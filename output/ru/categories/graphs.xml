@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Learn another day (Записи о graphs)</title><link>https://al1s.github.io/</link><description></description><atom:link href="https://al1s.github.io/ru/categories/graphs.xml" type="application/rss+xml" rel="self"></atom:link><language>ru</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Sat, 04 Aug 2018 00:19:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for July-15-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-july-15-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
+&lt;h2&gt;What will I learn today?&lt;/h2&gt;
+&lt;p&gt;Data visualization project: build US map with top economic activities for each state.  I want to get data spread over all industry groups for each state to see what are economy drivers for each state.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="done"&gt;
+&lt;h2&gt;Done&lt;/h2&gt;
+&lt;div class="section" id="challenges"&gt;
+&lt;h3&gt;Challenges&lt;/h3&gt;
+&lt;p&gt;#. Unable to get much data from API in the way I want.
+#.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="solutions"&gt;
+&lt;h3&gt;Solutions&lt;/h3&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;There are too much data I want to retrieve from &lt;a class="reference external" href="https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/cbp-api.html"&gt;Census bureau API&lt;/a&gt; - it's ok to get 200 rows, but if I want to break it down to more grained data - the API shuts down. The reason I want more data - its current aggregation seems weird for my goals. For example - two industries (5415 - Computer Systems Design and Related Services is not in 51 - Information) belonging in my opinion to one group are actually in different.&lt;/p&gt;
+&lt;p&gt;One way to solve it - prefetch all data to local storage and work with it. Then what is the best way to do it? Or maybe it's better to pretend that I have one, and just work with data as if I have the API for it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-july-15-2018/</guid><pubDate>Sun, 15 Jul 2018 17:43:31 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan and done for November-08-2017 | Learn another day</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="../../ru/rss.xml">
+<link rel="canonical" href="https://al1s.github.io/posts/plan-and-done-for-november-08-2017/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="alstof">
+<link rel="prev" href="../plan-and-done-for-october-22-2017/" title="Plan and done for October-22-2017" type="text/html">
+<link rel="next" href="../plan-and-done-for-january-21-2018/" title="Plan and done for January-21-2018" type="text/html">
+<meta property="og:site_name" content="Learn another day">
+<meta property="og:title" content="Plan and done for November-08-2017">
+<meta property="og:url" content="https://al1s.github.io/posts/plan-and-done-for-november-08-2017/">
+<meta property="og:description" content="What will I learn today?
+FreeCodeCamp curriculum: No repeat please.
+
+
+Done
+Permutations and combinations. There are bunch of algorithms to construct permutations. I've tried Heap recursive, Heap itera">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-11-08T15:32:31-07:00">
+<meta property="article:tag" content="freeCodeCamp">
+<meta property="article:tag" content="javascript">
+<link rel="alternate" hreflang="ru" href="../../ru/posts/plan-and-done-for-november-08-2017/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://al1s.github.io/">
+
+                <span id="blog-title">Learn another day</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" role="navigation" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Archive</a>
+                </li>
+<li>
+<a href="../../categories/">Tags</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://al1s.github.io/ru/" rel="alternate" hreflang="ru">Русский</a></li>
+
+                
+                    
+    <li>
+    <a href="index.rst" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Plan and done for November-08-2017</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    alstof
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-11-08T15:32:31-07:00" itemprop="datePublished" title="2017-11-08 15:32">2017-11-08 15:32</time></a></p>
+            
+        <p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<p>FreeCodeCamp curriculum: No repeat please.</p>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<p>Permutations and combinations. There are bunch of algorithms to construct permutations. I've tried Heap recursive, Heap iterative and Steinhaus-Johnson-Trotter. The code for each is here - <a class="reference external" href="https://codepen.io/alstof/pen/jarvNx">https://codepen.io/alstof/pen/jarvNx</a>. Couldn't get grounded intuition behind Heap algo: the reason it works - it has a pattern of elements swapping, but it's very easy to implement:</p>
+<blockquote>
+<pre class="code javascript"><a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-1"></a><span class="kd">var</span> <span class="nx">heapPermute</span> <span class="o">=</span> <span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-2"></a>  <span class="kd">var</span> <span class="nx">swap</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">pos1</span><span class="p">,</span> <span class="nx">pos2</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">pos1</span><span class="p">],</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">pos2</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">pos2</span><span class="p">],</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">pos1</span><span class="p">]];</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-3"></a>  <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">''</span><span class="p">));</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-4"></a>  <span class="k">else</span> <span class="p">{</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-5"></a>    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-6"></a>      <span class="nx">heapPermute</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">arr</span><span class="p">);</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-7"></a>      <span class="nx">swap</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">?</span> <span class="nx">i</span> <span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-8"></a>    <span class="p">}</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-9"></a>    <span class="nx">heapPermute</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">arr</span><span class="p">);</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-10"></a>  <span class="p">}</span>
+<a name="rest_code_cdbfb4370cb6471eab262621c6e8474b-11"></a><span class="p">}</span>
+</pre>
+</blockquote>
+<p>SJT looks a little more complicated, but it has more sense for me - just build the whole pyramid from scratch - starting with permutation of 1, 2, 3 ... elements and add every next element to what you've already got in every porision from last to first for every odd element of previous permutation and first to last for every even one.</p>
+<p>Good source of explanation is Khan Academy - <a class="reference external" href="https://www.khanacademy.org/math/precalculus/prob-comb/combinatorics-precalc/v/factorial-and-counting-seat-arrangements">https://www.khanacademy.org/math/precalculus/prob-comb/combinatorics-precalc/v/factorial-and-counting-seat-arrangements</a>.</p>
+<p>Pictures with explanation are available at Wiki:</p>
+<ul class="simple">
+<li>Heap - <a class="reference external" href="https://en.wikipedia.org/wiki/Heap%27s_algorithm">https://en.wikipedia.org/wiki/Heap%27s_algorithm</a>
+</li>
+<li>SJT - <a class="reference external" href="https://en.wikipedia.org/wiki/Steinhaus%E2%80%93Johnson%E2%80%93Trotter_algorithm">https://en.wikipedia.org/wiki/Steinhaus%E2%80%93Johnson%E2%80%93Trotter_algorithm</a>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/freecodecamp/" rel="tag">freeCodeCamp</a></li>
+            <li><a class="tag p-category" href="../../categories/javascript/" rel="tag">javascript</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../plan-and-done-for-october-22-2017/" rel="prev" title="Plan and done for October-22-2017">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../plan-and-done-for-january-21-2018/" rel="next" title="Plan and done for January-21-2018">Next post</a>
+            </li>
+        </ul></nav></aside></article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:alstof@gmail.com">alstof</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

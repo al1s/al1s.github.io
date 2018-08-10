@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Notes collection">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn another day (11 страница со старыми записями) | Learn another day</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="rss.xml">
+<link rel="canonical" href="https://al1s.github.io/ru/index-11.html">
+<link rel="prev" href="." type="text/html">
+<link rel="next" href="index-10.html" type="text/html">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Перейти к главному содержимому</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Включить навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://al1s.github.io/ru/">
+
+                <span id="blog-title">Learn another day</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" role="navigation" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="archive.html">Архив</a>
+                </li>
+<li>
+<a href="categories/">Тэги</a>
+                </li>
+<li>
+<a href="rss.xml">RSS лента</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://al1s.github.io/" rel="alternate" hreflang="en">English</a></li>
+
+                
+                    
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-27-2018/" class="u-url">Plan and done for May-27-2018</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-27-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-05-27T06:03:31-07:00" title="2018-05-27 06:03">2018-05-27 06:03</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<p>FreeCodeCamp React projects: Camper Leaderboard.</p>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<div class="section" id="challenges">
+<h3>Challenges</h3>
+<ol class="arabic simple">
+<li>I want to use async/await for fetching data but what about catching errors?</li>
+<li>When and where to fetch initial data to React app?</li>
+</ol>
+</div>
+<div class="section" id="solutions">
+<h3>Solutions</h3>
+<ol class="arabic simple">
+<li>Here is the <a class="reference external" href="https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/">receipt</a> to do it with style:</li>
+</ol>
+<pre class="code javascript"><a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-1"></a><span class="kd">function</span> <span class="nx">to</span><span class="p">(</span><span class="nx">promise</span><span class="p">)</span> <span class="p">{</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-2"></a>  <span class="k">return</span> <span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-3"></a>      <span class="k">return</span> <span class="p">[</span><span class="kc">null</span><span class="p">,</span> <span class="nx">data</span><span class="p">];</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-4"></a>    <span class="p">})</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-5"></a>    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="p">=&gt;</span> <span class="p">[</span><span class="nx">err</span><span class="p">]);</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-6"></a><span class="p">}</span>
+</pre>
+<ol class="arabic simple" start="2">
+<li>The right place is <code>componentDidMount</code>. An explanation - <a class="reference external" href="https://zhenyong.github.io/react/tips/initial-ajax.html">Initial data via AJAX</a>.</li>
+</ol>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-06-2018/" class="u-url">plan-and-done-for-may-06-2018</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-06-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-05-06T06:23:31-07:00" title="2018-05-06 06:23">2018-05-06 06:23</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<p>FreeCodeCamp React projects: Markdown online parser - start coding.</p>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<div class="section" id="online-markdown-editor-app">
+<h3>Online markdown editor app</h3>
+<p>The user <a class="reference external" href="https://www.freecodecamp.org/challenges/build-a-markdown-previewer">story</a> and the desired result.</p>
+<div class="section" id="challenges">
+<h4>Challenges</h4>
+<ol class="arabic simple">
+<li>Estimated size of the bundle over 50kB gzipped.</li>
+<li>How to make browsersync work with react application?</li>
+<li>Can't make work webpack hot reload with gulp.</li>
+<li>How to render escaped HTML inside component?</li>
+</ol>
+</div>
+<div class="section" id="solutions">
+<h4>Solutions</h4>
+<ol class="arabic">
+<li>
+<p class="first"><a class="reference external" href="https://github.com/facebook/react/issues/10780">Explanation</a> from Dan Abramov. Google for <a class="reference external" href="https://www.google.com/search?q=webpack+different+plugins+for+production+and+development&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-ab">solution alternatives</a>.</p>
+</li>
+<li>
+<p class="first">I've found this <a class="reference external" href="https://words.mxbry.com/making-react-webpack-browsersync-gulp-play-nice-and-hot-reload-b2c1e01522e3">receipt</a>. Here is an example of <a class="reference external" href="https://github.com/BrowserSync/recipes/blob/master/recipes/webpack.react-hot-loader/webpack.config.js">config</a></p>
+</li>
+<li>
+<p class="first">The problem looks like:</p>
+<pre class="literal-block">
+react-hot-loader\index.js' is not a loader (must have normal or pitch function)
+</pre>
+<p>To solve it we need to move <code>react-hot-loader</code> from webpack.config.js to .babelrc as described in Dan's <a class="reference external" href="http://gaearon.github.io/react-hot-loader/getstarted/">post</a> (check step 3.2.a).</p>
+<p>Second problem with dependencies of eslint and depricated rule <code>jsx-a11y/href-no-hash</code>. Solved it including to rules into .eslintrc - <code>"jsx-a11y/href-no-hash": 2, "jsx-a11y/anchor-is-valid": 2</code>;</p>
+<p>Third problem is the working server doesn't produce bundle.js. But as I've got it's not a bug but a feature - webpack doesn't generate output when it runs in with devServer.</p>
+<p>Fourth problem is server does rebuild, but after checking for update and finding the updated module doesn't hot reload react components saying:</p>
+<pre class="literal-block">
+App is up to date.
+</pre>
+<p>Solved it after a couple of hours by reading different issues (<a class="reference external" href="https://github.com/gaearon/react-hot-loader/issues/581">#581</a> and <a class="reference external" href="https://github.com/gaearon/react-hot-loader/issues/100">#100</a> gave me a clue) and finally using manual of <a class="reference external" href="https://github.com/gaearon/react-hot-loader#code-splitting">react-hot-reload</a>. I've exported all my components as hot.</p>
+</li>
+<li>
+<p class="first">I've got escaped HTML result of a <a class="reference external" href="https://github.com/markedjs/marked">markdown converter</a> function. When I tried to put the result into an output component on the page I got raw HTML on the page. The way to convert it into renderable HTML is to use weird function <code>dangerouslySetInnerHTML</code> as described on <a class="reference external" href="https://stackoverflow.com/a/19277723">SO page</a> . Here is a <a class="reference external" href="https://github.com/facebook/react/issues/2778">bit</a> about the function name and sense begind it.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-april-15-2018/" class="u-url">Plan and done for April 15 - May 05</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-april-15-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-04-15T06:00:31-07:00" title="2018-04-15 06:00">2018-04-15 06:00</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<p>FreeCodeCamp projects: Simon game - start coding.</p>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<div class="section" id="simon-game-app">
+<h3>Simon game app</h3>
+<p>The user <a class="reference external" href="https://www.freecodecamp.org/challenges/build-a-simon-game">story</a> and the desired result.</p>
+<div class="section" id="game-process">
+<h4>Game process</h4>
+<ol class="arabic simple">
+<li>On Start game load the game engine.</li>
+<li>Choose a random sequence and keep it as current.</li>
+<li>Save current game position - 1.</li>
+<li>Play sequence from beginning to the current position inclusive.</li>
+<li>Wait for user input.</li>
+<li>Compare each entered element with corresponding element in sequence.</li>
+<li>On error: show message; buzz.</li>
+<li>On success: move current position one element right; repeat from step 3.</li>
+<li>On success in strict mode: repeat from step 2.</li>
+</ol>
+</div>
+<div class="section" id="challenges">
+<h4>Challenges</h4>
+<ol class="arabic simple">
+<li>What is the Simon game?</li>
+<li>How to get sectors?</li>
+<li>How to play sound?</li>
+<li>How to make color of the sector blink lighter on click or touch?</li>
+<li>How to produce a sequence of sounds?</li>
+<li>How to make the shape of active element not squared?</li>
+<li>How to inform user about winning in the game?</li>
+<li>How to make delays to handle state changes in UI more smoothly?</li>
+<li>How to synchronize ending of Web Audio API Oscillator play with UI?</li>
+</ol>
+</div>
+<div class="section" id="solutions">
+<h4>Solutions</h4>
+<ol class="arabic">
+<li>
+<p class="first"><a class="reference external" href="https://en.wikipedia.org/wiki/Simon_(game)">Explanation</a> on the Simon game.</p>
+</li>
+<li>
+<p class="first">We can get circle sectors by <a class="reference external" href="https://stackoverflow.com/questions/21205652/how-to-draw-a-circle-sector-in-css">CSS hacking</a> for div elements with special background filling or trasformations. It's many lines of an unintuitive code. My way is to set a background image for each sector to inline SVG. Code is very intelligible and clear:</p>
+<pre class="code text"><a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-1"></a>&lt;svg
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-2"></a>   xmlns="http://www.w3.org/2000/svg"
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-3"></a>   viewBox="0 0 200 200"
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-4"></a>   id="fourColorsCircle"&gt;
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-5"></a>  &lt;path fill="red"    d="M100,100 L100,0   A100,100 1 0,1 200,100 z" id="sector_XY" /&gt;
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-6"></a>  &lt;path fill="blue"   d="M100,100 L200,100 A100,100 1 0,1 100,200 z" id="sector_Xy" /&gt;
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-7"></a>  &lt;path fill="yellow" d="M100,100 L100,200 A100,100 1 0,1 0,100   z" id="sector_xy" /&gt;
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-8"></a>  &lt;path fill="green"  d="M100,100 L0,100   A100,100 1 0,1 100,0   z" id="sector_xY" /&gt;
+<a name="rest_code_1cb9b6a9fd2d40a498cb86519efd1af0-9"></a>&lt;/svg&gt;
+</pre>
+</li>
+<li>
+<p class="first">Use Web Audio API to make sounds out of HTML. Great explanation with a working code is at <a class="reference external" href="https://css-tricks.com/introduction-web-audio-api/">CSS tricks</a>. Oscilator with sine wave form at a given frequency with Gain node to control fade out.</p>
+</li>
+<li>
+<p class="first">There is SVG modified for any touched element or inner shadow for the element (but it doesn't work with SVG). There is <code>lighten</code> function in LESS but I don't want to add another framework (even if it's just CSS post-processing framework) just because of one function. I've tried to use <code>filter: opacity</code> in CSS as described in the <a class="reference external" href="https://codepen.io/noahblon/post/coloring-svgs-in-css-background-images">post</a>, but it produces different result on different colors - works best on green and worse on red. Finally I replace SVG for a second on key pressed to its brighter version.</p>
+</li>
+<li>
+<p class="first">The problem is the Web Audio API oscilators are played at once despite they are played in a loop. The way to manage sequences I need to set exact time spot for each note to be played, schedule it. Here is the <a class="reference external" href="http://catarak.github.io/blog/2014/12/02/web-audio-timing-tutorial/">first</a>  short and the <a class="reference external" href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">second</a> much thorough explanation.</p>
+</li>
+<li>
+<p class="first">I want the game to be accessible, but I don't like the shape of common active outline. Couldn't find any advices on making it more acceptable - not just plain squared, but something that repeats the form of the original element. Variant - to implement the whole keyboard layout to play the game with ARIA description on key mapping.</p>
+</li>
+<li>
+<p class="first">I want some fanfare-like sound. And the only thing that come to my mind is ta-da-da-daaa-da-da from hockey matches timeouts. Looked at Wiki and after a while I've found it is the <a class="reference external" href="https://en.wikipedia.org/wiki/Charge_(fanfare)">Charge!</a>. In order to play it through the tone generator I had to implement additional function which let me to play chords and set note duration.</p>
+</li>
+<li>
+<p class="first">One way to do it is to put <code>setTimeout()</code> everywhere I want a delay. But it makes it harder to deal with a sequence of delays or a sequence of UI interactions. I want a <code>Promise()</code> power to chain all interactions in a highly visible structure. SO gives an <a class="reference external" href="https://stackoverflow.com/questions/22707475/how-to-make-a-promise-from-settimeout">example</a> of such implementation.</p>
+</li>
+<li>
+<p class="first">I want to pause listening on buttons while the app is playing a sequence: it could be inconsistent for a user to press a button during the play and wait for it to be consumed by an app as a sequential input. The problem is that an osicllator neither has callback nor returns a promise. After a little research I've <a class="reference external" href="https://stackoverflow.com/a/32848139">found</a> a solution in the form of an <code>onended</code> event of an Oscillator node (<a class="reference external" href="https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-onended">here</a> is description). The final solution is to implement a sequence player to return a promise of all promises and a tone player to return a promise on <code>onended</code> event. But there is another problem. Gain node provides a fade-out and goes on even when the sound is barely audible but the UI is still frozen. It's inconsistent for a user to hear or see nor activity from an app but being unable to interact with it. In order to produce more reliable behavior I exluded the last tone from a waiting list and during it's play the user may start interact with the app.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article>
+</div>
+
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="." rel="prev">Новые записи</a>
+            </li>
+            <li class="next">
+                <a href="index-10.html" rel="next">Старые записи</a>
+            </li>
+        </ul></nav>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:alstof@gmail.com">alstof</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/colorbox-i18n/jquery.colorbox-ru.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("ru");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

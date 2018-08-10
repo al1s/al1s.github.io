@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Notes collection">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn another day (old posts, page 8) | Learn another day</title>
+<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="ru/rss.xml">
+<link rel="canonical" href="https://al1s.github.io/index-8.html">
+<link rel="prev" href="index-9.html" type="text/html">
+<link rel="next" href="index-7.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://al1s.github.io/">
+
+                <span id="blog-title">Learn another day</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" role="navigation" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="archive.html">Archive</a>
+                </li>
+<li>
+<a href="categories/">Tags</a>
+                </li>
+<li>
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://al1s.github.io/ru/" rel="alternate" hreflang="ru">Русский</a></li>
+
+                
+                    
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-22-2017/" class="u-url">Plan and done for June-22-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-22-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-22T12:47:31-07:00" title="2017-06-22 12:47">2017-06-22 12:47</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">Stuck a little with the yesterday's problem. The reason - can't add up only those remainder's groups which don't give a divider mutually - I've set an array of 'banned' remainders and try to use it inside <code>Array.prototype.reduce()</code> but it seems like it's not seen inside <code>reduce</code> loop.</p>
+<p>The solution for this was quite easy - I added to an array numbers and checked if an element is included with a string equivalent. Added plus sign before an element so it looked like <code>Arr.includes(+num)</code> and everything started to work great.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-21-2017/" class="u-url">Plan and done for June-21-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-21-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-21T10:13:31-07:00" title="2017-06-21 10:13">2017-06-21 10:13</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">Today's problem is about properties of dividing integers - <a class="reference external" href="https://www.hackerrank.com/challenges/non-divisible-subset">https://www.hackerrank.com/challenges/non-divisible-subset</a>.</p>
+<p>Sum of which numbers isn't dividable by third number? The brute-force approach is to check each combination of two numbers in a set has O(n^2) complexity. I want it to be better.</p>
+<p>Division is an opposite to multiplication and the last is just a compressed version of addition:</p>
+<pre class="literal-block">
+9 / 3 = 3 =&gt; 3 * 3 = 9 =&gt; 3 + 3 + 3 = 9;
+</pre>
+<p>If the number isn't dividable by other number it means we have a skewed view of addition:</p>
+<pre class="literal-block">
+10 / 3 = 3.333(3) =&gt; 3.3(3) * 3 = 10, but let's make it simpler: 3 + 3 + 3 + 1 = 10;
+</pre>
+<p>The only thing that changes is the last addendum - we have the remainder now. Let's add some numbers to our <tt class="docutils literal">10</tt> and look what'll happen.:</p>
+<pre class="literal-block">
+10 + 1 = 11 =&gt; 3 + 3 + 3 + (1 + 1) = 11 =&gt; 3 + 3 + 3 + 2 = 11;
+11 / 3 = 3 remainder 2;
+
+10 + 2 = 12 =&gt; 3 + 3 + 3 + (1 + 2) = 12 =&gt; 3 + 3 + 3 + 3 = 12;
+12 / 3 = 4;
+
+10 + 5 = 15 =&gt; 3 + 3 + 3 + (1 + 2) + 3 = 15 =&gt; 3 + 3 + 3 + 3 + 3 = 15;
+</pre>
+<p>Looks like the remainders of two addendums divided by the third number shouldn't add up to divisable number if we want the sum won't. My approach according to above is to accumulate all numbers in a given set into dictionary using remainder as a key. Then choose the largest groups which remainders sum will not be dividable and sum all such groups together. It will be the answer.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-20-2017/" class="u-url">Plan and done for June-20-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-20-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-20T04:35:31-07:00" title="2017-06-20 04:35">2017-06-20 04:35</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">I'm still on the same problem as yesterday - <a class="reference external" href="https://www.hackerrank.com/challenges/sherlock-and-squares">https://www.hackerrank.com/challenges/sherlock-and-squares</a>.</p>
+<p>My initial approach was overcomplicated way of thoughts (as usual). The solution was much simpler - just find two square roots of given numbers and round them to ceil and floor respectfully. The difference between calculated roots increaces by one is the answer except the case when both given numbers are equal.</p>
+<p>While my attempts to figure out why HR built-in tests were failing I decided to switch to my local test suit. After short analysis of different testing frameworks I stopped on Jasmine - it has everything I need already integrated, opposite to Mocha, where assertion framework should be chosen separately. Jasmine is well documented so to integrate test inside a browser was easy.</p>
+<p>It was challenging to implement the test itself - I wanted to generate randomly both boundaries and then knowing what were initial values for calculating powers of two and if I know initials than it's easy to get how many values I have in between. The challenge was to get a random value exluding upper and lower boundaries - MDN advices on <code>random</code> are about inclusive implementations. Finally I've got it by increasing and decreasing low and high limits of squares.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-19-2017/" class="u-url">Plan and done for June-19-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-19-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-19T04:35:31-07:00" title="2017-06-19 04:35">2017-06-19 04:35</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">The next problem - <a class="reference external" href="https://www.hackerrank.com/challenges/sherlock-and-squares">https://www.hackerrank.com/challenges/sherlock-and-squares</a>.</p>
+<p>My initial approach was based on calculating increments between difference of current and the next square root. The reasoning looked like this:</p>
+<p>Let's assume, that we know the sequence of full square difference:</p>
+<pre class="literal-block">
+            1, 2, 3, 4,  5,  6,  7,  8,  9...
+for the row 1, 4, 9, 16, 25, 36, 49, 64, 81...
+it would be   3, 5, 7,  9,  11, 13, 15, 17...
+so each time the difference increases by 2.
+</pre>
+<p>The formula for it is 2*n - 1, where n is our initial number. Then to solve the problem just get the square root of the first number and find the difference, then check if my second given number within it.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-18-2017/" class="u-url">Plan and done for June-18-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-18-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-18T05:22:31-07:00" title="2017-06-18 05:22">2017-06-18 05:22</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">Switched to hackerrank - <a class="reference external" href="https://www.hackerrank.com">https://www.hackerrank.com</a> - for a while to practice algorithms and to improve velocity in coding with Javascript, get fluency in it.</p>
+<p>There were two problems that I've solved - find the cost of transformation of any 3x3 matrix into a magic square matrix (<a class="reference external" href="https://www.hackerrank.com/challenges/magic-square-forming">https://www.hackerrank.com/challenges/magic-square-forming</a>); manipulate given strings symbol by symbol to morph one into another (<a class="reference external" href="https://www.hackerrank.com/challenges/append-and-delete">https://www.hackerrank.com/challenges/append-and-delete</a>).</p>
+<p>RescueTime (<a class="reference external" href="https://www.rescuetime.com">https://www.rescuetime.com</a>) said that I've spent almost 8 hours. What is this? First three hours I tried to get into approach to magic square solution. First I used Excel in search of some hints on how to calculate it faster. Then I just switched into Octave and started matrix manipulation routines - rotation, flipping, substracting. It showed results so I get back to code editor and implemented all these basic matrix transformations in JS. The final solution was easy when I've got all tools needed. Limit is that the matrix could be only 3x3. The main reason for the limit is that I don't understand quite well how to find all possible matrix rotation and flipping algorithmically. There are some interesting links: how to build an array filled with constants - <a class="reference external" href="https://stackoverflow.com/a/13735425">https://stackoverflow.com/a/13735425</a>; someone's example of rotation of any matrix - <a class="reference external" href="http://jsfiddle.net/MrPolywhirl/NH42z/">http://jsfiddle.net/MrPolywhirl/NH42z/</a>.</p>
+<p>And the second problem was much easier to solve - RescueTime showed it took only 1.5 hours.</p>
+<p>Too slow...</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-17-2017/" class="u-url">Plan and done for June-17-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-17-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-17T14:42:31-07:00" title="2017-06-17 14:42">2017-06-17 14:42</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">What is this all about - <a class="reference external" href="http://al1s.github.io/posts/plan-and-done-for-may-25-2017/">http://al1s.github.io/posts/plan-and-done-for-may-25-2017/</a>.</p>
+<p>Day 18 -   sum up time periods in data-* attributes of list items on a page using reduce.</p>
+<p>Implemented a function for calculating total time summing arguments passed as a string each. The challenge was in passing list of arguments that I've got from a nodeList object - it continuisly passed to the function as a string, but not a list of arguments or an array. Finally I've filled an array explicitly.</p>
+<p>Here is working example - <a class="reference external" href="https://al1s.github.io/JavaScript30//index.html">https://al1s.github.io/JavaScript30//index.html</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-16-2017/" class="u-url">Plan and done for June-16-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-16-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-16T14:45:31-07:00" title="2017-06-16 14:45">2017-06-16 14:45</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">What is this all about - <a class="reference external" href="http://al1s.github.io/posts/plan-and-done-for-may-25-2017/">http://al1s.github.io/posts/plan-and-done-for-may-25-2017/</a>.</p>
+<p>Continue day 16. It's quite easy assignment but I'm in a lack of time. Build tons of helper functions.</p>
+<ul class="simple">
+<li>
+<code>getElmCenterPoint()</code> - to get any element center;</li>
+<li>
+<code>getDistanceToElm()</code> - to calculate distance between a target element and the mouse pointer;</li>
+<li>
+<code>shiftCoordinates()</code> - to get mouse pointer coordinates taking the element center as a coordinates origin;</li>
+<li>
+<code>mirrorCoord()</code> - to get coordinates opposite (the kind of oppositeness depends on the function arguments: it could be mirrored around one or another axes, or both) to the mouse pointer.</li>
+</ul>
+<p>Here is about paralax effect by Dudley Storey - <a class="reference external" href="http://thenewcode.com/1162/Cheap-Parallax-with-JavaScript-and-CSS-Transforms">http://thenewcode.com/1162/Cheap-Parallax-with-JavaScript-and-CSS-Transforms</a>.</p>
+<p>Used debounce function to prevent performance degradation. More info on debounce is here - <a class="reference external" href="https://css-tricks.com/debouncing-throttling-explained-examples/">https://css-tricks.com/debouncing-throttling-explained-examples/</a>.</p>
+<p>Learned how to work with boxShadow/textShadow style attributes: get - getComputedStyle(elm).textShadow and <a class="reference external" href="https://stackoverflow.com/a/17819623">https://stackoverflow.com/a/17819623</a>, set - <a class="reference external" href="https://stackoverflow.com/a/10890994">https://stackoverflow.com/a/10890994</a>.</p>
+<p>Here is working example - <a class="reference external" href="https://al1s.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index.html">https://al1s.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index.html</a>.</p>
+<p>And an appointment on the day 17 is easy one: sorting list excluding articles - a, the, an. My approach was to iterate through articles list and replace every occurence of it in a target string. After it just <code>Array.prototype.sort()</code>. Wes's solution is more elegant.</p>
+<p>Here is working example - <a class="reference external" href="https://al1s.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index.html">https://al1s.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index.html</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-14-2017/" class="u-url">Plan and done for June-14-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-14-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-14T11:26:31-07:00" title="2017-06-14 11:26">2017-06-14 11:26</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">What is this all about - <a class="reference external" href="http://al1s.github.io/posts/plan-and-done-for-may-25-2017/">http://al1s.github.io/posts/plan-and-done-for-may-25-2017/</a>.</p>
+<p>Still on the day 16. What dimensional properties are available in a browser window? Here are officials by MDN:</p>
+<ul class="simple">
+<li>mouseEvent.offsetX, mouseEvent.offsetY - the X and Y coordinates of the mouse pointer relative to the position of the padding edge of the target node;</li>
+<li>mouseEvent.clientX, mouseEvent.clientY - the X and Y coordinates of the mouse pointer in local (DOM content) coordinates.</li>
+<li>mouseEvent.pageX, mouseEvent.pageY - the X and Y coordinates of the mouse pointer relative to the whole document.</li>
+<li>mouseEvent.screenX, mouseEvent.screenY - the X and Y coordinates of the mouse pointer in global (screen) coordinates.</li>
+<li>elm.getBoundingClientRect() - the size of an element and its position relative to the viewport.</li>
+<li>window.innerHeight, window.innerWidth - height and width (in pixels) of the browser window viewport including, if rendered, the horizontal scrollbar. These are dimensions of the page being displayed. Source - <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight">https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight</a>;</li>
+<li>window.scrollX, window.scrollY - the number of pixels that the document is currently scrolled horizontally and vertically. <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX">https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX</a>;</li>
+</ul>
+<p>Here is demo of different dimension aspects and basic paralax helper functions - <a class="reference external" href="https://codepen.io/alstof/full/xrEaRB/">https://codepen.io/alstof/full/xrEaRB/</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-13-2017/" class="u-url">Plan and done for June-13-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-13-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-13T18:48:31-07:00" title="2017-06-13 18:48">2017-06-13 18:48</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">What is this all about - <a class="reference external" href="http://al1s.github.io/posts/plan-and-done-for-may-25-2017/">http://al1s.github.io/posts/plan-and-done-for-may-25-2017/</a>.</p>
+<p>Day 16 - a paralax effect with text shadow. A user story:</p>
+<ul class="simple">
+<li>As a user I want to move a mouse around on a page and see how one of the element's shadow reflect mouse movements, so that the page seems animated and react to my mouse movements;</li>
+</ul>
+<p>Ideas:</p>
+<ul class="simple">
+<li>if an element in a visible part of the screen - handle the mouse movements;</li>
+<li>the closer the mouse cursor to the element - the shorter the shadow;</li>
+<li>calculate the mouse position relativly to element center, calculate the distance;</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-june-12-2017/" class="u-url">Plan and done for June-12-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-june-12-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-06-12T04:52:31-07:00" title="2017-06-12 04:52">2017-06-12 04:52</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">What is this all about - <a class="reference external" href="http://al1s.github.io/posts/plan-and-done-for-may-25-2017/">http://al1s.github.io/posts/plan-and-done-for-may-25-2017/</a>.</p>
+<p>Day 14 - build a menu list. User story:</p>
+<ul class="simple">
+<li>As a user I want to add dishes to my plate, one at a time, so that I'll finally have a list of dishes.</li>
+<li>As a user I want to keep this list after page reload, so that it persist window closing and I'll have the same list even after a browser restart.</li>
+<li>As a user I want to mark items in a list and these marks have to persist page reload, so that I'll know what I marked specially before.</li>
+</ul>
+<p>Plan:</p>
+<ul class="simple">
+<li>use local storage to persist page reload;</li>
+<li>keep all entered values in one list and save it to one item in a browser local storage;</li>
+<li>prevent page reload on form submission;</li>
+<li>consider performance as a first class user requirement;</li>
+</ul>
+<p>First of all - my Chrome configuration didn't let me save anything in a local storage. There are one radio and one checkboxe in Advanced config in the Cookies control list which should be considered: <cite>Allow Local data</cite> to be set and <cite>Block third-party cookies and site data</cite> unchecked.</p>
+<p>What was interesting:</p>
+<ul class="simple">
+<li>I've added the handler to checkbox <code>change</code> event during dynamical list item composing - it let do this if you use native interface to add elements to DOM - <code>createElement</code> and <code>appendChild</code>;</li>
+<li>I've implemented <code>remove</code> button for each element added to a list just to make it more valuable. Actually it's a little TODO app, so it should have all expected functions - add/delete items to a list, check items in a list, keep items persistent.</li>
+<li>I've implemented redrawing for only added item - after a user add item the only thing changes on a page - this item added to a list (Wes told about it in a tutorial video, but his code redraw the whole list). It's performance friendly way to work with a DOM.</li>
+</ul>
+<p>Link to the page - <a class="reference external" href="https://al1s.github.io/JavaScript30/15%20-%20LocalStorage/index.html">https://al1s.github.io/JavaScript30/15%20-%20LocalStorage/index.html</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article>
+</div>
+
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="index-9.html" rel="prev">Newer posts</a>
+            </li>
+            <li class="next">
+                <a href="index-7.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:alstof@gmail.com">alstof</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

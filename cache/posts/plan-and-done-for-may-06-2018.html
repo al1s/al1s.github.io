@@ -1,0 +1,44 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>FreeCodeCamp React projects: Markdown online parser - start coding.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<div class="section" id="online-markdown-editor-app">
+<h2>Online markdown editor app</h2>
+<p>The user <a class="reference external" href="https://www.freecodecamp.org/challenges/build-a-markdown-previewer">story</a> and the desired result.</p>
+<div class="section" id="challenges">
+<h3>Challenges</h3>
+<ol class="arabic simple">
+<li>Estimated size of the bundle over 50kB gzipped.</li>
+<li>How to make browsersync work with react application?</li>
+<li>Can't make work webpack hot reload with gulp.</li>
+<li>How to render escaped HTML inside component?</li>
+</ol>
+</div>
+<div class="section" id="solutions">
+<h3>Solutions</h3>
+<ol class="arabic">
+<li><p class="first"><a class="reference external" href="https://github.com/facebook/react/issues/10780">Explanation</a> from Dan Abramov. Google for <a class="reference external" href="https://www.google.com/search?q=webpack+different+plugins+for+production+and+development&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-ab">solution alternatives</a>.</p>
+</li>
+<li><p class="first">I've found this <a class="reference external" href="https://words.mxbry.com/making-react-webpack-browsersync-gulp-play-nice-and-hot-reload-b2c1e01522e3">receipt</a>. Here is an example of <a class="reference external" href="https://github.com/BrowserSync/recipes/blob/master/recipes/webpack.react-hot-loader/webpack.config.js">config</a></p>
+</li>
+<li><p class="first">The problem looks like:</p>
+<pre class="literal-block">
+react-hot-loader\index.js' is not a loader (must have normal or pitch function)
+</pre>
+<p>To solve it we need to move <code>react-hot-loader</code> from webpack.config.js to .babelrc as described in Dan's <a class="reference external" href="http://gaearon.github.io/react-hot-loader/getstarted/">post</a> (check step 3.2.a).</p>
+<p>Second problem with dependencies of eslint and depricated rule <code>jsx-a11y/href-no-hash</code>. Solved it including to rules into .eslintrc - <code>&quot;jsx-a11y/href-no-hash&quot;: 2, &quot;jsx-a11y/anchor-is-valid&quot;: 2</code>;</p>
+<p>Third problem is the working server doesn't produce bundle.js. But as I've got it's not a bug but a feature - webpack doesn't generate output when it runs in with devServer.</p>
+<p>Fourth problem is server does rebuild, but after checking for update and finding the updated module doesn't hot reload react components saying:</p>
+<pre class="literal-block">
+App is up to date.
+</pre>
+<p>Solved it after a couple of hours by reading different issues (<a class="reference external" href="https://github.com/gaearon/react-hot-loader/issues/581">#581</a> and <a class="reference external" href="https://github.com/gaearon/react-hot-loader/issues/100">#100</a> gave me a clue) and finally using manual of <a class="reference external" href="https://github.com/gaearon/react-hot-loader#code-splitting">react-hot-reload</a>. I've exported all my components as hot.</p>
+</li>
+<li><p class="first">I've got escaped HTML result of a <a class="reference external" href="https://github.com/markedjs/marked">markdown converter</a> function. When I tried to put the result into an output component on the page I got raw HTML on the page. The way to convert it into renderable HTML is to use weird function <code>dangerouslySetInnerHTML</code> as described on <a class="reference external" href="https://stackoverflow.com/a/19277723">SO page</a> . Here is a <a class="reference external" href="https://github.com/facebook/react/issues/2778">bit</a> about the function name and sense begind it.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>

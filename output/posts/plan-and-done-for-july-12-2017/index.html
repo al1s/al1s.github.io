@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan and done for July-12-2017 | Learn another day</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="../../ru/rss.xml">
+<link rel="canonical" href="https://al1s.github.io/posts/plan-and-done-for-july-12-2017/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="alstof">
+<link rel="prev" href="../plan-and-done-for-july-04-2017/" title="Plan and done for July-04-2017" type="text/html">
+<link rel="next" href="../plan-and-done-for-july-16-2017/" title="Plan and done for July-16-2017" type="text/html">
+<meta property="og:site_name" content="Learn another day">
+<meta property="og:title" content="Plan and done for July-12-2017">
+<meta property="og:url" content="https://al1s.github.io/posts/plan-and-done-for-july-12-2017/">
+<meta property="og:description" content="What will I learn today?
+Dive into JS.
+
+
+Done
+I've solved Queen attack II. It wasn't hard, but in some way mind bending. The next two challenges are Roads and libraries - https://www.hackerrank.com/ch">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-07-12T13:25:31-07:00">
+<meta property="article:tag" content="hackerrank">
+<meta property="article:tag" content="javascript">
+<link rel="alternate" hreflang="ru" href="../../ru/posts/plan-and-done-for-july-12-2017/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://al1s.github.io/">
+
+                <span id="blog-title">Learn another day</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" role="navigation" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Archive</a>
+                </li>
+<li>
+<a href="../../categories/">Tags</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://al1s.github.io/ru/" rel="alternate" hreflang="ru">Русский</a></li>
+
+                
+                    
+    <li>
+    <a href="index.rst" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Plan and done for July-12-2017</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    alstof
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-07-12T13:25:31-07:00" itemprop="datePublished" title="2017-07-12 13:25">2017-07-12 13:25</time></a></p>
+            
+        <p class="sourceline"><a href="index.rst" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<p>Dive into JS.</p>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<p>I've solved Queen attack II. It wasn't hard, but in some way mind bending. The next two challenges are Roads and libraries - <a class="reference external" href="https://www.hackerrank.com/challenges/torque-and-development">https://www.hackerrank.com/challenges/torque-and-development</a> and Climbing the leaderboard - <a class="reference external" href="https://www.hackerrank.com/challenges/climbing-the-leaderboard">https://www.hackerrank.com/challenges/climbing-the-leaderboard</a>. I solved both, but my solutions didn't meet time complexity criteria, so now I'm in optimization mode.</p>
+<p>My approach to Roads and libs is:</p>
+<ul class="simple">
+<li>The idea is to find whether we have a connected graph.</li>
+<li>If not, then we need at least the same number of libraries as independent graphs.</li>
+<li>If graph is connected, we build at least one library.</li>
+<li>If library cost &gt; road cost, fix all roads, otherwise, build a library in every town.</li>
+<li>In order to find the graph roots and edges I built node adjacency list and all nodes list.</li>
+</ul>
+<p>The last two are sources of latency. At first I tried to build all nodes list by concatenating all nodes within <code>forEach</code> loop and then moving the result into a set to get a list of nodes without repetitions. I've got rid of concatenation, and just pushed all nodes into flat array and then copied it into a set. The adjacency list is looked harder. I want to get a list of all nodes with their neighbours for each. I use for it an array and each position is my node number filled with arrays of neighbours. Maybe the better idea is to use object for storing the list.</p>
+<p>In order to understand how my solution works under load I use a dataset I've found under the first link here - <a class="reference external" href="https://cstheory.stackexchange.com/a/740">https://cstheory.stackexchange.com/a/740</a>.</p>
+<p>The solution works faster with an object as a storage of adjacency list, but it fails HR performance tests.</p>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/hackerrank/" rel="tag">hackerrank</a></li>
+            <li><a class="tag p-category" href="../../categories/javascript/" rel="tag">javascript</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../plan-and-done-for-july-04-2017/" rel="prev" title="Plan and done for July-04-2017">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../plan-and-done-for-july-16-2017/" rel="next" title="Plan and done for July-16-2017">Next post</a>
+            </li>
+        </ul></nav></aside></article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:alstof@gmail.com">alstof</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

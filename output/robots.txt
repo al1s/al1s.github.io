@@ -1,0 +1,4 @@
+Sitemap: https://al1s.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: al1s.github.io

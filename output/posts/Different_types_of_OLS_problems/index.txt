@@ -1,0 +1,12 @@
+<!-- 
+.. title: Different types of OLS problems
+.. slug: Different_types_of_OLS_problems
+.. date: 2016-06-03 16:42:38 UTC+03:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
+Heteroscedastisity and Autocorrelation vs. Endogeneity vs. Multicollinearity

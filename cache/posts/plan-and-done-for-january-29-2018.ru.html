@@ -1,0 +1,27 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>FreeCodeCamp projects: Weather - fix error with unreacheble host for ip resolution; Pomodoro - start coding.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<p>While I was editing my application to the LEAP project I found that WeatherNow app stoped working on my laptop. After light research (developer tools -&gt; console and network tabs) I found the reason. The resource I've used for retrieving geolocation data based on my IP-address started responding with error message.</p>
+<p>The first impulse was to replace current resource with another one. I checked for available resources and found a bunch here - <a class="reference external" href="https://stackoverflow.com/a/35123097/2255031">https://stackoverflow.com/a/35123097/2255031</a>. I payed attention to the list of resources which were available before but are down now. The most optimal and natural way is to add many resources to the app and then just request location from all of them and work with the first available. But how to get data from first successful promise resolved if we have multiple resources? Here is elegant solution from SO - <a class="reference external" href="https://stackoverflow.com/a/37235274/2255031">https://stackoverflow.com/a/37235274/2255031</a>:</p>
+<blockquote>
+<pre class="code javascript"><a name="rest_code_292765df402146fba623340339e15921-1"></a><span class="kd">function</span> <span class="nx">oneSuccess</span><span class="p">(</span><span class="nx">promises</span><span class="p">){</span>
+<a name="rest_code_292765df402146fba623340339e15921-2"></a>  <span class="k">return</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">promises</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">p</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a name="rest_code_292765df402146fba623340339e15921-3"></a>    <span class="c1">// If a request fails, count that as a resolution so it will keep</span>
+<a name="rest_code_292765df402146fba623340339e15921-4"></a>    <span class="c1">// waiting for other possible successes. If a request succeeds,</span>
+<a name="rest_code_292765df402146fba623340339e15921-5"></a>    <span class="c1">// treat it as a rejection so Promise.all immediately bails out.</span>
+<a name="rest_code_292765df402146fba623340339e15921-6"></a>    <span class="k">return</span> <span class="nx">p</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span>
+<a name="rest_code_292765df402146fba623340339e15921-7"></a>      <span class="nx">val</span> <span class="p">=&gt;</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="nx">val</span><span class="p">),</span>
+<a name="rest_code_292765df402146fba623340339e15921-8"></a>      <span class="nx">err</span> <span class="p">=&gt;</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+<a name="rest_code_292765df402146fba623340339e15921-9"></a>    <span class="p">);</span>
+<a name="rest_code_292765df402146fba623340339e15921-10"></a>  <span class="p">)).</span><span class="nx">then</span><span class="p">(</span>
+<a name="rest_code_292765df402146fba623340339e15921-11"></a>    <span class="c1">// If &#39;.all&#39; resolved, we&#39;ve just got an array of errors.</span>
+<a name="rest_code_292765df402146fba623340339e15921-12"></a>    <span class="nx">errors</span> <span class="p">=&gt;</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="nx">errors</span><span class="p">),</span>
+<a name="rest_code_292765df402146fba623340339e15921-13"></a>    <span class="c1">// If &#39;.all&#39; rejected, we&#39;ve got the result we wanted.</span>
+<a name="rest_code_292765df402146fba623340339e15921-14"></a>    <span class="nx">val</span> <span class="p">=&gt;</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span>
+<a name="rest_code_292765df402146fba623340339e15921-15"></a>  <span class="p">);</span>
+<a name="rest_code_292765df402146fba623340339e15921-16"></a><span class="p">}</span>
+</pre></blockquote>
+</div>

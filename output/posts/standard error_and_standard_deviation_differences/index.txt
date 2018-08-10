@@ -1,0 +1,12 @@
+<!-- 
+.. title: Standard error and standard deviation differences
+.. slug: standard error_and_standard_deviation_differences
+.. date: 2016-04-21 07:26:38 UTC+03:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
+Put simply, the standard error of the sample mean is an estimate of how far the sample mean is likely to be from the population mean, whereas the standard deviation of the sample is the degree to which individuals within the sample differ from the sample mean. If the population standard deviation is finite, the standard error of the mean of the sample will tend to zero with increasing sample size, because the estimate of the population mean will improve, while the standard deviation of the sample will tend to approximate the population standard deviation as the sample size increases. [wiki](https://en.wikipedia.org/wiki/Standard_error)

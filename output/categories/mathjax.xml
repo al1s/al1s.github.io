@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learn another day (Posts about mathjax)</title><link>https://al1s.github.io/</link><description></description><atom:link rel="self" href="https://al1s.github.io/categories/mathjax.xml" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Thu, 28 Jun 2018 21:43:30 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Variance and expected value</title><link>https://al1s.github.io/posts/Variance_and_expected_value/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;p&gt;If we know $ mathit{E(varepsilon_1|X_1)} $ and $ mathit{E(varepsilon^2_1|X_1)} $ then we can get a $ mathit{Var(varepsilon_1|X_1)} $ as $ mathit{E(varepsilon^2_1|X_1)} - mathit{E(varepsilon_1|X_1)}^2 $.&lt;/p&gt;
+&lt;p&gt;And conditional variance can be get as $ mathit{Var(varepsilon_1)} = mathit{Var(mathit{E(varepsilon^2_1|X_1)})} + mathit{E(mathit{Var(varepsilon_1|X_1)})} $.&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><guid>https://al1s.github.io/posts/Variance_and_expected_value/</guid><pubDate>Thu, 12 May 2016 04:25:38 GMT</pubDate></item><item><title>Multicollinearity monitoring</title><link>https://al1s.github.io/posts/Multicollinearity%2Bmonitoring/</link><dc:creator>alstof</dc:creator><description>&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Variance inflation factor: $$ mathit{VIF_j} = frac{1}{1-mathit{R^2_j}} $$&lt;/li&gt;
+&lt;li&gt;Correlation: $$ mathit{sCorr(x,y)} = frac{sum(x_i - hat x)(y_i - hat y)/(n-1)}{sqrt{mathit{sVar(x)ast sVar(y)}}} $$&lt;/li&gt;
+&lt;li&gt;Indicator values: $ mathit{VIF_j}&amp;gt;10 $, $ mathit{sCorr(x,y)}&amp;gt;0.9 $&lt;/li&gt;
+&lt;/ol&gt;</description><category>mathjax</category><guid>https://al1s.github.io/posts/Multicollinearity%2Bmonitoring/</guid><pubDate>Thu, 28 Apr 2016 04:45:38 GMT</pubDate></item><item><title>Standard error formula</title><link>https://al1s.github.io/posts/Standard_error_formula/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;p&gt;$$ mathit{se^2}(hat beta_j) = frac{hat sigma^2}{mathit{RSS_j}} =
+= frac{hat sigma^2}{mathit{TSS_j} ast (1-mathit{R^2_j})} =
+= frac{1}{(1-mathit{R^2_j})} ast frac{hat sigma^2}{mathit{TSS_j}} $$&lt;/p&gt;
+&lt;p&gt;And $ sigma $ is $ sqrt{E[(X-mu)^2]} = sqrt{E[mathit{X^2}]-(E[mathit{X}])^2} $, where $ mu = E[mathit{X}] $&lt;/p&gt;
+&lt;p&gt;But what is statistical error $ varepsilon $? Here it is $ varepsilon=mathit{X_i-mu} $, where $ mu $ is a population mean. But we work with real values which are only part of population, its sample and the sample mean is $ mathit{bar{X}} $. Then error become the residual: $ mathit{r_i} = mathit{X_i}-mathit{bar{X}} $.&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><guid>https://al1s.github.io/posts/Standard_error_formula/</guid><pubDate>Thu, 28 Apr 2016 04:45:38 GMT</pubDate></item><item><title>Questions on stats</title><link>https://al1s.github.io/posts/Questions_on_stats/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;p&gt;How to check&lt;/p&gt;
+&lt;p&gt;1. if we have enough independant variables?
+1. if regression significant with chosen significant level.&lt;/p&gt;
+&lt;p&gt;Significance should be estimated by F-stats.&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><guid>https://al1s.github.io/posts/Questions_on_stats/</guid><pubDate>Tue, 26 Apr 2016 04:56:38 GMT</pubDate></item><item><title>Anova vs. Linear regression</title><link>https://al1s.github.io/posts/Anova_vs_Linear_regression/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;p&gt;Anova:&lt;/p&gt;
+&lt;p&gt;$$ mathit{SS}_text{total} = mathit{SS}_text{between} + mathit{SS}_text{within}  $$&lt;/p&gt;
+&lt;p&gt;LinReg:
+$$ mathit{SS}_text{total} = mathit{SS}_text{regression} + mathit{SS}_text{residual}  $$&lt;/p&gt;
+&lt;p&gt;The last could be seen as:&lt;/p&gt;
+&lt;p&gt;$$ mathit{TSS} = mathit{ESS} + mathit{RSS}  $$&lt;/p&gt;
+&lt;p&gt;And what are TSS, RSS, ESS? Here they are:
+$$ mathit{TSS} =sum_{j=1}^n (y_j - bar y)^2 $$
+$$ mathit{ESS} = sum_{j=1}^n (hat y - bar y)^2 $$
+$$ mathit{RSS} = sum_{j=1}^n (y_j - hat y)^2 $$&lt;/p&gt;
+&lt;p&gt;$$ mathit{TSS} = mathit{ESS} + mathit{RSS} $$&lt;/p&gt;
+&lt;p&gt;$$ mathit{R}^2 = frac{mathit{ESS}}{mathit{TSS}} $$&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><guid>https://al1s.github.io/posts/Anova_vs_Linear_regression/</guid><pubDate>Sat, 23 Apr 2016 08:52:38 GMT</pubDate></item><item><title>Distributions and their properties</title><link>https://al1s.github.io/posts/Distributions_and_their_properties/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;p&gt;In case of \[epsilon_i sim mathit{N}(0,sigma^2)\]&lt;/p&gt;
+&lt;p&gt;$$ frac{hat beta_j - beta_j}{mathit se(hat beta_j)} sim mathit t_{n-k}  $$&lt;/p&gt;
+&lt;p&gt;$$ frac{mathit RSS}{sigma^2} sim chi^2_{n-k}  $$&lt;/p&gt;
+&lt;p&gt;$$ frac{(mathit RSS_R - RSS_{UR})/r}{RSS_{UR}/(mathit n-k_{UR})} sim mathit F_{r,n-k_{UR}} $$&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><guid>https://al1s.github.io/posts/Distributions_and_their_properties/</guid><pubDate>Fri, 22 Apr 2016 04:37:38 GMT</pubDate></item></channel></rss>

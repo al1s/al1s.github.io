@@ -1,0 +1,18 @@
+<!-- 
+.. title: Questions on stats
+.. slug: Questions_on_stats
+.. date: 2016-04-26 07:56:38 UTC+03:00
+.. tags: mathjax
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
+How to check
+
+1. if we have enough independant variables?
+1. if regression significant with chosen significant level.
+
+
+Significance should be estimated by F-stats. 

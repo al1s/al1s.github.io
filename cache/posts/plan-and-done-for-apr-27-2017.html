@@ -1,0 +1,33 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Change background height to align the photo with original.</li>
+<li>Make the map live.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+<li>PixelPerfect tablet and desktop versions.</li>
+<li>Make a dropdown menu for mobile.</li>
+<li>Replace logo with SVG elements.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic">
+<li><p class="first">Blurry edges in the background shape. The reason - <tt class="docutils literal"><span class="pre">background-size:</span> cover;</tt> so it makes the shape scaling.</p>
+<p>Done! The picture finally matched with original by scaling explicitly with <tt class="docutils literal"><span class="pre">background-size</span></tt> and then setting exact <tt class="docutils literal"><span class="pre">background-position</span></tt>. It started scaling enormously on screens larger than 320px, but I gonna fix it with media-queries.</p>
+<p>Another challenge was scaling of italic text SVG in masthead. The reason was the use of relative height bigger then needed for elements being aligned - I use it more as positioning tool, but it's totally unnatural for a height to be a positioning tool of the element. Fixed it with the use of correct (smaller) height and <tt class="docutils literal"><span class="pre">margin-top</span></tt>.</p>
+</li>
+<li><p class="first">Basic Google map tutorial - <a class="reference external" href="https://www.w3schools.com/graphics/google_maps_basic.asp">https://www.w3schools.com/graphics/google_maps_basic.asp</a> - provides with all needed functionality. In addition to the JS code I need coordinates of the place I wanna show on the map and Google API key to work with map engine with my own credentials. In order to get coordinates (taken from - <a class="reference external" href="https://www.lifewire.com/latitude-longitude-coordinates-google-maps-1683398">https://www.lifewire.com/latitude-longitude-coordinates-google-maps-1683398</a>):</p>
+<ul class="simple">
+<li>Open Google maps, locate the place.</li>
+<li>Right-click (Control-click on a Mac) the location.</li>
+<li>Click on &quot;What's here?&quot; in the menu that pops up.</li>
+<li>Click on coordinates.</li>
+</ul>
+<p>Almost done - the map is on the page, it's zoomable, it has a marker. What left is an event handler. It doesn't work with error - <tt class="docutils literal">Cannot read property 'click' of undefined</tt>. Looks like google api handler conflicts with JQuery.</p>
+</li>
+</ol>
+<ol class="arabic simple" start="6">
+<li>A dropdown menu receipt is here - <a class="reference external" href="https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css">https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css</a> - and living example is in the playground - <a class="reference external" href="https://codepen.io/lmgonzalves/pen/KaWaJO">https://codepen.io/lmgonzalves/pen/KaWaJO</a>.</li>
+</ol>
+</div>

@@ -1,0 +1,14 @@
+<!-- 
+.. title: Variance and expected value
+.. slug: Variance_and_expected_value
+.. date: 2016-05-12 07:25:38 UTC+03:00
+.. tags: mathjax
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
+If we know $ \mathit{E(\varepsilon_1|X_1)} $ and $ \mathit{E(\varepsilon^2_1|X_1)} $ then we can get a $ \mathit{Var(\varepsilon_1|X_1)} $ as $ \mathit{E(\varepsilon^2_1|X_1)} - \mathit{E(\varepsilon_1|X_1)}^2 $.
+
+And conditional variance can be get as $ \mathit{Var(\varepsilon_1)} = \mathit{Var(\mathit{E(\varepsilon^2\_1|X\_1)})} + \mathit{E(\mathit{Var(\varepsilon\_1|X\_1)})} $.

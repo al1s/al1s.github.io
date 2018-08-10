@@ -1,0 +1,19 @@
+<!-- 
+.. title: On Big-O notation intuitively
+.. slug: Big_O_notation
+.. date: 2016-06-29 15:59:38 UTC-07:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
+Links for better understanding of Big-O and complexity estimation:
+
+* [examples](http://stackoverflow.com/a/2307314/2255031) on different grades of Big-O;
+* [funny](http://stackoverflow.com/questions/24279896/learning-about-big-o-notation-with-c-confused-as-to-whether-this-is-on-or-o?lq=1) way to compare complexity - everything that O(n) is O(n^2), obviously;
+* on [real world problems](http://stackoverflow.com/questions/1248509/do-you-use-big-o-complexity-evaluation-in-the-real-world?rq=1) which involve Big-O estimation;
+* with [graph](http://stackoverflow.com/a/487278/2255031) for better visual distinguishing;
+* [vivid explanation](http://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly/2307314#2307314) of different grades of complexity on phonebook example;
+* [mathematical way](http://stackoverflow.com/a/4852666/2255031) to get complexity level;

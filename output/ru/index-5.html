@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Notes collection">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn another day (5 страница со старыми записями) | Learn another day</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="rss.xml">
+<link rel="canonical" href="https://al1s.github.io/ru/index-5.html">
+<link rel="prev" href="index-6.html" type="text/html">
+<link rel="next" href="index-4.html" type="text/html">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Перейти к главному содержимому</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Включить навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://al1s.github.io/ru/">
+
+                <span id="blog-title">Learn another day</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" role="navigation" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="archive.html">Архив</a>
+                </li>
+<li>
+<a href="categories/">Тэги</a>
+                </li>
+<li>
+<a href="rss.xml">RSS лента</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://al1s.github.io/" rel="alternate" hreflang="en">English</a></li>
+
+                
+                    
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-13-2017/" class="u-url">Plan and done for May-13-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-13-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-13T05:22:14-07:00" title="2017-05-13 05:22">2017-05-13 05:22</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Fix quirks in Safari: icons have became too small, everything become a mess on a wide screen.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+<li>Build additional pages - hotels, impression, blog.</li>
+<li>Style the form on impression page.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic" start="3">
+<li>
+<p class="first">Fixed on the May 10.</p>
+</li>
+<li>
+<p class="first">Fixed on the May 10. The reason was in fluid flexbox elements behavior. Chanded <tt class="docutils literal"><span class="pre">flex-grow</span></tt> to 0 - no grow on rescale for icon element.</p>
+</li>
+<li>
+<p class="first">Built html part of an impression/review page on the May 10.</p>
+</li>
+<li>
+<p class="first">There are many parts:</p>
+<ul>
+<li>
+<p class="first">Form accessibility.</p>
+<p>Tried to use <tt class="docutils literal">fieldset</tt> and <tt class="docutils literal">legend</tt> elements for a review page but they are funny: <tt class="docutils literal">legend</tt> positions above <tt class="docutils literal">fieldset</tt> without any respect to indents of the last. Here is details on froms - <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form">https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form</a>. Tried different <tt class="docutils literal">display</tt> options but there is no visible effect. Kept <tt class="docutils literal">div</tt> for grouped input elements.</p>
+<p>Here is a fuitful discussion why a <tt class="docutils literal">legend</tt> element behave the way it is - <a class="reference external" href="http://forums.mozillazine.org/viewtopic.php?f=7&amp;t=75083">http://forums.mozillazine.org/viewtopic.php?f=7&amp;t=75083</a>. It looks like a <tt class="docutils literal">legend</tt> is a part of the border of a <tt class="docutils literal">fieldset</tt> and it's a natural behavior for <tt class="docutils literal">legend</tt>. Here is how it looks in pure - <a class="reference external" href="https://mdn.github.io/learning-area/html/forms/html-form-structure/fieldset-legend.html">https://mdn.github.io/learning-area/html/forms/html-form-structure/fieldset-legend.html</a>.</p>
+<p>A solution would be to use a <tt class="docutils literal">fieldset</tt> for accessibility reasons and skip <tt class="docutils literal">legend</tt> at all.</p>
+</li>
+<li>
+<p class="first">Style radio elements.</p>
+<p>Here is example of a custom radio button style - <a class="reference external" href="http://codepen.io/AngelaVelasquez/pen/BWXbxP">http://codepen.io/AngelaVelasquez/pen/BWXbxP</a>.</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-09-2017/" class="u-url">Plan and done for May-09-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-09-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-09T11:52:14-07:00" title="2017-05-09 11:52">2017-05-09 11:52</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Fix quirks in Safari: icons have became too small, everything become a mess on a wide screen.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+<li>Build additional pages - hotels, impression, blog.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic simple" start="3">
+<li>Masthead is ready. Added intermediate width breakpoints.</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li>Safari is disgusting. It collapses a height when the height is not explicitly set.</li>
+</ol>
+<ol class="arabic simple" start="4">
+<li>Done. It was a flexbox with <tt class="docutils literal"><span class="pre">flex-basis:</span> auto</tt> and <tt class="docutils literal"><span class="pre">flex-grow:</span> 1</tt>, so the width of each of three containers wasn't evenly distibuted. Changed <tt class="docutils literal"><span class="pre">flex-grow</span></tt> to 0 and add <tt class="docutils literal"><span class="pre">min-width:</span> 30%</tt>.</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-08-2017/" class="u-url">Plan and done for May-08-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-08-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-08T10:57:14-07:00" title="2017-05-08 10:57">2017-05-08 10:57</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Dismissed: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+<li>Fix quirks in Safari: icons have became too small, everything become a mess on a wide screen.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+<li>Unify color use - I have variables for it.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic" start="3">
+<li>
+<p class="first">I have a styleguide where all colors and UI states are written. The step is to add all <tt class="docutils literal">:active</tt> and <tt class="docutils literal">:hover</tt> effects to interactible parts of the site. Besides I want make all links working - now they all point to null.</p>
+<p>Done for the main page of the project.</p>
+</li>
+</ol>
+<ol class="arabic simple" start="7">
+<li>Done.</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-07-2017/" class="u-url">Plan and done for May-07-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-07-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-07T10:57:14-07:00" title="2017-05-07 10:57">2017-05-07 10:57</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Replace logo with SVG elements.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+<li>Add Google analitics to my blog and project pages.</li>
+<li>Fix quirks in Safari: icons have became too small, everything become a mess on a wide screen.</li>
+<li>Remove a shape from the teaser on anything wider 30rem.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic" start="2">
+<li>
+<p class="first">The logo right now is a PNG-file. It has a white halo 1 px wide. I have alternative style for it - PNG picture and larger one-color SVG background.</p>
+<p>Done.</p>
+</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li>Done.</li>
+</ol>
+<ol class="arabic simple" start="5">
+<li>Done.</li>
+</ol>
+<ol class="arabic simple" start="7">
+<li>Done.</li>
+</ol>
+<p><strong>Spontaneous</strong>. Got <tt class="docutils literal">git push</tt> error message: <tt class="docutils literal">this exceeds GitHub's file size limit of 100.00 MB</tt>. Resolved it with <tt class="docutils literal">BFG <span class="pre">-D</span> tags</tt> (links are here - <a class="reference external" href="http://stackoverflow.com/a/31349737">http://stackoverflow.com/a/31349737</a>).</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-04-2017/" class="u-url">Plan and done for May-04-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-04-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-04T10:57:14-07:00" title="2017-05-04 10:57">2017-05-04 10:57</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>PixelPerfect desktop versions.</li>
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Replace logo with SVG elements.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<p>Family day. Went to Alki beach - the weather was great.</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-03-2017/" class="u-url">Plan and done for May-03-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-03-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-03T01:13:14-07:00" title="2017-05-03 01:13">2017-05-03 01:13</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>PixelPerfect desktop versions.</li>
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Replace logo with SVG elements.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<p><strong>Spontaneous</strong>. Fixed menu icon's color by building in fill color into inline-SVG.</p>
+<p><strong>Spontaneous</strong>. A <tt class="docutils literal">media__text</tt> has to have bottom indent to be fluid on resize. Done!</p>
+<ol class="arabic simple">
+<li>Done.</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-02-2017/" class="u-url">Plan and done for May-02-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-02-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-02T10:23:14-07:00" title="2017-05-02 10:23">2017-05-02 10:23</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>PixelPerfect tablet and desktop versions.</li>
+<li>Replace logo with SVG elements.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">While fitting layout to tablet version found many funny decisions made in the beginning of the project. They all aligned to mobile version pretty well but ablolutely rigid for adapting the main page to another media-width. For example, my <tt class="docutils literal"><span class="pre">.media-body</span></tt> class was a flexbox and three elements inside of it were <tt class="docutils literal">column</tt> directioned. But it's absolutely counterintuitive to align them to a specific vertical rhythm. I have to remove <tt class="docutils literal">flexbox</tt> attribute from the wrapper to have a chance to adjust inner elements with a <tt class="docutils literal"><span class="pre">margin-top</span></tt>.</p>
+<p>Done. But now I have to go back to mobile and fix all stuff which now became broken.</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-may-01-2017/" class="u-url">Plan and done for May-01-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-may-01-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-05-01T10:41:14-07:00" title="2017-05-01 10:41">2017-05-01 10:41</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Finish mobile menu.</li>
+<li>PixelPerfect tablet and desktop versions.</li>
+<li>Replace logo with SVG elements.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">Done! Implemented it with additional throttling JS-plugin by Ben Alman - <a class="reference external" href="http://benalman.com/code/projects/jquery-throttle-debounce/examples/throttle/">http://benalman.com/code/projects/jquery-throttle-debounce/examples/throttle/</a>. Here is - <a class="reference external" href="http://drupalmotion.com/article/debounce-and-throttle-visual-explanation">http://drupalmotion.com/article/debounce-and-throttle-visual-explanation</a> - how it works explained visually. Applied the same function to hide-on-scroll menu. Some more explanations - <a class="reference external" href="http://unscriptable.com/2009/03/20/debouncing-javascript-methods/">http://unscriptable.com/2009/03/20/debouncing-javascript-methods/</a>.</p>
+<p>Have to fixed color of hamburger and cross icons and decide on scrolling - what is better - to hide icon or to have it always on top? And if have it fixed, then what about its color - it disappears when white on white.</p>
+</li>
+</ol>
+<p><strong>Practicing Vim</strong>. Have turned spellchecking for text files. Here is how - <a class="reference external" href="https://robots.thoughtbot.com/vim-spell-checking">https://robots.thoughtbot.com/vim-spell-checking</a>.</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-apr-30-2017/" class="u-url">Plan and done for Apr-30-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-apr-30-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-04-30T16:56:14-07:00" title="2017-04-30 16:56">2017-04-30 16:56</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Make a dropdown menu for mobile.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+<li>PixelPerfect tablet and desktop versions.</li>
+<li>Replace logo with SVG elements.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<ol class="arabic">
+<li>
+<p class="first">Done. What was interesting? I've built it with a pure CSS basing on Dudley's manual - <a class="reference external" href="http://thenewcode.com/599/A-Responsive-Animated-Menu-For-Single-Column-Web-Designs">http://thenewcode.com/599/A-Responsive-Animated-Menu-For-Single-Column-Web-Designs</a>. I've changed trigger mechanics - instead of <tt class="docutils literal">:hover</tt> it fires on hamburger click which is nothing else then <tt class="docutils literal">label</tt> for a hidden <tt class="docutils literal">input</tt> element. Took an example here - <a class="reference external" href="http://thenewcode.com/625/A-Visual-Database-Gallery-In-Pure-CSS">http://thenewcode.com/625/A-Visual-Database-Gallery-In-Pure-CSS</a>. Here is another UI-rich implementation - <a class="reference external" href="https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css">https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css</a>. And here - <a class="reference external" href="http://callmenick.com/post/animating-css-only-hamburger-menu-icons">http://callmenick.com/post/animating-css-only-hamburger-menu-icons</a> - pure CSS animation around hamburger symbol.</p>
+<p>Works great, but then I've found that it won't change to a large screen menu layout in case of screen resize when the mobile menu is open - it just stays as a screen-wide column of menu items. There is no CSS only solution for it, so switched to JS alternative. Found many JQuery receipts, major of them use <tt class="docutils literal">setTimeout()</tt>, so have performance issues. There is a solution - <a class="reference external" href="http://marcj.github.io/css-element-queries/">http://marcj.github.io/css-element-queries/</a> - which implements an alternative logic and it says that it has no performance drawbacks, but for my current knowledge level of JS is way hard to understand. I've choosen simpler one - <a class="reference external" href="http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/">http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/</a>. It shouldn't freeze the page much and does what I need - toggle menu layout by toggle the checkbox input. My menu implementation is here - <a class="reference external" href="https://codepen.io/alstof/pen/ybMEqM">https://codepen.io/alstof/pen/ybMEqM</a>. It has a little weird timeout of menu layout toggle on resize and it won't work on ongoing resize - only when resize is finished.</p>
+<p>Tried to implement different order for menu items depending on a screen size. It works, but due to timeout I mentioned above it behaves funny - the items' order changes before the layout. Looks terrible. Have to rework JS implementation (can't keep it as is, because order of items has to change on resize as layout too).</p>
+</li>
+</ol>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-apr-29-2017/" class="u-url">Plan and done for Apr-29-2017</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-apr-29-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-04-29T04:46:14-07:00" title="2017-04-29 04:46">2017-04-29 04:46</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Make a dropdown menu for mobile.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+<li>PixelPerfect tablet and desktop versions.</li>
+<li>Replace logo with SVG elements.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<p>Nothing. Gone with my family to Deception Pass - <a class="reference external" href="https://goo.gl/maps/Nq8rvpG4N8y">https://goo.gl/maps/Nq8rvpG4N8y</a>.</p>
+</div>
+</div>
+    </div>
+    </article>
+</div>
+
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="index-6.html" rel="prev">Новые записи</a>
+            </li>
+            <li class="next">
+                <a href="index-4.html" rel="next">Старые записи</a>
+            </li>
+        </ul></nav>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:alstof@gmail.com">alstof</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/colorbox-i18n/jquery.colorbox-ru.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("ru");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

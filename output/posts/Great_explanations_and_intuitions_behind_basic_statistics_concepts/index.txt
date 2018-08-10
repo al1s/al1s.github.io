@@ -1,0 +1,17 @@
+<!-- 
+.. title: Great explanations and intuitions behind basic statistics concepts
+.. slug: Great_explanations_and_intuitions_behind_basic_statistics_concepts
+.. date: 2016-06-01 14:59:38 UTC+03:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
+Great explanations:
+
+* on [covariance](http://stats.stackexchange.com/a/18200);
+* on [correlation](http://stats.stackexchange.com/a/18089);
+* on time series [stationarity](http://stats.stackexchange.com/a/19747);
+* on rule of [unit root](http://stats.stackexchange.com/questions/29121/intuitive-explanation-of-unit-root?lq=1);

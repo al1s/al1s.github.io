@@ -1,0 +1,12 @@
+<!-- 
+.. title: TSS-RSS-ESS connections
+.. slug: TSS_RSS_ESS_connections
+.. date: 2016-04-21 08:02:38 UTC+03:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+-->
+
+Least square and cool plot of connection between TSS, ESS, RSS from [here](https://www.westgard.com/lesson43.htm)
