@@ -1,0 +1,19 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Make a dropdown menu for mobile.</li>
+<li>Prev: Format search form to make labels more aligned with input fields.</li>
+<li>Prev: Work with styleguide.</li>
+<li>PixelPerfect tablet and desktop versions.</li>
+<li>Replace logo with SVG elements.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic">
+<li><p class="first">Done. What was interesting? I've built it with a pure CSS basing on Dudley's manual - <a class="reference external" href="http://thenewcode.com/599/A-Responsive-Animated-Menu-For-Single-Column-Web-Designs">http://thenewcode.com/599/A-Responsive-Animated-Menu-For-Single-Column-Web-Designs</a>. I've changed trigger mechanics - instead of <tt class="docutils literal">:hover</tt> it fires on hamburger click which is nothing else then <tt class="docutils literal">label</tt> for a hidden <tt class="docutils literal">input</tt> element. Took an example here - <a class="reference external" href="http://thenewcode.com/625/A-Visual-Database-Gallery-In-Pure-CSS">http://thenewcode.com/625/A-Visual-Database-Gallery-In-Pure-CSS</a>. Here is another UI-rich implementation - <a class="reference external" href="https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css">https://scotch.io/tutorials/building-a-morphing-hamburger-menu-with-css</a>. And here - <a class="reference external" href="http://callmenick.com/post/animating-css-only-hamburger-menu-icons">http://callmenick.com/post/animating-css-only-hamburger-menu-icons</a> - pure CSS animation around hamburger symbol.</p>
+<p>Works great, but then I've found that it won't change to a large screen menu layout in case of screen resize when the mobile menu is open - it just stays as a screen-wide column of menu items. There is no CSS only solution for it, so switched to JS alternative. Found many JQuery receipts, major of them use <tt class="docutils literal">setTimeout()</tt>, so have performance issues. There is a solution - <a class="reference external" href="http://marcj.github.io/css-element-queries/">http://marcj.github.io/css-element-queries/</a> - which implements an alternative logic and it says that it has no performance drawbacks, but for my current knowledge level of JS is way hard to understand. I've choosen simpler one - <a class="reference external" href="http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/">http://alvarotrigo.com/blog/firing-resize-event-only-once-when-resizing-is-finished/</a>. It shouldn't freeze the page much and does what I need - toggle menu layout by toggle the checkbox input. My menu implementation is here - <a class="reference external" href="https://codepen.io/alstof/pen/ybMEqM">https://codepen.io/alstof/pen/ybMEqM</a>. It has a little weird timeout of menu layout toggle on resize and it won't work on ongoing resize - only when resize is finished.</p>
+<p>Tried to implement different order for menu items depending on a screen size. It works, but due to timeout I mentioned above it behaves funny - the items' order changes before the layout. Looks terrible. Have to rework JS implementation (can't keep it as is, because order of items has to change on resize as layout too).</p>
+</li>
+</ol>
+</div>

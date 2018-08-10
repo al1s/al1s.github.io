@@ -1,0 +1,23 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Fix quirks in Safari: icons have become too small, everything become a mess on a wide screen.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+<li>Build additional pages - hotels, impression, blog.</li>
+<li>Style the form on impression page.</li>
+<li>Dive into JS.</li>
+<li>Implement form validation.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic" start="7">
+<li><p class="first">Yesterday's JS30 exercise is to implement an analog clock using JS and CSS. The best way to do it is with CSS transform rules. There are two functions: one to sync visual appearance of the clock with current time, another - to animate clock hands movements.</p>
+<p>I move the clock's hands by rotating them with <code>transform-origin: right</code> and <code>transform: rotate(30deg)</code>. The second hand rotates every second and the quantum of rotation is 360/60=6deg. The minute hand rotates 6deg every 60 seconds or 1deg every 10sec and the hour hand rotates 30deg every 3600 seconds or 1deg every 120sec.</p>
+<p>Added digits to the clock face. First tried to do it with <code>position: absolute; top: ...px; left: ...px;</code>. Horrible. Found the great article by Hugo Giraudel - <a class="reference external" href="http://hugogiraudel.com/2013/04/02/items-on-circle/">http://hugogiraudel.com/2013/04/02/items-on-circle/</a>. I don't have the SASS freedom with JS30 exercises, because there is already prepared html with all styles integrated, so I just took approach from Ana's article (mentioned by Hugo) - <a class="reference external" href="https://stackoverflow.com/a/12817454">https://stackoverflow.com/a/12817454</a> and applied transformation <code>rotate(${angle}) translate(${half-of-the-parent-width}) rotate(-${angle});</code> to <code>div.class:nth-of-type()</code> elements of my digits circle.</p>
+<p>Today's assignment was to work with CSS variables via JS. It was easy. Here is short article on CSS variables and how to work with them via JS - <a class="reference external" href="https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care">https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care</a>. It even has some examples but it's not intresting just to copy-paste everything. When I finished I check Wes Bos approach. It's way better utilizes JS facilities such as <code>this</code> to achieve the true brevity.</p>
+</li>
+</ol>
+</div>

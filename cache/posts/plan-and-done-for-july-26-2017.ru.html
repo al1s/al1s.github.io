@@ -1,0 +1,202 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>Dive into JS.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<style>
+  .t30 {background-color: #A50021; color: #fff;}
+  .t25 {background-color: #D82632; color: #fff;}
+  .t20 {background-color: #F76D5E; color: #242442;}
+  .t15 {background-color: #FFAD72; color: #00365c;}
+  .t10 {background-color: #FFE099; color: #001F66}
+  .t5 {background-color: #FFFFBF; color: #000040;}
+  .t0 {background-color: #E0FFFF; color: #1F0000;}
+  .t-5 {background-color: #AAF7FF; color: #1F0000;}
+  .t-10 {background-color: #72D8FF; color: #1F0000;}
+  .t-15 {background-color: #3FA0FF; color: #1F0000;}
+  .t-20 {background-color: #264CFF; color: #fcc;}
+</style><p>Who this article addresses to? - developers who starts they journey.
+What I want to show? - System approach to an implementation.
+What is my system of interest? - Users who wants to check current weather condition.
+We've got user story list.</p>
+<p>Implementing the FreeCodeCamp project - Local weather app.</p>
+<p>User stories (published on the appointment page - <a class="reference external" href="https://www.freecodecamp.org/challenges/show-the-local-weather">https://www.freecodecamp.org/challenges/show-the-local-weather</a>):</p>
+<ul class="simple">
+<li>I can see the weather in my current location.</li>
+<li>I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</li>
+<li>I can push a button to toggle between Fahrenheit and Celsius.</li>
+</ul>
+<p>I want to mention that I haven't seen example app (<a class="reference external" href="https://codepen.io/freeCodeCamp/full/bELRjV">https://codepen.io/freeCodeCamp/full/bELRjV</a>) before I've finished my initial working prototype so all considerations below are based on common sense. I want to move along the plan below to demonstrate my implementation process.</p>
+<ol class="arabic simple">
+<li>Design considerations:</li>
+</ol>
+<ul class="simple">
+<li>pure JS;</li>
+<li>minimalistic design;</li>
+<li>a11y is for accessability and it's one of the goals;</li>
+<li>responsive design;</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>Plan of the app:</li>
+</ol>
+<ul class="simple">
+<li>fetch data from weather API;</li>
+<li>prepare visual representation of the page depending on data fetched;
+* get the photo which reflect the current condition;
+* get the color depicting current temperature;</li>
+<li>use HTTP cookie to store user scale preference - celsius or fahrenheit;</li>
+</ul>
+<ol class="arabic simple" start="3">
+<li>Challenges and implementation:</li>
+</ol>
+<ul class="simple">
+<li>CSS variables don't work with CSS SVG styles - solved;</li>
+<li>Geolocation silently dies on tablets and phones - solved;</li>
+<li>CORS for WeatherUnderground's autocomplete API - solved;</li>
+<li>Support for a wide range of browsers - solved.</li>
+</ul>
+<div class="section" id="design">
+<h2>Design</h2>
+<div class="section" id="frameworks-vs-pure-js">
+<h3>Frameworks vs. Pure JS</h3>
+<p>The first thought was to dive into React to wrap my head around its basics. The second one was calm and clear: I have to implement it just with knowledge I've already got, without shiny new and appealing stuff. All new libraries are pleasure for procrastinating mind, it's not the time for it. JQuery? Why do I need it at all - current browser engines has plenty of functionality as is, without additional wrappers.</p>
+</div>
+<div class="section" id="minimum-page-element-set">
+<h3>Minimum page element set</h3>
+<p>I decided to use as a current weather conditions indicator the destinctive photos of nature: clear - the view where the sky is without any clouds, cloudy - the sky covered fully with clouds etc. The photo goes to the background and above it I want to see only current time, date, location and temperature. I wanted to visually highlight temperature level so I used the box for the text block colored according to the current temperature (there is a bunch of temperature coding examples in google - <a class="reference external" href="https://goo.gl/hsnimK">https://goo.gl/hsnimK</a>). According to the user story the app needs the toggle for different temperature scales. I wanted to see neither additional preferences tab nor a checkbox floating in a space and distracting from the pure functionality. On the other hand I had to present a user with a disctinct temperature scale symbol so why not to use such a symblol as a toggle. I could just add event listener to the sybmol, but the second thought was that it's a poor UI experience. What if I put both letters depicting Celsius and Fahrenheit scales on the page together and make one vivid and another vague to make it clear, which is currently on?</p>
+</div>
+<div class="section" id="accessibility">
+<h3>Accessibility</h3>
+<p>Accessibility aspects of the page include visual, navigation, audible sections. The visual part is about color contrast and there is a great tool from Lea Verou to check whether contrast rate in compliance with WCAG (which is decrypted as Web content accessibility guidlines by W3) - <a class="reference external" href="https://leaverou.github.io/contrast-ratio">https://leaverou.github.io/contrast-ratio</a>. The navigation part means that page is controlable by a keyboard. All three control elements of the page are native HTML control elements: button for 'Info' and scale toggles which are radio with labels. A user can hop between them with <code>&lt;tab&gt;</code> and press <code>&lt;Enter&gt;</code> or <code>&lt;Space&gt;</code> to make them act. The audible part includes <code>aria-*</code> tags for all elements to make it clear what scale is used now and how contol elements work. I used Chrome WAVE extension as an accessibility audit tool. There are a cople of tools to analyze web pages compliance - <a class="reference external" href="https://soap.stanford.edu/tips-and-tools/tools">https://soap.stanford.edu/tips-and-tools/tools</a>. And I used examples of <code>aria*</code> labels usage from - <a class="reference external" href="http://oaa-accessibility.org/">http://oaa-accessibility.org/</a>.</p>
+<p>(Accessibility is an important matter for me. I always notice features of physical accessibility around me and pay attention to color and texture decision in visual media - art, ads, TV. Often I notice thoughts in the background of color contrast in different media. Wish to have an app in my phone which could analize current picture and show it the way people with different visual abilities perceive. I've tried to find something like this in both app stores but didn't find any - I mean not simple color checker against WCAG recomendations but something like vision simulator which would wash out normal color perception and present you with different color world around. Maybe such app needs modern hardware and frameworks for augmented reality - ARKit like...).</p>
+</div>
+<div class="section" id="responsiveness">
+<h3>Responsiveness</h3>
+<p>Responsive design means the page suits well to be displayed on any screen or by any screenless devices. The first consideration here whether content is flexible to fit different screen resolution. The second one is whether the page responds to user expectation on loading time. Chrome has built-in audit tool which shows exactly what makes a page load slow. In my case it's a usage of web fonts. Here is a great article by Zach Leatherman about web fonts optimization - <a class="reference external" href="https://www.zachleat.com/web/comprehensive-webfonts/#font-display">https://www.zachleat.com/web/comprehensive-webfonts/#font-display</a> but I didn't follow recomendations because a performance audit shows that the first meaningful element of the page is shown within 2 seconds including web font loading which is an acceptable result.</p>
+</div>
+</div>
+<div class="section" id="through-the-plan-of-the-implementation">
+<h2>Through the plan of the implementation</h2>
+<div class="section" id="api-to-get-weather">
+<h3>API to get weather</h3>
+<p>My weather API is Weather Underground (WU) - <a class="reference external" href="https://www.wunderground.com/">https://www.wunderground.com/</a>. Why it's not OpenWeatherMap - I use WU everyday for about a year and it provides the consistent reliable result. I've used <code>fetch</code> as a method to get data. But there was a catch. Check challenges section for details.</p>
+</div>
+<div class="section" id="visual-elements-of-the-page">
+<h3>Visual elements of the page</h3>
+<p>Photos are taken from Flickr. They all are under Creative Commons licenses. Here is the full list:</p>
+<a class="reference external image-reference" href="https://flic.kr/p/RDW4Z1"><img alt="Photo of a cloudy winter day" src="/images/cloudy_winter_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/RzuZS7"><img alt="Photo of a partly sunny winter day" src="/images/partlysunny_winter_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/R33zcf"><img alt="Photo of a mostly sunny winter day" src="/images/mostlysunny_winter_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/RHwJiG"><img alt="Photo of a sunny winter day" src="/images/sunny_winter_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/cScQxy"><img alt="Photo of a cloudy summer day" src="/images/cloudy_summer_tn.jpg" /></a>
+<a class="reference external image-reference" href="http://freestock.ca/skies_clouds_g61-coastal_clouds__hdr_p1879.html"><img alt="Photo of a partly sunny summer day" src="/images/partlysunny_summer_tn.jpg" /></a>
+<a class="reference external image-reference" href="http://freestock.ca/canada_g92-beaver_brook_scenery__hdr_p804.html"><img alt="Photo of a mostly sunny spring day" src="/images/mostlysunny_summer_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/fgLTUU"><img alt="Photo of a sunny summer day" src="/images/sunny_summer_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/UtjTDm"><img alt="Photo of a partly sunny spring day" src="/images/partlysunny_spring_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/SbmJj2"><img alt="Photo of a mostly sunny spring day" src="/images/mostlysunny_spring_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/oavqBk"><img alt="Photo of a sunny spring day" src="/images/sunny_spring_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/qb4cbs"><img alt="Photo of a mostly sunny fall day" src="/images/mostlysunny_fall_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/k7zUGc"><img alt="Photo of a day with flurries" src="/images/flurries_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/dkqP1t"><img alt="Photo of a day with fog" src="/images/fog_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/dfkuTL"><img alt="Photo of a rainy day" src="/images/rain_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/7AVLQR"><img alt="Photo of a snowy day" src="/images/snow_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/cESNRS"><img alt="Photo of a stormy day" src="/images/storm_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/pusoD1"><img alt="Photo of a hazy day" src="/images/hazy_tn.jpg" /></a>
+<a class="reference external image-reference" href="https://flic.kr/p/i28UqP"><img alt="Photo of a sunny fall day" src="/images/sunny_fall_tn.jpg" /></a>
+<p>As I mentioned above I changed the color of the box where weather details appear according to the current air temperature. The mapping is:</p>
+<table border="1" class="docutils">
+<caption>Color temperature mapping</caption>
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Color</th>
+<th class="head">Temperature range</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><span class="t30">#A50021</span></td>
+<td>more than 30</td>
+</tr>
+<tr><td><span class="t25">#D82632</span></td>
+<td>between 25 and 30</td>
+</tr>
+<tr><td><span class="t20">#F76D5E</span></td>
+<td>between 20 and 25</td>
+</tr>
+<tr><td><span class="t15">#FFAD72</span></td>
+<td>between 15 and 20</td>
+</tr>
+<tr><td><span class="t10">#FFE099</span></td>
+<td>between 10 and 15</td>
+</tr>
+<tr><td><span class="t5">#FFFFBF</span></td>
+<td>between 5 and 10</td>
+</tr>
+<tr><td><span class="t0">#E0FFFF</span></td>
+<td>between 0 and 5</td>
+</tr>
+<tr><td><span class="t-5">#AAF7FF</span></td>
+<td>between -5 and 0</td>
+</tr>
+<tr><td><span class="t-10">#72D8FF</span></td>
+<td>between -10 and -5</td>
+</tr>
+<tr><td><span class="t-15">#3FA0FF</span></td>
+<td>between -15 and -10</td>
+</tr>
+<tr><td><span class="t-20">#264CFF</span></td>
+<td>between -20 and -15</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="user-preferences">
+<h3>User preferences</h3>
+<p>I don't want to toggle scale all the time from Fahrenheit to Celsius (the last one are natural for me but I use Fahernheit as default scale) so I added cookies to keep user preferences. There are three additional functions to create, read and erase cookie. Functions are taken from QuirksMode - <a class="reference external" href="https://www.quirksmode.org/js/cookies.html">https://www.quirksmode.org/js/cookies.html</a>, but I modified <cite>read</cite> to use regexp instead of a loop.</p>
+</div>
+</div>
+<div class="section" id="challenges">
+<h2>Challenges</h2>
+<div class="section" id="two-colored-svg-and-chrome">
+<h3>Two-colored SVG and Chrome.</h3>
+<p>I had two colored boxes on the page, - the first is for a weather details and the second is for a photo credit - and that was the reason to use CSS variables for font and background colors. It has been working great till I added a Creative commons icon to credit. The icon was an SVG and I wanted it to reflect the main color scheme but instead Chrome made it all black with no distinct of inner element and background.</p>
+<p>The problem was that you cannot manage different colors for different SVG inner elements by CSS styles as expected. The solution is to use <code>color</code> and <code>fill</code> properties for an SVG and explicitly apply <code>currentColor</code> attribute to <code>fill</code> property inside SVG code to one of the elements. It will inherit color from <code>color</code> property set inside CSS style. Here is explanation by Fabrice Weinberg - <a class="reference external" href="https://codepen.io/FWeinb/post/quick-tip-svg-use-style-two-colors">https://codepen.io/FWeinb/post/quick-tip-svg-use-style-two-colors</a>.</p>
+</div>
+<div class="section" id="geolocation-on-mobiles">
+<h3>Geolocation on mobiles</h3>
+<p>After I finished initial version of the page I tested it in Chrome, Firefox, Opera and Safari. It worked great with the first three and throws an unknown geolocation error in Safari. My thought was: Ok, let's skip it for a while and switch to mobile devices. I tested the app on an iPad, an iPhone, and an Android phone, with a range of browsers: Safari, Chrome, Firefox. The only combination that worked was Androind + Firefox. All others throw a geolocation timeout error. I digged for a little and found only that there was not only my problem and there was a bunch of advices (the first question I had to answer was whether I worked within secured HTTP or not so yes - the app was deployed on two different services - github.io and codepen.io, both provided secured HTTP). I've tried following advices:</p>
+<ul class="simple">
+<li>use <code>PositionOptions.maximumAge</code> set to Infinity;</li>
+<li>use <code>PositionOptions.timeout</code> set to long intervals;</li>
+<li>use <code>PositionOptions.enableHighAccuracy</code> either <cite>true</cite> or <cite>false</cite>;</li>
+<li>use <code>watchPosition</code> instead of <code>getCurrentPosition</code>.</li>
+</ul>
+<p>None of these worked for me so as an alternate solution to the problem I added geoIP request as a fallback if original geolocation request was unsuccessful, so everytime the app can't get the location data from a device it asks for the location of IP-adress that a data provider assigned to your device. As a free secured engine I used geoIP API - <a class="reference external" href="https://freegeoip.net/json/">https://freegeoip.net/json/</a>.</p>
+</div>
+<div class="section" id="support-for-a-wide-range-of-browsers">
+<h3>Support for a wide range of browsers</h3>
+<p>During an initial attempt, I succeed in implementing a working prototype of the app. It worked in Chrome and Firefox (last versions) on a desktop platform and didn't work in Safari (due to lack of support of <code>fetch</code> before 10.3) and on mobile (weird quirks with <code>navigator.geolocation</code> mentioned below). It's not the way I wanted it to be, so I moved my project from plain single html file to gulp-powered workflow to get:</p>
+<ul class="simple">
+<li>ES6 features work in older browsers with babel - <a class="reference external" href="https://babeljs.io/">https://babeljs.io/</a>;</li>
+<li>browser specific prefixes with autoprefixer - <a class="reference external" href="https://github.com/postcss/autoprefixer">https://github.com/postcss/autoprefixer</a>;</li>
+<li>fetch polyfill installed and attached as an npm module - <a class="reference external" href="https://github.com/github/fetch">https://github.com/github/fetch</a>;</li>
+<li>browser-sync to monitor and reload app in browsers on any change;</li>
+</ul>
+<p>My gulp configuration is available on github - <a class="reference external" href="https://github.com/al1s/WeatherNow/blob/master/gulpfile.js">https://github.com/al1s/WeatherNow/blob/master/gulpfile.js</a>.</p>
+</div>
+<div class="section" id="cross-domain-request-fails-for-wu-autocomplete-api">
+<h3>Cross-domain request fails for WU autocomplete API</h3>
+<p>As an addition to the pure geolocation based forecast I planned to implement user defined weather request - you provide a city name, the app gives you the current weather. There is an API for searching by city name provided by WeatherUnderground - <a class="reference external" href="https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api">https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api</a>. Initial attempt showed there is an Access-Control-Allow-Origin error - <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS">https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS</a>. Managing Access-Contol-Allow-Origin policy generally is a server-side story. In a couple words - the server returns only what user's browser asks for and if a browser doesn't get in page headers explicit permission to use the page data it returns an Access-Contoll-Allow-Origin violation error. Wiki provides additional details and visual representation of the way CORS works - <a class="reference external" href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">https://en.wikipedia.org/wiki/Cross-origin_resource_sharing</a>. I solved the problem by adding CORS proxy (<a class="reference external" href="https://cors-anywhere.herokuapp.com/">https://cors-anywhere.herokuapp.com/</a>) in the middle. It works till there is no sensitive details flow between a user and a server.</p>
+</div>
+</div>
+<div class="section" id="wrap-up">
+<h2>Wrap up</h2>
+<p>There was an interesting journey to coding.</p>
+<p>twitter
+blog
+github</p>
+</div>
+</div>

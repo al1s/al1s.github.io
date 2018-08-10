@@ -1,0 +1,34 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Fix quirks in Safari: icons have became too small, everything become a mess on a wide screen.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+<li>Build additional pages - hotels, impression, blog.</li>
+<li>Style the form on impression page.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic" start="3">
+<li><p class="first">Fixed on the May 10.</p>
+</li>
+<li><p class="first">Fixed on the May 10. The reason was in fluid flexbox elements behavior. Chanded <tt class="docutils literal"><span class="pre">flex-grow</span></tt> to 0 - no grow on rescale for icon element.</p>
+</li>
+<li><p class="first">Built html part of an impression/review page on the May 10.</p>
+</li>
+<li><p class="first">There are many parts:</p>
+<ul>
+<li><p class="first">Form accessibility.</p>
+<p>Tried to use <tt class="docutils literal">fieldset</tt> and <tt class="docutils literal">legend</tt> elements for a review page but they are funny: <tt class="docutils literal">legend</tt> positions above <tt class="docutils literal">fieldset</tt> without any respect to indents of the last. Here is details on froms - <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form">https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form</a>. Tried different <tt class="docutils literal">display</tt> options but there is no visible effect. Kept <tt class="docutils literal">div</tt> for grouped input elements.</p>
+<p>Here is a fuitful discussion why a <tt class="docutils literal">legend</tt> element behave the way it is - <a class="reference external" href="http://forums.mozillazine.org/viewtopic.php?f=7&amp;t=75083">http://forums.mozillazine.org/viewtopic.php?f=7&amp;t=75083</a>. It looks like a <tt class="docutils literal">legend</tt> is a part of the border of a <tt class="docutils literal">fieldset</tt> and it's a natural behavior for <tt class="docutils literal">legend</tt>. Here is how it looks in pure - <a class="reference external" href="https://mdn.github.io/learning-area/html/forms/html-form-structure/fieldset-legend.html">https://mdn.github.io/learning-area/html/forms/html-form-structure/fieldset-legend.html</a>.</p>
+<p>A solution would be to use a <tt class="docutils literal">fieldset</tt> for accessibility reasons and skip <tt class="docutils literal">legend</tt> at all.</p>
+</li>
+<li><p class="first">Style radio elements.</p>
+<p>Here is example of a custom radio button style - <a class="reference external" href="http://codepen.io/AngelaVelasquez/pen/BWXbxP">http://codepen.io/AngelaVelasquez/pen/BWXbxP</a>.</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>

@@ -1,0 +1,71 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>FreeCodeCamp projects: Simon game - start coding.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<div class="section" id="simon-game-app">
+<h2>Simon game app</h2>
+<p>The user <a class="reference external" href="https://www.freecodecamp.org/challenges/build-a-simon-game">story</a> and the desired result.</p>
+<div class="section" id="game-process">
+<h3>Game process</h3>
+<ol class="arabic simple">
+<li>On Start game load the game engine.</li>
+<li>Choose a random sequence and keep it as current.</li>
+<li>Save current game position - 1.</li>
+<li>Play sequence from beginning to the current position inclusive.</li>
+<li>Wait for user input.</li>
+<li>Compare each entered element with corresponding element in sequence.</li>
+<li>On error: show message; buzz.</li>
+<li>On success: move current position one element right; repeat from step 3.</li>
+<li>On success in strict mode: repeat from step 2.</li>
+</ol>
+</div>
+<div class="section" id="challenges">
+<h3>Challenges</h3>
+<ol class="arabic simple">
+<li>What is the Simon game?</li>
+<li>How to get sectors?</li>
+<li>How to play sound?</li>
+<li>How to make color of the sector blink lighter on click or touch?</li>
+<li>How to produce a sequence of sounds?</li>
+<li>How to make the shape of active element not squared?</li>
+<li>How to inform user about winning in the game?</li>
+<li>How to make delays to handle state changes in UI more smoothly?</li>
+<li>How to synchronize ending of Web Audio API Oscillator play with UI?</li>
+</ol>
+</div>
+<div class="section" id="solutions">
+<h3>Solutions</h3>
+<ol class="arabic">
+<li><p class="first"><a class="reference external" href="https://en.wikipedia.org/wiki/Simon_(game)">Explanation</a> on the Simon game.</p>
+</li>
+<li><p class="first">We can get circle sectors by <a class="reference external" href="https://stackoverflow.com/questions/21205652/how-to-draw-a-circle-sector-in-css">CSS hacking</a> for div elements with special background filling or trasformations. It's many lines of an unintuitive code. My way is to set a background image for each sector to inline SVG. Code is very intelligible and clear:</p>
+<pre class="code text"><a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-1"></a>&lt;svg
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-2"></a>   xmlns=&quot;http://www.w3.org/2000/svg&quot;
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-3"></a>   viewBox=&quot;0 0 200 200&quot;
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-4"></a>   id=&quot;fourColorsCircle&quot;&gt;
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-5"></a>  &lt;path fill=&quot;red&quot;    d=&quot;M100,100 L100,0   A100,100 1 0,1 200,100 z&quot; id=&quot;sector_XY&quot; /&gt;
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-6"></a>  &lt;path fill=&quot;blue&quot;   d=&quot;M100,100 L200,100 A100,100 1 0,1 100,200 z&quot; id=&quot;sector_Xy&quot; /&gt;
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-7"></a>  &lt;path fill=&quot;yellow&quot; d=&quot;M100,100 L100,200 A100,100 1 0,1 0,100   z&quot; id=&quot;sector_xy&quot; /&gt;
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-8"></a>  &lt;path fill=&quot;green&quot;  d=&quot;M100,100 L0,100   A100,100 1 0,1 100,0   z&quot; id=&quot;sector_xY&quot; /&gt;
+<a name="rest_code_72182485393c4dd0b1bd81f1a2f3c0e0-9"></a>&lt;/svg&gt;
+</pre></li>
+<li><p class="first">Use Web Audio API to make sounds out of HTML. Great explanation with a working code is at <a class="reference external" href="https://css-tricks.com/introduction-web-audio-api/">CSS tricks</a>. Oscilator with sine wave form at a given frequency with Gain node to control fade out.</p>
+</li>
+<li><p class="first">There is SVG modified for any touched element or inner shadow for the element (but it doesn't work with SVG). There is <code>lighten</code> function in LESS but I don't want to add another framework (even if it's just CSS post-processing framework) just because of one function. I've tried to use <code>filter: opacity</code> in CSS as described in the <a class="reference external" href="https://codepen.io/noahblon/post/coloring-svgs-in-css-background-images">post</a>, but it produces different result on different colors - works best on green and worse on red. Finally I replace SVG for a second on key pressed to its brighter version.</p>
+</li>
+<li><p class="first">The problem is the Web Audio API oscilators are played at once despite they are played in a loop. The way to manage sequences I need to set exact time spot for each note to be played, schedule it. Here is the <a class="reference external" href="http://catarak.github.io/blog/2014/12/02/web-audio-timing-tutorial/">first</a>  short and the <a class="reference external" href="https://www.html5rocks.com/en/tutorials/audio/scheduling/">second</a> much thorough explanation.</p>
+</li>
+<li><p class="first">I want the game to be accessible, but I don't like the shape of common active outline. Couldn't find any advices on making it more acceptable - not just plain squared, but something that repeats the form of the original element. Variant - to implement the whole keyboard layout to play the game with ARIA description on key mapping.</p>
+</li>
+<li><p class="first">I want some fanfare-like sound. And the only thing that come to my mind is ta-da-da-daaa-da-da from hockey matches timeouts. Looked at Wiki and after a while I've found it is the <a class="reference external" href="https://en.wikipedia.org/wiki/Charge_(fanfare)">Charge!</a>. In order to play it through the tone generator I had to implement additional function which let me to play chords and set note duration.</p>
+</li>
+<li><p class="first">One way to do it is to put <code>setTimeout()</code> everywhere I want a delay. But it makes it harder to deal with a sequence of delays or a sequence of UI interactions. I want a <code>Promise()</code> power to chain all interactions in a highly visible structure. SO gives an <a class="reference external" href="https://stackoverflow.com/questions/22707475/how-to-make-a-promise-from-settimeout">example</a> of such implementation.</p>
+</li>
+<li><p class="first">I want to pause listening on buttons while the app is playing a sequence: it could be inconsistent for a user to press a button during the play and wait for it to be consumed by an app as a sequential input. The problem is that an osicllator neither has callback nor returns a promise. After a little research I've <a class="reference external" href="https://stackoverflow.com/a/32848139">found</a> a solution in the form of an <code>onended</code> event of an Oscillator node (<a class="reference external" href="https://webaudio.github.io/web-audio-api/#dom-audioscheduledsourcenode-onended">here</a> is description). The final solution is to implement a sequence player to return a promise of all promises and a tone player to return a promise on <code>onended</code> event. But there is another problem. Gain node provides a fade-out and goes on even when the sound is barely audible but the UI is still frozen. It's inconsistent for a user to hear or see nor activity from an app but being unable to interact with it. In order to produce more reliable behavior I exluded the last tone from a waiting list and during it's play the user may start interact with the app.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>

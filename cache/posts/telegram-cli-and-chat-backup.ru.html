@@ -1,0 +1,15 @@
+<p>Complete procedure can be googled from [here](<a class="reference external" href="https://www.haykranen.nl/2014/12/02/howto-backup-your-telegram-chats/">https://www.haykranen.nl/2014/12/02/howto-backup-your-telegram-chats/</a>).</p>
+<p>Some comments on run:</p>
+<ul class="simple">
+<li>don't just download it from github as a zip - there are patches, which will not be included in it (tgl and recursive directories). Solution as written in doc for tg-cli: git clone --recursive <a class="reference external" href="https://github.com/vysheng/tg.git">https://github.com/vysheng/tg.git</a> &amp;&amp; cd tg;</li>
+<li>when compiled inside homebrew it shows an error: unused function 'get_peer'. Solution is [here](<a class="reference external" href="https://github.com/vysheng/tg/issues/996">https://github.com/vysheng/tg/issues/996</a>). It's simple - comment three strings in lua-tg.c and recompile;</li>
+<li><dl class="first docutils">
+<dt>to get chat history with all photos and videos set following parameters in telegram-history-dumpconfig.yaml to true:</dt>
+<dd><ul class="first last">
+<li>copy_media: true</li>
+<li>download_media ... photo, video, audio ... true.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>

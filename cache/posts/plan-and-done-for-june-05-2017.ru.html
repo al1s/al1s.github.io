@@ -1,0 +1,36 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Fix quirks in Safari: icons have become too small, everything become a mess on a wide screen.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+<li>Build additional pages - hotels, impression, blog.</li>
+<li>Style the form on impression page.</li>
+<li>Dive into JS.</li>
+<li>Implement form validation.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic" start="7">
+<li><p class="first">Still on the day 8 of JS30 (<a class="reference external" href="https://javascript30.com">https://javascript30.com</a>) - fighting with canvas drawing. I want to implement smooth width change dependant on a mouse speed. Tried to bind it directly to the speed - it works but it's far from expected smoothness.</p>
+<p>Here is a snippet from MDN (<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round</a>) to make round in JS behave like in other languages - with precision:</p>
+<pre class="code javascript"><a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-1"></a><span class="kd">var</span> <span class="nx">myNamespace</span> <span class="o">=</span> <span class="p">{};</span>
+<a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-2"></a>
+<a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-3"></a><span class="nx">myNamespace</span><span class="p">.</span><span class="nx">round</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">number</span><span class="p">,</span> <span class="nx">precision</span><span class="p">)</span> <span class="p">{</span>
+<a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-4"></a>    <span class="kd">var</span> <span class="nx">factor</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="nx">precision</span><span class="p">);</span>
+<a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-5"></a>    <span class="kd">var</span> <span class="nx">tempNumber</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">*</span> <span class="nx">factor</span><span class="p">;</span>
+<a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-6"></a>    <span class="kd">var</span> <span class="nx">roundedTempNumber</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">tempNumber</span><span class="p">);</span>
+<a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-7"></a>    <span class="k">return</span> <span class="nx">roundedTempNumber</span> <span class="o">/</span> <span class="nx">factor</span><span class="p">;</span>
+<a name="rest_code_ae60b6ba4ce444e8bbf9702b3dbc423c-8"></a><span class="p">};</span>
+</pre><p>Want to try to calculate a mouse acceleration and bind width to it.</p>
+<p>And again finally I've got something, that looks not as planned. Ok. Let's move on - perfection kills has some answers and techniques - <a class="reference external" href="http://perfectionkills.com/exploring-canvas-drawing-techniques/">http://perfectionkills.com/exploring-canvas-drawing-techniques/</a> (one is exactly about quadratic bezier curve - <a class="reference external" href="https://codepen.io/kangax/pen/zofsp">https://codepen.io/kangax/pen/zofsp</a>) and here is SO answer - <a class="reference external" href="https://stackoverflow.com/a/10661872">https://stackoverflow.com/a/10661872</a>. I've completed it to look like Wes Bos example.</p>
+<p>Done:</p>
+<ul class="simple">
+<li>recalled some math primitives - get an angle between two vectors, get point's coordinates;</li>
+<li>applied ternary operator, prototype enhencement by new functions implementation, utilizing <code>hsl()</code> command in coloring shapes, canvas drawing.</li>
+</ul>
+</li>
+</ol>
+</div>

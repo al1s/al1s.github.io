@@ -1,0 +1,22 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Dive into JS.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic">
+<li><p class="first">The next problem - <a class="reference external" href="https://www.hackerrank.com/challenges/sherlock-and-squares">https://www.hackerrank.com/challenges/sherlock-and-squares</a>.</p>
+<p>My initial approach was based on calculating increments between difference of current and the next square root. The reasoning looked like this:</p>
+<p>Let's assume, that we know the sequence of full square difference:</p>
+<pre class="literal-block">
+            1, 2, 3, 4,  5,  6,  7,  8,  9...
+for the row 1, 4, 9, 16, 25, 36, 49, 64, 81...
+it would be   3, 5, 7,  9,  11, 13, 15, 17...
+so each time the difference increases by 2.
+</pre>
+<p>The formula for it is 2*n - 1, where n is our initial number. Then to solve the problem just get the square root of the first number and find the difference, then check if my second given number within it.</p>
+</li>
+</ol>
+</div>

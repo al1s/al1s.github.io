@@ -1,0 +1,28 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>FreeCodeCamp curriculum: No repeat please.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<p>Permutations and combinations. There are bunch of algorithms to construct permutations. I've tried Heap recursive, Heap iterative and Steinhaus-Johnson-Trotter. The code for each is here - <a class="reference external" href="https://codepen.io/alstof/pen/jarvNx">https://codepen.io/alstof/pen/jarvNx</a>. Couldn't get grounded intuition behind Heap algo: the reason it works - it has a pattern of elements swapping, but it's very easy to implement:</p>
+<blockquote>
+<pre class="code javascript"><a name="rest_code_78448f88a8e74013bce17ad8715b83f6-1"></a><span class="kd">var</span> <span class="nx">heapPermute</span> <span class="o">=</span> <span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-2"></a>  <span class="kd">var</span> <span class="nx">swap</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">pos1</span><span class="p">,</span> <span class="nx">pos2</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">pos1</span><span class="p">],</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">pos2</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">pos2</span><span class="p">],</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">pos1</span><span class="p">]];</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-3"></a>  <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">));</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-4"></a>  <span class="k">else</span> <span class="p">{</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-5"></a>    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-6"></a>      <span class="nx">heapPermute</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">arr</span><span class="p">);</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-7"></a>      <span class="nx">swap</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">?</span> <span class="nx">i</span> <span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-8"></a>    <span class="p">}</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-9"></a>    <span class="nx">heapPermute</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">arr</span><span class="p">);</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-10"></a>  <span class="p">}</span>
+<a name="rest_code_78448f88a8e74013bce17ad8715b83f6-11"></a><span class="p">}</span>
+</pre></blockquote>
+<p>SJT looks a little more complicated, but it has more sense for me - just build the whole pyramid from scratch - starting with permutation of 1, 2, 3 ... elements and add every next element to what you've already got in every porision from last to first for every odd element of previous permutation and first to last for every even one.</p>
+<p>Good source of explanation is Khan Academy - <a class="reference external" href="https://www.khanacademy.org/math/precalculus/prob-comb/combinatorics-precalc/v/factorial-and-counting-seat-arrangements">https://www.khanacademy.org/math/precalculus/prob-comb/combinatorics-precalc/v/factorial-and-counting-seat-arrangements</a>.</p>
+<p>Pictures with explanation are available at Wiki:</p>
+<ul class="simple">
+<li>Heap - <a class="reference external" href="https://en.wikipedia.org/wiki/Heap%27s_algorithm">https://en.wikipedia.org/wiki/Heap%27s_algorithm</a></li>
+<li>SJT - <a class="reference external" href="https://en.wikipedia.org/wiki/Steinhaus%E2%80%93Johnson%E2%80%93Trotter_algorithm">https://en.wikipedia.org/wiki/Steinhaus%E2%80%93Johnson%E2%80%93Trotter_algorithm</a></li>
+</ul>
+</div>

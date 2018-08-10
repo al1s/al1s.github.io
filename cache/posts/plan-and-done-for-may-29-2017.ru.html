@@ -1,0 +1,45 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Make menu hide only on tablet and desktop versions or add input-label to hide JS-function.</li>
+<li>Fix quirks in Safari: icons have become too small, everything become a mess on a wide screen.</li>
+<li>Fix a masthead height on resolution wider 640px.</li>
+<li>Fix an offer body text align for the gift message - now it aligns to center on resolutions less than 570.</li>
+<li>Build additional pages - hotels, impression, blog.</li>
+<li>Style the form on impression page.</li>
+<li>Dive into JS.</li>
+<li>Implement form validation.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic" start="7">
+<li><p class="first">Today's JS30 challange is to build photo gallery with an animation on click:</p>
+<ul class="simple">
+<li>expand the clicked picture if it wasn't expanded before;</li>
+<li>shrink the clicked picture if it was expanded before;</li>
+<li>make a hidden text appear (or disappear as it's in the normal state).</li>
+</ul>
+<p>The first interesting stop on the route - how to expand the picture no matter if the mouse clicked on picture or on the text in front of it. An event listener returns different objects as a target in such case: <code>div</code> with picture or <code>p</code> for the text clicked.</p>
+<p>My first thought was just to prevent events if <code>p</code> element is clicked, but it's bad UX - sometimes a user clicks the picture and it works, sometimes - it doesn't. The next thought - maybe I accidentally attach event handlers to all elements down the tree starting from my target div? I need to check if it's true, so how to get all event listeners on a page? Google says it has it right inside DevTool of Chrome - <a class="reference external" href="https://developers.google.com/web/tools/chrome-devtools/console/events">https://developers.google.com/web/tools/chrome-devtools/console/events</a>. I've checked - no way, neither Chrome nor Canary. They both have tab called Event Listeners, but there is only events of active element in the Inspector, not all of them even if I tap <code>body</code> element. I've found (<a class="reference external" href="https://gist.github.com/danburzo/9254630#gistcomment-1942033">https://gist.github.com/danburzo/9254630#gistcomment-1942033</a>) the code which shows exactly what I need:</p>
+<pre class="code javascript"><a name="rest_code_cb8a8e55b07c41788593526fc62d7086-1"></a><span class="kr">const</span> <span class="nx">items</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">)).</span><span class="nx">map</span><span class="p">(</span><span class="nx">element</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-2"></a><span class="kr">const</span> <span class="nx">listeners</span> <span class="o">=</span> <span class="nx">getEventListeners</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-3"></a>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-4"></a><span class="k">return</span> <span class="p">{</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-5"></a>  <span class="nx">element</span><span class="o">:</span> <span class="nx">element</span><span class="p">,</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-6"></a>  <span class="nx">listeners</span><span class="o">:</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">listeners</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nx">key</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-7"></a>    <span class="k">return</span> <span class="p">{</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-8"></a>      <span class="nx">event</span><span class="o">:</span> <span class="nx">key</span><span class="p">,</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-9"></a>      <span class="nx">listeners</span><span class="o">:</span> <span class="nx">listeners</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-10"></a>    <span class="p">};</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-11"></a>  <span class="p">})</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-12"></a><span class="p">};</span>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-13"></a>
+<a name="rest_code_cb8a8e55b07c41788593526fc62d7086-14"></a><span class="p">}).</span><span class="nx">filter</span><span class="p">(</span><span class="nx">item</span> <span class="p">=&gt;</span> <span class="nx">item</span><span class="p">.</span><span class="nx">listeners</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+</pre><p>Checked it - only the divs with pictures have listeners and that's exactly what I want to get as all listeners on the page. My next step was to dive into Event capturing/bubbling threads - <a class="reference external" href="https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm">https://www.kirupa.com/html5/event_capturing_bubbling_javascript.htm</a>. But it didn't bring any useful fruits, so I've switched to another tutorial - <a class="reference external" href="https://www.kirupa.com/html5/handling_events_for_many_elements.htm">https://www.kirupa.com/html5/handling_events_for_many_elements.htm</a> and found <code>currentTarget</code> element which is exactly what I need! Here is a great visualization - <a class="reference external" href="http://joequery.me/code/event-target-vs-event-currenttarget-30-seconds/">http://joequery.me/code/event-target-vs-event-currenttarget-30-seconds/</a> which I implemented from scratch in my playground - <a class="reference external" href="https://codepen.io/alstof/full/gWNOdr/">https://codepen.io/alstof/full/gWNOdr/</a>.</p>
+<p>I've implemented shrinking by reseting <code>flex</code> rule of each picture element to the default value: <code>flex: 1 1 auto</code>. And I've animated text in the same way - just reseting initial value of first and third text child elements of <code>transform: translateY(+-20vh)</code> to undefined on <code>transitionend</code> event (look here - <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/Events/transitionend">https://developer.mozilla.org/en-US/docs/Web/Events/transitionend</a>, and there is no any reason to use whichTransitionEnd by David Walsh - <a class="reference external" href="https://davidwalsh.name/css-animation-callback">https://davidwalsh.name/css-animation-callback</a>, because we have full support in all modern browsers - <a class="reference external" href="http://caniuse.com/#search=transitionend">http://caniuse.com/#search=transitionend</a>).</p>
+<p>Done in almost 7 hours most part of which I tried to get how events behave in browser.</p>
+</li>
+</ol>
+<p><strong>Spontaneous</strong>. Here are tons of dev-tool screencasts - <a class="reference external" href="https://umaar.com/dev-tips/">https://umaar.com/dev-tips/</a>.</p>
+</div>

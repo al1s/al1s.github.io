@@ -1,0 +1,42 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>FreeCodeCamp project: Wikipedia viewer.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<p>Trasforming search bar is implemented. Here is a pen on Codepen - <a class="reference external" href="https://codepen.io/alstof/pen/yzNdKj">https://codepen.io/alstof/pen/yzNdKj</a>, here is a stand-alone page - <a class="reference external" href="https://al1s.github.io/AskWiki/">https://al1s.github.io/AskWiki/</a>.</p>
+<p>Besides there was a todo list:</p>
+<ul class="simple">
+<li>fix address bar - remove submit parameters from it;</li>
+<li>clear the page if the input value is undefined;</li>
+<li>speed up loading and displaying data;</li>
+<li>limit the keys to react to meaningful - letters and entry control;</li>
+<li>fix browser history: make backspace to return a user to the previous page;</li>
+<li>fix images size - it's too crane;</li>
+<li>show a message on no search results;</li>
+<li>make the page functional on iPad mini (Safari 7);</li>
+<li>deal with Promise object manipulation;</li>
+<li>how to get the page similar to Wiki's one on no data found;</li>
+</ul>
+<div class="section" id="fix-browser-history">
+<h2>Fix browser history</h2>
+<p>There is the <code>history</code> object wich may be used to control browser behavior on back and forward buttons. Here is MDN article - <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/History_API">https://developer.mozilla.org/en-US/docs/Web/API/History_API</a>.</p>
+<p>Now the page restores previous search phrase on back and forward.</p>
+</div>
+<div class="section" id="show-a-message-when-there-are-no-results-returned">
+<h2>Show a message when there are no results returned</h2>
+<p>Implemented custom error object based on <a class="reference external" href="https://stackoverflow.com/a/5251506/2255031">https://stackoverflow.com/a/5251506/2255031</a>. The reason was to get cutomized variables inside error object to pass it between functions. I'm not sure if it's correct coding style.</p>
+</div>
+<div class="section" id="promise-with-resolves-and-rejects">
+<h2>Promise with resolves and rejects</h2>
+<p>I used promises in the code but the question left - how to return a value from a Promise: e.g. I've implemented common ajax request wrapper for fetch and it could be used as a call to get results but it didn't work when I tried to use it inside Promise.all function.</p>
+</div>
+<div class="section" id="special-search-results-when-nothing-found">
+<h2>Special search results when nothing found</h2>
+<p>The Wiki returns special page on no data found result - Special:search. I haven't found it was mentioned anywhere in API docs or discussed as possible result on unsuccessful search. I've tried to retrieve the same page I have in a browser but got the CORS error that I treated such as the functionality wasn't implemented in a Wiki's public API.</p>
+</div>
+<div class="section" id="unlisted">
+<h2>Unlisted</h2>
+<p>I like the way VS Code simulates Vim keyboard control scheme. Everything I used in pure Vim, I use now in VS Code.</p>
+</div>
+</div>

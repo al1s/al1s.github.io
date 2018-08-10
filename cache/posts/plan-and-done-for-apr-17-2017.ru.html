@@ -1,0 +1,45 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Practicing vim and git (CLI via hub)</li>
+<li>Study another 5 CSS things on tympanus.net</li>
+<li>Add &quot;To top&quot; link.</li>
+<li>Add menu animation on page down.</li>
+<li>Add sprites for retina.</li>
+<li>Format search form to make labels more aligned with input fields.</li>
+<li>Fix readme.md for the project (it contains original NTH-starter-kit text).</li>
+<li>Work with styleguide.</li>
+<li>Migrate all notes about web-dev progress to the blog.</li>
+<li>Tweet my findings.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic" start="3">
+<li><p class="first">Done. Just included existing block to the project and rerun gulp.</p>
+</li>
+<li><p class="first">Done, but without smooth animations. I don't want to use JQuery animations, because of performance. Here is - <a class="reference external" href="https://apeatling.com/2014/01/building-smooth-sliding-mobile-menu/">https://apeatling.com/2014/01/building-smooth-sliding-mobile-menu/</a> - example how to handle such animation right, but I stuck in catching <tt class="docutils literal">transitionEnd</tt> event. Tried to attach it to <tt class="docutils literal">nav</tt> and to <tt class="docutils literal">body</tt>, but it haven't worked.</p>
+<p>Finally made it with a little help from the codepen - <a class="reference external" href="https://codepen.io/andiio/pen/gspxJ">https://codepen.io/andiio/pen/gspxJ</a>.</p>
+</li>
+<li><p class="first">Done. Details (how to handle icons, images and favicon) are taken from <a class="reference external" href="http://ivomynttinen.com/blog/a-guide-for-creating-a-better-retina-web">http://ivomynttinen.com/blog/a-guide-for-creating-a-better-retina-web</a>. Exact media query for background-image should looks like <a class="reference external" href="http://brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/">http://brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/</a>. And <a class="reference external" href="https://bjango.com/articles/min-device-pixel-ratio/">https://bjango.com/articles/min-device-pixel-ratio/</a> is a pixel ratio tester.</p>
+</li>
+</ol>
+<p><strong>Spontaneous</strong>. How to deploy projects to gh-pages? <a class="reference external" href="https://gist.github.com/cobyism/4730490">https://gist.github.com/cobyism/4730490</a> one of the answers. But I have better one - it's already integrated into NTH-starter-kit: &quot;gulp delpoy&quot; and you're done.</p>
+<p><strong>Spontaneous</strong>. Publish with Nikola. Installation is <a class="reference external" href="http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/">http://brunettoziosi.eu/posts/blogging-with-nikola-ipython-github/</a>. After it starts use CLI with:</p>
+<pre class="literal-block">
+source /Users/alstof/Documents/virtualenv/nikola/bin/activate
+nikola post
+nikola github-deploy
+</pre>
+<p>From <a class="reference external" href="http://louistiao.me/posts/how-i-customized-my-nikola-powered-site/">http://louistiao.me/posts/how-i-customized-my-nikola-powered-site/</a>. There are more about tuning nilola.</p>
+<p>Thinking on autodeploy functionality just like <tt class="docutils literal">gulp watch</tt> does: I create a blog post and save it and ... it's on my site. Here - <a class="reference external" href="http://entrproject.org/">http://entrproject.org/</a> - is utility to start moving in the direction.</p>
+<p>Nikola engine is written with Python, so its primary text format is reStructuredText (aka .rst). Resources to taste it:</p>
+<ul class="simple">
+<li>Here is Gist - <a class="reference external" href="https://gist.github.com/dupuy/1855764">https://gist.github.com/dupuy/1855764</a> - with comparision.</li>
+<li>And Sphinx manual - <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">http://www.sphinx-doc.org/en/stable/rest.html</a> - with quick examples.</li>
+</ul>
+<p><strong>Spontaneous</strong>. Start a project with NTH-starter-kit:</p>
+<pre class="literal-block">
+git clone https://github.com/al1s/NTH-start-project.git technomart
+</pre>
+</div>

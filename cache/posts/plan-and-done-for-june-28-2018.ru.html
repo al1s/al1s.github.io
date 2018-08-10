@@ -1,0 +1,62 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Learn D3 fundamentals.</li>
+<li>Practice D3 selections.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic">
+<li><p class="first">There are bunch of links to good articles to grasp what D3 is about:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://bl.ocks.org/mbostock/3808234">Bostock's entry point</a> with many links inside;</li>
+<li><a class="reference external" href="https://medium.com/&#64;Elijah_Meeks/d3-is-not-a-data-visualization-library-67ba549e8520">Elijah Meeks explanation</a></li>
+</ul>
+</li>
+<li><p class="first">It takes some time to grasp how selection works in D3. Misunderstanding starts from <a class="reference external" href="https://www.youtube.com/watch?v=8jvoTV54nX://www.youtube.com/watch?v=8jvoTV54nXw">Introduction to D3</a> by Curran Kelleher and his <a class="reference external" href="http://curran.github.io/screencasts/introToD3/examples/viewer/#/66">notebooks</a>. If Update and Enter are different selections, then why when I set X coordinate and block color for update selection only, the whole result is correct - the color of all blocks is the same and they are divided appropriately along X axis?</p>
+<p>The only explanation is that there is only the whole cycle every time and all objects are involved:</p>
+<ul class="simple">
+<li>after <code>selection.data()</code> we have empty placeholder for each data point in a dataset;</li>
+<li>after <code>selection.enter()</code> we have DOM constructed accroding to data and attributes defined on stage 'Enter' applied to each new element;</li>
+<li>after <code>selection.update()</code> we have additional attributes applied to 'old' elements, those which weren't added during Enter processing... and (it was the main bug in my understanding of the rendering stages in D3) to new elements if the attributes weren't defined during 'Enter' and defined on 'Update' stage;</li>
+<li><code>select.exit().remove()</code> just removes unbound elements; something like a garbage collection.</li>
+</ul>
+<p>In order to illustrate notes above I crafted two versions of the code:</p>
+</li>
+</ol>
+<pre class="code javascript"><a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-1"></a><span class="kd">function</span> <span class="nx">render</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">color</span><span class="p">){</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-2"></a>  <span class="kd">var</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">transition</span><span class="p">()</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-3"></a>     <span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="mi">2750</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-4"></a>  <span class="kd">var</span> <span class="nx">rects</span> <span class="o">=</span> <span class="nx">svg</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">&quot;rect&quot;</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-5"></a>  <span class="nx">console</span><span class="p">.</span><span class="nx">group</span><span class="p">(</span><span class="s1">&#39;Render&#39;</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-6"></a>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-7"></a>  <span class="c1">// Enter</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-8"></a>  <span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Before enter&#39;</span><span class="p">,</span> <span class="nx">rects</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-9"></a>  <span class="nx">rects</span><span class="p">.</span><span class="nx">enter</span><span class="p">().</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;rect&quot;</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-10"></a>    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-11"></a>    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;width&quot;</span><span class="p">,</span>  <span class="mi">20</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-12"></a>    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-13"></a>    <span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="s2">&quot;fill-opacity&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="nx">e</span><span class="o">-</span><span class="mi">6</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-14"></a>  <span class="p">.</span><span class="nx">transition</span><span class="p">(</span><span class="nx">t</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-15"></a>    <span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="s2">&quot;fill-opacity&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-16"></a>  <span class="nx">log</span><span class="p">(</span><span class="s1">&#39;After enter&#39;</span><span class="p">,</span> <span class="nx">rects</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-17"></a>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-18"></a>  <span class="c1">// Update</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-19"></a>  <span class="nx">rects</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-20"></a>    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;fill&quot;</span><span class="p">,</span> <span class="nx">color</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-21"></a>    <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="nx">scale</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-22"></a>  <span class="nx">log</span><span class="p">(</span><span class="s1">&#39;After update&#39;</span><span class="p">,</span> <span class="nx">rects</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-23"></a>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-24"></a>  <span class="c1">// Exit</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-25"></a>  <span class="nx">rects</span><span class="p">.</span><span class="nx">exit</span><span class="p">().</span><span class="nx">remove</span><span class="p">()</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-26"></a>    <span class="p">.</span><span class="nx">transition</span><span class="p">(</span><span class="nx">t</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-27"></a>    <span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="s2">&quot;fill-opacity&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="nx">e</span><span class="o">-</span><span class="mi">6</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-28"></a>  <span class="nx">log</span><span class="p">(</span><span class="s1">&#39;After exit&#39;</span><span class="p">,</span> <span class="nx">rects</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-29"></a>  <span class="nx">console</span><span class="p">.</span><span class="nx">groupEnd</span><span class="p">(</span><span class="s1">&#39;Render&#39;</span><span class="p">)</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-30"></a>  <span class="p">}</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-31"></a>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-32"></a><span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">render</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;red&quot;</span><span class="p">),</span><span class="mi">0</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-33"></a><span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">render</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;blue&quot;</span><span class="p">),</span><span class="mi">2500</span><span class="p">);</span>
+<a name="rest_code_d0f5ebd496c145f4858c4536c3d4c61d-34"></a><span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="nx">render</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;green&quot;</span><span class="p">),</span><span class="mi">5000</span><span class="p">)</span>
+</pre></div>

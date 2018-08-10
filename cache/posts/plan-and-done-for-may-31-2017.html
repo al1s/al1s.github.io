@@ -1,0 +1,108 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<ol class="arabic simple">
+<li>Practice D3 selections.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<ol class="arabic">
+<li><p class="first">It takes some time to grasp how selection works in D3. Misunderstanding starts from <a class="reference external" href="https://www.youtube.com/watch?v=8jvoTV54nX://www.youtube.com/watch?v=8jvoTV54nXw">Introduction to D3</a> by Curran Kelleher and his <a class="reference external" href="http://curran.github.io/screencasts/introToD3/examples/viewer/#/66">notebooks</a>. If Update and Enter are different selections, then why when I set X coordinate and block color for update selection only, the whole result is correct - the color of all blocks is the same and they are divided appropriately along X axis?</p>
+<p>The only explanation is that there is only the whole cycle every time and all objects are involved:</p>
+<ul class="simple">
+<li>after <code>selection.data()</code> we have empty placeholder for each data point in a dataset;</li>
+<li>after <code>selection.enter()</code> we have DOM constructed accroding to data and attributes defined on stage 'Enter' applied to each new element;</li>
+<li>after <code>selection.update()</code> we have additional attributes applied to 'old' elements, those which weren't added during Enter processing... and (it was the main bug in my understanding of the rendering stages in D3) to new elements if the attributes weren't defined during 'Enter' and defined on 'Update' stage;</li>
+<li><code>select.exit().remove()</code> just removes unbound elements; something like a garbage collection.</li>
+</ul>
+<p>In order to illustrate notes above I crafted two versions of the code:</p>
+<blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 25)</p>
+<p>Content block expected for the &quot;code-block&quot; directive; none found.</p>
+<pre class="literal-block">
+.. code-block:: javascript
+
+</pre>
+</div>
+<dl class="docutils">
+<dt>function render(data, color){</dt>
+<dd><dl class="first docutils">
+<dt>var t = d3.transition()</dt>
+<dd><p class="first last">.duration(2750);</p>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 30)</p>
+<p>Definition list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>var rects = svg.selectAll(&quot;rect&quot;).data(data);
+console.group('Render');</p>
+<p>// Enter
+log('Before enter', rects);
+rects.enter().append(&quot;rect&quot;)</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 36)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<p>.attr(&quot;y&quot;, 50)
+.attr(&quot;width&quot;,  20)
+.attr(&quot;height&quot;, 20)
+.style(&quot;fill-opacity&quot;, 1e-6)</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 40)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<dl class="docutils">
+<dt>.transition(t)</dt>
+<dd><p class="first last">.style(&quot;fill-opacity&quot;, 1)</p>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 42)</p>
+<p>Definition list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>log('After enter', rects);</p>
+<p>// Update
+rects</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 46)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<p>.attr(&quot;fill&quot;, color)
+.attr(&quot;x&quot;, scale)</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 48)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p>log('After update', rects)</p>
+<p>// Exit
+rects.exit().remove()</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">&lt;string&gt;</tt>, line 52)</p>
+<p>Unexpected indentation.</p>
+</div>
+<blockquote>
+<p>.transition(t)
+.style(&quot;fill-opacity&quot;, 1e-6)</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 54)</p>
+<p>Block quote ends without a blank line; unexpected unindent.</p>
+</div>
+<p class="last">log('After exit', rects);
+console.groupEnd('Render')
+}</p>
+</dd>
+</dl>
+<p>setTimeout(() =&gt; render([1, 2], &quot;red&quot;),0);
+setTimeout(() =&gt; render([1, 2, 3, 4, 5], &quot;blue&quot;),2500);
+setTimeout(() =&gt; render([1, 2, 3], &quot;green&quot;),5000)</p>
+</blockquote>
+</li>
+</ol>
+</div>

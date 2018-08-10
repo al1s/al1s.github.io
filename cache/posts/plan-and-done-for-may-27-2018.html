@@ -1,0 +1,29 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>FreeCodeCamp React projects: Camper Leaderboard.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<div class="section" id="challenges">
+<h2>Challenges</h2>
+<ol class="arabic simple">
+<li>I want to use async/await for fetching data but what about catching errors?</li>
+<li>When and where to fetch initial data to React app?</li>
+</ol>
+</div>
+<div class="section" id="solutions">
+<h2>Solutions</h2>
+<ol class="arabic simple">
+<li>Here is the <a class="reference external" href="https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/">receipt</a> to do it with style:</li>
+</ol>
+<pre class="code javascript"><a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-1"></a><span class="kd">function</span> <span class="nx">to</span><span class="p">(</span><span class="nx">promise</span><span class="p">)</span> <span class="p">{</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-2"></a>  <span class="k">return</span> <span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-3"></a>      <span class="k">return</span> <span class="p">[</span><span class="kc">null</span><span class="p">,</span> <span class="nx">data</span><span class="p">];</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-4"></a>    <span class="p">})</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-5"></a>    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="p">=&gt;</span> <span class="p">[</span><span class="nx">err</span><span class="p">]);</span>
+<a name="rest_code_e8d6e7effe354d17ad5be7f8f6e84906-6"></a><span class="p">}</span>
+</pre><ol class="arabic simple" start="2">
+<li>The right place is <code>componentDidMount</code>. An explanation - <a class="reference external" href="https://zhenyong.github.io/react/tips/initial-ajax.html">Initial data via AJAX</a>.</li>
+</ol>
+</div>
+</div>

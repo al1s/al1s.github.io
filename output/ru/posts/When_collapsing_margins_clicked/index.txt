@@ -1,0 +1,13 @@
+<!--
+.. title: When collapsing margins clicked
+.. slug: When_collapsing_margins_clicked
+.. date: 2017-02-25 15:04:00 UTC-08:00
+.. tags:
+.. category:
+.. link:
+.. description:
+.. type: text
+-->
+
+I've read W3 spec on box model and behaviour of collapsing margins and tried to model different conditions when they collapse. But finally found this [article](https://www.sitepoint.com/web-foundations/collapsing-margins/) where everything already illustrated well.
+

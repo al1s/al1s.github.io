@@ -1,0 +1,19 @@
+<div class="section" id="what-will-i-learn-today">
+<h1>What will I learn today?</h1>
+<p>Dive into JS.</p>
+</div>
+<div class="section" id="done">
+<h1>Done</h1>
+<p>I've solved Queen attack II. It wasn't hard, but in some way mind bending. The next two challenges are Roads and libraries - <a class="reference external" href="https://www.hackerrank.com/challenges/torque-and-development">https://www.hackerrank.com/challenges/torque-and-development</a> and Climbing the leaderboard - <a class="reference external" href="https://www.hackerrank.com/challenges/climbing-the-leaderboard">https://www.hackerrank.com/challenges/climbing-the-leaderboard</a>. I solved both, but my solutions didn't meet time complexity criteria, so now I'm in optimization mode.</p>
+<p>My approach to Roads and libs is:</p>
+<ul class="simple">
+<li>The idea is to find whether we have a connected graph.</li>
+<li>If not, then we need at least the same number of libraries as independent graphs.</li>
+<li>If graph is connected, we build at least one library.</li>
+<li>If library cost &gt; road cost, fix all roads, otherwise, build a library in every town.</li>
+<li>In order to find the graph roots and edges I built node adjacency list and all nodes list.</li>
+</ul>
+<p>The last two are sources of latency. At first I tried to build all nodes list by concatenating all nodes within <code>forEach</code> loop and then moving the result into a set to get a list of nodes without repetitions. I've got rid of concatenation, and just pushed all nodes into flat array and then copied it into a set. The adjacency list is looked harder. I want to get a list of all nodes with their neighbours for each. I use for it an array and each position is my node number filled with arrays of neighbours. Maybe the better idea is to use object for storing the list.</p>
+<p>In order to understand how my solution works under load I use a dataset I've found under the first link here - <a class="reference external" href="https://cstheory.stackexchange.com/a/740">https://cstheory.stackexchange.com/a/740</a>.</p>
+<p>The solution works faster with an object as a storage of adjacency list, but it fails HR performance tests.</p>
+</div>

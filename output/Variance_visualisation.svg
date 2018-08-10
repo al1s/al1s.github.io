@@ -1,0 +1,89 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-7 -17 112.5 180">
+ <title>Variance visualisation</title>
+ <desc>Geometric visualisation of the variance of the example distribution (2, 4, 4, 4, 5, 5, 7, 9) on http://en.wikipedia.org/wiki/Standard_deviation by CMG Lee. 1. A frequency distribution is constructed. 2. The centroid of the distribution gives its mean. 3. A square with sides equal to the difference of each value from the mean is formed for each value. 4. Arranging the squares into a rectangle with one side equal to the number of values (n) results in the other side being equal to the variance of the distribution (&#963;&#178;).</desc>
+ <style type="text/css">
+  .v1 { fill:#993300; }
+  .v2 { fill:#ff0000; }
+  .v3 { fill:#ff9900; }
+  .v4 { fill:#cccc00; }
+  .v5 { fill:#009900; }
+  .v6 { fill:#0000ff; }
+  .v7 { fill:#9900cc; }
+  .v8 { fill:#999999; }
+ </style>
+ <defs>
+  <pattern id="pattern" patternUnits="userSpaceOnUse" width="4" height="4"><path d="M 2,0 L 0,2 M 2,4 L 4,2" stroke="#666666" fill="none"/></pattern>
+  <path id="arrowhead" d="M -1,1 L 0,0 L 1,1" fill="none"/>
+  <rect id="value" x="-2.5" y="-5" width="5" height="5" rx="2" ry="2"/>
+  <g id="distribution">
+   <use xlink:href="#value" transform="translate(20,  0)" class="v8"/>
+   <use xlink:href="#value" transform="translate(40,  0)" class="v5"/>
+   <use xlink:href="#value" transform="translate(40, -5)" class="v4"/>
+   <use xlink:href="#value" transform="translate(40,-10)" class="v2"/>
+   <use xlink:href="#value" transform="translate(50,  0)" class="v3"/>
+   <use xlink:href="#value" transform="translate(50, -5)" class="v1"/>
+   <use xlink:href="#value" transform="translate(70,  0)" class="v7"/>
+   <use xlink:href="#value" transform="translate(90,  0)" class="v6"/>
+   <rect x="5" y="0" width="90" height="5" rx="2" ry="2" fill="#66ccff"/>
+   <text x="10" y="4">1</text>
+   <text x="20" y="4">2</text>
+   <text x="30" y="4">3</text>
+   <text x="40" y="4">4</text>
+   <text x="50" y="4">5</text>
+   <text x="60" y="4">6</text>
+   <text x="70" y="4">7</text>
+   <text x="80" y="4">8</text>
+   <text x="90" y="4">9</text>
+  </g>
+  <g id="balance">
+   <use xlink:href="#distribution"/>
+   <path d="M 45,10 L 50,5 L 55,10" fill="#666666"/>
+  </g>
+ </defs>
+
+ <circle cx="0" cy="0" r="99999" fill="#ffffff"/>
+ <g font-family="Arial,Helvetica,sans-serif" font-size="5" text-anchor="middle" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke="none" fill="#000000">
+  <g>
+   <text x="0" y="-5" font-size="10">1.</text>
+   <use xlink:href="#distribution"/>
+  </g>
+  <g transform="translate(0,30)">
+   <text x="0" y="-5" font-size="10">2.</text>
+   <use xlink:href="#balance"/>
+   <rect x="40" y="10" width="20" height="2" fill="url(#pattern)"/>
+   <path d="M 40,10 H 62" stroke="#666666"/>
+   <path d="M 2,0 A 10,10 0 0 0 5,10 M 0,0 A 10,10 0 0 0 2,9  M 98,0 A 10,10 0 0 1 95,10 M 100,0 A 10,10 0 0 1 98,9" stroke="#666666" fill="none"/>
+  </g>
+  <g transform="translate(0,90)">
+   <text x="0" y="-30" font-size="10">3.</text>
+   <use xlink:href="#balance"/>
+   <g stroke="#000000" stroke-opacity="0.5" fill-opacity="0.5">
+    <rect x="50" y="-40" width="40" height="40" rx="4" ry="4" class="v6"/>
+    <rect x="20" y="-30" width="30" height="30" rx="3" ry="3" class="v8"/>
+    <rect x="40" y="-10" width="10" height="10" rx="1" ry="1" class="v5"/>
+    <rect x="40" y="-20" width="10" height="10" rx="1" ry="1" class="v4"/>
+    <rect x="40" y="-30" width="10" height="10" rx="1" ry="1" class="v2"/>
+    <rect x="50" y="-20" width="20" height="20" rx="2" ry="2" class="v7"/>
+   </g>
+  </g>
+  <g transform="translate(0,150)">
+   <text x="0" y="-30" font-size="10">4.</text>
+   <g stroke="#000000" stroke-opacity="0.5" fill-opacity="0.5">
+    <rect x="50" y="-40" width="40" height="40" rx="4" ry="4" class="v6"/>
+    <rect x="10" y="-30" width="30" height="30" rx="3" ry="3" class="v8"/>
+    <rect x="40" y="-10" width="10" height="10" rx="1" ry="1" class="v5"/>
+    <rect x="40" y="-20" width="10" height="10" rx="1" ry="1" class="v4"/>
+    <rect x="40" y="-30" width="10" height="10" rx="1" ry="1" class="v2"/>
+    <rect x="10" y="-40" width="40" height="10" rx="2" ry="2" class="v7"/>
+    <path d="M 95,-40 V 0 M 10,5 H 90"/>
+    <use xlink:href="#arrowhead" transform="translate(95,-40)"/>
+    <use xlink:href="#arrowhead" transform="translate(95,0) rotate(180)"/>
+    <use xlink:href="#arrowhead" transform="translate(10,5) rotate(-90)"/>
+    <use xlink:href="#arrowhead" transform="translate(90,5) rotate(90)"/>
+   </g>
+   <text x="50"  y="10" ><tspan font-style="italic">n</tspan></text>
+   <text x="100" y="-18"><tspan font-style="italic">&#963;</tspan><tspan dy="-0.5ex">2</tspan></text>
+  </g>
+ </g>
+</svg>
