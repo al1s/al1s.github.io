@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learn another day</title><link>https://al1s.github.io/</link><description>Notes collection</description><atom:link type="application/rss+xml" rel="self" href="https://al1s.github.io/ru/rss.xml"></atom:link><language>ru</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Fri, 10 Aug 2018 03:00:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for August-09-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-august-09-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learn another day</title><link>https://al1s.github.io/</link><description>Notes collection</description><atom:link type="application/rss+xml" rel="self" href="https://al1s.github.io/ru/rss.xml"></atom:link><language>ru</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Fri, 10 Aug 2018 03:17:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for August-09-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-august-09-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
 &lt;h2&gt;What will I learn today?&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Practice Javascript at CodeFellow.&lt;/li&gt;
@@ -9,20 +9,14 @@
 &lt;div class="section" id="done"&gt;
 &lt;h2&gt;Done&lt;/h2&gt;
 &lt;p&gt;Today I learned:&lt;/p&gt;
-&lt;p&gt;Results of the day - &lt;a class="reference external" href="https://github.com/al1s/SalmonCookies/pull/22"&gt;https://github.com/al1s/SalmonCookies/pull/22&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/al1s/SalmonCookies/pull/22"&gt;Results&lt;/a&gt; of the day -&lt;/p&gt;
 &lt;p&gt;My thoughts about the final project:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;first idea was to built a calendar with all required assignments from Canvas which are not finished yet sorted by submission date. But, first, it uses external API and it's forbidden, and second Canvas has tangled API which I don't want to dive in.&lt;/li&gt;
-&lt;li&gt;second thought - to build HTML to ASCII converter. Just for fun. It will require two steps: convert HTML into JPG, convert JPG into ASCII. I've found a &lt;a class="reference external" href="http://html2canvas.hertzen.com/"&gt;solution&lt;/a&gt; for the first task in a form of an external library. And here &lt;a href="https://al1s.github.io/ru/posts/plan-and-done-for-august-09-2018/#id1"&gt;&lt;span class="problematic" id="id2"&gt;`https://www.codeproject.com/Articles/20435/Using-C-To-Generate-ASCII-Art-From-An-Image&amp;gt;`_&lt;/span&gt;&lt;/a&gt; is an explanation of converting pictures into ASCII art with a C# example. The idea is exciting but totally useless.&lt;/li&gt;
+&lt;li&gt;second thought - to build HTML to ASCII converter. Just for fun. It will require two steps: convert HTML into JPG, convert JPG into ASCII. I've found a &lt;a class="reference external" href="http://html2canvas.hertzen.com/"&gt;solution&lt;/a&gt; for the first task in a form of an external library. And &lt;a class="reference external" href="https://www.codeproject.com/Articles/20435/Using-C-To-Generate-ASCII-Art-From-An-Image"&gt;here&lt;/a&gt; is an explanation of converting pictures into ASCII art with a C# example. The idea is exciting but totally useless.&lt;/li&gt;
 &lt;li&gt;technical skills are easy to acquire through practice. My concerns now primarily about an organization - I easily dive into assignments and lose focus to details.&lt;/li&gt;
 &lt;li&gt;today's assignment was very good for practicing CSS - exactly what I needed, spend 4 hours just to style the page.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="system-messages section"&gt;
-&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
-&lt;div class="system-message" id="id1"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 20); &lt;em&gt;&lt;a href="https://al1s.github.io/ru/posts/plan-and-done-for-august-09-2018/#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-Unknown target name: "https://www.codeproject.com/articles/20435/using-c-to-generate-ascii-art-from-an-image&amp;gt;".&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-august-09-2018/</guid><pubDate>Thu, 09 Aug 2018 17:17:31 GMT</pubDate></item><item><title>Plan and done for August-08-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-august-08-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
 &lt;h2&gt;What will I learn today?&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
