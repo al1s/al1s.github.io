@@ -12,7 +12,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="ru/rss.xml">
 <link rel="canonical" href="https://al1s.github.io/">
 <link rel="next" href="index-11.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/plan-and-done-for-august-10-2018/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/plan-and-done-for-august-11-2018/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -73,7 +73,99 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-august-10-2018/" class="u-url">Plan and done for August-10-2018</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-august-11-2018/" class="u-url">Plan and done for August-11-2018</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-august-11-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-08-11T04:57:31-07:00" title="2018-08-11 04:57">2018-08-11 04:57</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<ol class="arabic simple">
+<li>Practicing Javascript at CodeFellow.</li>
+<li>Generation ideas for Code 201 Final projects.</li>
+</ol>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<div class="section" id="idea-for-the-final-project">
+<h3>Idea for the final project.</h3>
+<p>Chrome extension for tracking and presenting user with his activities in the browser.</p>
+<div class="section" id="events-to-track">
+<h4>Events to track:</h4>
+<ul class="simple">
+<li>New tab opened.</li>
+<li>New page loaded (with an url to track).</li>
+<li>Time spent in the current tab (all user events are tracked with attach to the 1st level domain).</li>
+<li>User clicked in the current tab.</li>
+<li>User typed in the current tab.</li>
+<li>Tab switched.</li>
+<li>User followed a link to a new domain.</li>
+</ul>
+</div>
+<div class="section" id="time-scope">
+<h4>Time scope</h4>
+<p>The last 7 days.</p>
+</div>
+<div class="section" id="domain-scope">
+<h4>Domain scope</h4>
+<p>All domains.</p>
+</div>
+<div class="section" id="final-result">
+<h4>Final result</h4>
+<p>2 diagrams showing top 20 domain names:</p>
+<ul class="simple">
+<li>for the time user spent on each during the last 7 days.</li>
+<li>for the user clicks on each during the last 7 days.</li>
+</ul>
+</div>
+<div class="section" id="data-format">
+<h4>Data format:</h4>
+<pre class="code javascript"><a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-1"></a><span class="kd">var</span> <span class="nx">domainLastVisited</span> <span class="o">=</span> <span class="p">{</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-2"></a>  <span class="nx">lastDateVisited</span><span class="o">:</span> <span class="nx">domain</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-3"></a><span class="p">};</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-4"></a>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-5"></a><span class="kd">var</span> <span class="nx">trackingData</span> <span class="o">=</span> <span class="p">{</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-6"></a>  <span class="p">[</span><span class="nx">domain</span><span class="p">]</span><span class="o">:</span> <span class="p">{</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-7"></a>    <span class="nx">timeSpent</span><span class="o">:</span> <span class="p">[</span><span class="nx">seconds</span><span class="p">],</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-8"></a>    <span class="nx">clicks</span><span class="o">:</span> <span class="p">[</span><span class="nx">count</span><span class="p">],</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-9"></a>    <span class="nx">visits</span><span class="o">:</span> <span class="p">[</span><span class="nx">time</span><span class="p">],</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-10"></a>  <span class="p">}</span>
+<a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-11"></a><span class="p">}</span>
+</pre>
+</div>
+<div class="section" id="user-stories">
+<h4>User stories:</h4>
+<p>As a user, I want to have information of my internet activities to understand where I spend most of the time browsing.</p>
+<p>As a user, I want to know what attracted me the most during the past week.</p>
+<p>As a user, I want to know which sites I've attended the most.</p>
+<p>As a user, I want to track my activities in Chrome for the week: the sites I spent the most of the time and those which requires me to interact the most.</p>
+<p>As a user I want all tracking information to be presented to me in forms of beautiful diagrams.</p>
+<p>As a dev, I want to get an experience of development of browser extensions.</p>
+<p>As a dev, I want to work with data presentation tools.</p>
+<p>As a dev, I want to work with available in-browser data storage techniques.</p>
+</div>
+<div class="section" id="sources">
+<h4>Sources:</h4>
+<ol class="arabic simple">
+<li>
+<a class="reference external" href="https://www.google.com/search?q=track+user+actions+in+browser+tabs+by+extension+site:stackoverflow.com&amp;safe=active&amp;client=ms-android-google&amp;prmd=nisv&amp;sa=X&amp;ved=2ahUKEwjM5IL77OTcAhUo4IMKHY5SAXwQrQIoAjACegQICRAG&amp;biw=412&amp;bih=604&amp;dpr=2.63">Google</a> it.</li>
+<li>
+<a class="reference external" href="https://stackoverflow.com/q/36243128">Tracking</a> user activity.</li>
+<li>Tab is <a class="reference external" href="https://stackoverflow.com/a/6184276">focused</a>.</li>
+<li>extensions on my machine: ~/.config/google-chrome/Default/Extensions/</li>
+<li>
+<a class="reference external" href="https://docs.telerik.com/kendo-ui/controls/data-management/grid/how-to/Editing/grid-localstorage-crud">CRUD</a> with local storage.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-august-10-2018/" class="u-url">Plan and done for August-10-2018</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 alstof
@@ -305,40 +397,6 @@
 <li>Q: как нам протянуть полгода на один доход с учетом необходимости daycare для Али и няни на после школы и до нашего приезда с работы для всех детей. A: самый очевидный ответ вовлечение их бабушки, которая как раз гостит у нас. Она собиралась пробыть здесь до конца августа. Соответственно, хотелось бы ее видеть до конца декабря. Препятствия: она - инсулиновый диабетик с запасом инсулина до конца лета, плюс у нее периодически случается давление. Решение - привезти инсулин и таблетки из России: купить можно без рецепта, TSA пропускает инсулин и все необходимые реквизиты диабетика. Вопрос - кто сможет ввезти это из России; как это купить в России.</li>
 <li>Q: Are a mentor and a department in the company where on-the-job training will take place already assigned or they will be assigned down the road, and how it happens - is it set during discussions involving me and different departments?</li>
 </ul>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-july-15-2018/" class="u-url">Plan and done for July-15-2018</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                alstof
-            </span></p>
-            <p class="dateline"><a href="posts/plan-and-done-for-july-15-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-07-15T10:43:31-07:00" title="2018-07-15 10:43">2018-07-15 10:43</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<div class="section" id="what-will-i-learn-today">
-<h2>What will I learn today?</h2>
-<p>Data visualization project: build US map with top economic activities for each state.  I want to get data spread over all industry groups for each state to see what are economy drivers for each state.</p>
-</div>
-<div class="section" id="done">
-<h2>Done</h2>
-<div class="section" id="challenges">
-<h3>Challenges</h3>
-<p>#. Unable to get much data from API in the way I want.
-#.</p>
-</div>
-<div class="section" id="solutions">
-<h3>Solutions</h3>
-<ol class="arabic">
-<li>
-<p class="first">There are too much data I want to retrieve from <a class="reference external" href="https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/cbp-api.html">Census bureau API</a> - it's ok to get 200 rows, but if I want to break it down to more grained data - the API shuts down. The reason I want more data - its current aggregation seems weird for my goals. For example - two industries (5415 - Computer Systems Design and Related Services is not in 51 - Information) belonging in my opinion to one group are actually in different.</p>
-<p>One way to solve it - prefetch all data to local storage and work with it. Then what is the best way to do it? Or maybe it's better to pretend that I have one, and just work with data as if I have the API for it.</p>
-</li>
-<li>
-</li>
-</ol>
-</div>
-</div>
 </div>
     </div>
     </article>
