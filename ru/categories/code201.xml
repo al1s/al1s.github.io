@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learn another day (Записи о Code201)</title><link>https://al1s.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="https://al1s.github.io/ru/categories/code201.xml"></atom:link><language>ru</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Sat, 11 Aug 2018 13:07:36 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for August-11-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-august-11-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Learn another day (Записи о Code201)</title><link>https://al1s.github.io/</link><description></description><atom:link type="application/rss+xml" href="https://al1s.github.io/ru/categories/code201.xml" rel="self"></atom:link><language>ru</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Tue, 14 Aug 2018 00:52:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for August-13-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-august-13-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
+&lt;h2&gt;What will I learn today?&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Practicing Javascript, git and workflow at CodeFellow.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class="section" id="done"&gt;
+&lt;h2&gt;Done&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/al1s/busMall/pull/1"&gt;Result&lt;/a&gt; of the day.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;I need more practice in building an architecture of an app. Now it's hard to decide - which way to choose to implement requirements. I hope I will eventually find time to dive deeper into design patterns.&lt;/li&gt;
+&lt;li&gt;Built a &lt;a class="reference external" href="https://gist.github.com/al1s/ef70628b0af97888f5b210a2aceb22d7"&gt;little helper&lt;/a&gt; to have a picture of what's going on with my assignments in Canvas - I don't want to lose points just because for two days I thought I already submitted everything. The helper works only in the dev console in the tab where Canvas already open.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-august-13-2018/</guid><pubDate>Tue, 14 Aug 2018 00:43:31 GMT</pubDate></item><item><title>Plan and done for August-11-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-august-11-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
 &lt;h2&gt;What will I learn today?&lt;/h2&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Practicing Javascript at CodeFellow.&lt;/li&gt;
