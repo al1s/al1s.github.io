@@ -27,11 +27,11 @@
  </url>
  <url>
   <loc>https://al1s.github.io/archive.html</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/</loc>
-  <lastmod>2018-08-04T00:19:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/apprenti/</loc>
@@ -48,6 +48,10 @@
  <url>
   <loc>https://al1s.github.io/categories/d3/</loc>
   <lastmod>2018-06-28T21:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/categories/final-project/</loc>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/freecodecamp/</loc>
@@ -111,7 +115,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/index-11.html</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-2.html</loc>
@@ -364,6 +368,10 @@
  <url>
   <loc>https://al1s.github.io/posts/plan-and-done-for-august-16-2018/</loc>
   <lastmod>2018-08-17T01:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-august-17-2018/</loc>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/posts/plan-and-done-for-august-21-2017/</loc>
@@ -647,11 +655,11 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/archive.html</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/</loc>
-  <lastmod>2018-08-04T00:19:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/apprenti/</loc>
@@ -668,6 +676,10 @@
  <url>
   <loc>https://al1s.github.io/ru/categories/d3/</loc>
   <lastmod>2018-06-28T21:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/categories/final-project/</loc>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/freecodecamp/</loc>
@@ -731,7 +743,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-11.html</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-2.html</loc>
@@ -1034,6 +1046,11 @@
   <loc>https://al1s.github.io/ru/posts/plan-and-done-for-august-16-2018/</loc>
   <lastmod>2018-08-17T01:17:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-august-16-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-august-17-2018/</loc>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-august-17-2018/" />
  </url>
  <url>
   <loc>https://al1s.github.io/ru/posts/plan-and-done-for-august-21-2017/</loc>

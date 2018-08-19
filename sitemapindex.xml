@@ -11,15 +11,19 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/categories/code-fellows.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/categories/code201.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/categories/d3.xml</loc>
   <lastmod>2018-08-04T00:19:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://al1s.github.io/categories/final-project.xml</loc>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/categories/freecodecamp.xml</loc>
@@ -39,7 +43,7 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/categories/js.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/categories/js30.xml</loc>
@@ -67,7 +71,7 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/categories/web-dev.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/galleries/rss.xml</loc>
@@ -75,7 +79,7 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/rss.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/apprenti.xml</loc>
@@ -83,15 +87,19 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/code-fellows.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/code201.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/d3.xml</loc>
   <lastmod>2018-08-04T00:19:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://al1s.github.io/ru/categories/final-project.xml</loc>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/freecodecamp.xml</loc>
@@ -111,7 +119,7 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/js.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/js30.xml</loc>
@@ -139,7 +147,7 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/categories/web-dev.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/galleries/rss.xml</loc>
@@ -147,10 +155,10 @@
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/ru/rss.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://al1s.github.io/sitemap.xml</loc>
-  <lastmod>2018-08-17T01:17:00Z</lastmod>
+  <lastmod>2018-08-19T21:59:00Z</lastmod>
  </sitemap>
 </sitemapindex>
