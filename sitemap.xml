@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://al1s.github.io/</loc>
-  <lastmod>2018-08-10T03:00:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/2015/</loc>
@@ -27,11 +27,11 @@
  </url>
  <url>
   <loc>https://al1s.github.io/archive.html</loc>
-  <lastmod>2018-08-19T21:59:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/</loc>
-  <lastmod>2018-08-19T21:59:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/apprenti/</loc>
@@ -98,6 +98,10 @@
   <lastmod>2018-06-28T21:37:00Z</lastmod>
  </url>
  <url>
+  <loc>https://al1s.github.io/categories/software-development/</loc>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://al1s.github.io/categories/web-dev/</loc>
   <lastmod>2018-06-28T21:37:00Z</lastmod>
  </url>
@@ -107,47 +111,51 @@
  </url>
  <url>
   <loc>https://al1s.github.io/index-1.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-10.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-11.html</loc>
-  <lastmod>2018-08-19T21:59:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/index-12.html</loc>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-2.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-3.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-4.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-5.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-6.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-7.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-8.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-9.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/listings/</loc>
@@ -224,6 +232,10 @@
  <url>
   <loc>https://al1s.github.io/posts/my-english-study-path-nov-07-2015/</loc>
   <lastmod>2018-06-28T21:37:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/pitch/</loc>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/posts/plan-and-done-for-apr-01-2017/</loc>
@@ -635,7 +647,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/</loc>
-  <lastmod>2018-08-10T03:00:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/2015/</loc>
@@ -655,11 +667,11 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/archive.html</loc>
-  <lastmod>2018-08-19T21:59:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/</loc>
-  <lastmod>2018-08-19T21:59:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/apprenti/</loc>
@@ -726,6 +738,10 @@
   <lastmod>2018-06-28T21:37:00Z</lastmod>
  </url>
  <url>
+  <loc>https://al1s.github.io/ru/categories/software-development/</loc>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://al1s.github.io/ru/categories/web-dev/</loc>
   <lastmod>2018-06-28T21:37:00Z</lastmod>
  </url>
@@ -735,47 +751,51 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-1.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-10.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-11.html</loc>
-  <lastmod>2018-08-19T21:59:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/index-12.html</loc>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-2.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-3.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-4.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-5.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-6.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-7.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-8.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-9.html</loc>
-  <lastmod>2018-08-16T00:16:00Z</lastmod>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/posts/Anova_vs_Linear_regression/</loc>
@@ -866,6 +886,11 @@
   <loc>https://al1s.github.io/ru/posts/my-english-study-path-nov-07-2015/</loc>
   <lastmod>2018-06-28T21:37:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/my-english-study-path-nov-07-2015/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/pitch/</loc>
+  <lastmod>2018-08-24T13:25:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/pitch/" />
  </url>
  <url>
   <loc>https://al1s.github.io/ru/posts/plan-and-done-for-apr-01-2017/</loc>
