@@ -15,6 +15,6 @@ For a long time, I've been a part of the operation team for a big payment servic
 
 And all this integrated experience is a base and a source for my future career which will eventually lead me to the role of a system engineer or software architect. 
 
-I'm adventurous by nature and consider risk and surprises as challenges I was given to learn and become better. The journey I've started in the beginning of August here in Code Fellows is fun and I'm excited to see what is the next chapter.
+I'm adventurous by nature and consider risk and surprises as challenges I was given to learn and become better. The journey I've started at the beginning of August here in Code Fellows is fun and I'm excited to see what is the next chapter.
 
 I want to thank you, Aaron and Allisa, for being supportive and open to discussion, ready to dive into the project and share your ideas about functionality and user interface. One of the stretch goals was to create a user-friendly app so UX was among the active parts that shape the look and feel for the app.
