@@ -27,15 +27,19 @@
  </url>
  <url>
   <loc>https://al1s.github.io/archive.html</loc>
-  <lastmod>2018-08-24T16:26:00Z</lastmod>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/</loc>
-  <lastmod>2018-08-24T13:25:00Z</lastmod>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/apprenti/</loc>
   <lastmod>2018-08-04T00:19:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/categories/c/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/code-fellows/</loc>
@@ -123,7 +127,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/index-12.html</loc>
-  <lastmod>2018-08-24T16:26:00Z</lastmod>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-2.html</loc>
@@ -626,6 +630,38 @@
   <lastmod>2018-06-28T21:37:00Z</lastmod>
  </url>
  <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-12-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-13-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-14-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-17-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-18-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-19-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-20-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-21-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://al1s.github.io/posts/plan-and-done-for-september-01-2017/</loc>
   <lastmod>2018-06-28T21:37:00Z</lastmod>
  </url>
@@ -671,15 +707,19 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/archive.html</loc>
-  <lastmod>2018-08-24T16:26:00Z</lastmod>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/</loc>
-  <lastmod>2018-08-24T13:25:00Z</lastmod>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/apprenti/</loc>
   <lastmod>2018-08-04T00:19:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/categories/c/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/code-fellows/</loc>
@@ -767,7 +807,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-12.html</loc>
-  <lastmod>2018-08-24T16:26:00Z</lastmod>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-2.html</loc>
@@ -1380,6 +1420,46 @@
   <loc>https://al1s.github.io/ru/posts/plan-and-done-for-october-22-2017/</loc>
   <lastmod>2018-06-28T21:37:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-october-22-2017/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-12-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-12-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-13-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-13-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-14-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-14-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-17-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-17-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-18-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-18-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-19-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-19-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-20-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-20-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-21-2018/</loc>
+  <lastmod>2018-09-25T12:29:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-21-2018/" />
  </url>
  <url>
   <loc>https://al1s.github.io/ru/posts/plan-and-done-for-september-01-2017/</loc>

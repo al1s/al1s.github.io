@@ -1,5 +1,390 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Learn another day</title><link>https://al1s.github.io/</link><description>Notes collection</description><atom:link href="https://al1s.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Fri, 24 Aug 2018 16:32:03 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for Aug-24-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-aug-24-2018/</link><dc:creator>alstof</dc:creator><description>&lt;ol class="arabic"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learn another day</title><link>https://al1s.github.io/</link><description>Notes collection</description><atom:link type="application/rss+xml" href="https://al1s.github.io/rss.xml" rel="self"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Tue, 25 Sep 2018 12:29:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for Sep-21-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-21-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
+&lt;p&gt;Title underline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Retro about getting data by Express server from external API (Google Books)
+____________________________________________________
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Practiced in debugging Express &amp;lt;=&amp;gt; Postgres interaction;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h2&gt;What did we learn?&lt;/h2&gt;
+&lt;p&gt;Craft your database schema carefully not to be bitten by poor design later: we created the table with the unique constraint on author column and today were debugging insertion error for 20 minutes before found the reason why we can't add another book.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Spend more time on styling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Best practices for creating a robust server with Node/Express/DB with input validation and unified error handling. Current state looks fragile.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-21-2018/</guid><pubDate>Fri, 21 Sep 2018 20:06:14 GMT</pubDate></item><item><title>Plan and done for Sep-20-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-20-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
+&lt;p&gt;Title underline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Retro about using `validator.js &amp;lt;https://github.com/chriso/validator.js&amp;gt;`_ for backend Book App project
+____________________________________________________
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Added validation and sanitizing by existing validator for Node.js&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h2&gt;What did we learn?&lt;/h2&gt;
+&lt;p&gt;Practiced using validator.js and handling errors on the server side.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Spent more time on styling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Error handling and best practices in it.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-20-2018/</guid><pubDate>Thu, 20 Sep 2018 18:22:14 GMT</pubDate></item><item><title>Plan and done for Sep-19-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-19-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="c"&gt;
+&lt;h2&gt;C#&lt;/h2&gt;
+&lt;p&gt;I've started practicing basic C# fluency by taking small assessments on CodeWars. The first logistical question I've got - how to setup a test env for C# projects? My steps (based on many sources but primarily on &lt;a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test"&gt;MS dotnet Core guide&lt;/a&gt;) include:&lt;/p&gt;
+&lt;p&gt;Packages to install (with &lt;code&gt;dotnet add package PackageName&lt;/code&gt;):
+* NUnit;
+* NUnit.Console;
+* NUnit.ConsoleRunner;
+* NUnit.Runners;&lt;/p&gt;
+&lt;p&gt;Folders/files setup:
+* start a project: &lt;code&gt;dotnet new console -o "MyAppName"&lt;/code&gt;;
+* initialize a solution &lt;code&gt;cd MyAppName; dotnet new sln&lt;/code&gt;;
+* initialize a main project &lt;code&gt;mkdir ProjectName; cd ProjectName; dotnet new classLib&lt;/code&gt;;
+* add the main project to the solution &lt;code&gt;cd ..; dotnet sln add ./ProjectName/ProjectName.csproj&lt;/code&gt;;
+* initialize a test project &lt;code&gt;mkdir ProjectName.Tests; cd ProjectName.Tests; dotnet new nunit&lt;/code&gt;;
+* add reference to the main project &lt;code&gt;dotnet add reference ../ProjectName/ProjectName.csproj&lt;/code&gt;;
+* add the test project to the solution &lt;code&gt;cd ..; dotnet sln add ./ProjectName.Tests/ProjectName.Tests.csproj&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;VSCode extension - .NET Core Test Explorer&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="retro-about"&gt;
+&lt;h2&gt;Retro about&lt;/h2&gt;
+&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h3&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h3&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 27)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h3&gt;What did we learn?&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h3&gt;What should we do differently next time?&lt;/h3&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 35)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h3&gt;What still puzzles us, or what do we need to learn more about?&lt;/h3&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 39)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>c#</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-19-2018/</guid><pubDate>Wed, 19 Sep 2018 13:10:14 GMT</pubDate></item><item><title>Plan and done for Sep-18-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-18-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;We've moved through the plan step by step and implemented everything that was required. The progress is visible and accomplishment seems tangible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h2&gt;What did we learn?&lt;/h2&gt;
+&lt;p&gt;Use EJS and Express error handling.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Delegate more work to Danul..?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;How to combine rendering on a server with rendering on user-side. I mean - how to add React for example to pages, rendered initially on a server.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-18-2018/</guid><pubDate>Tue, 18 Sep 2018 19:31:14 GMT</pubDate></item><item><title>Plan and done for Sep-17-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-17-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
+&lt;p&gt;Title underline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Retro about attaching Postgresql to our blog engine (JOIN queries and promises)
+____________________________________________________
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Accomplished everything that was possible (except select-option tags) with just CSS. Sprites are still a pain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h2&gt;What did we learn?&lt;/h2&gt;
+&lt;p&gt;Practice CSS and form styling. Learned basic input validation using CSS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Plan first! Then work according to the plan step by step.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;As I've got we can't style &lt;code&gt;option&lt;/code&gt; tag. Adding javascript just to deal with the element's style seems unreasonable.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-17-2018/</guid><pubDate>Mon, 17 Sep 2018 19:47:14 GMT</pubDate></item><item><title>Plan and done for Sep-14-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-14-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
+&lt;p&gt;Title underline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+Retro about attaching Postgresql to our blog engine (JOIN queries and promises)
+____________________________________________________
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;It was a pleasure to work with Jeff - he grasps different concepts and ideas very fast and always ready for more adventures.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h2&gt;What did we learn?&lt;/h2&gt;
+&lt;p&gt;Practiced promises, mentoring.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Work together on a bigger project?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;How to conduct SQL injection on the blog (we didn't sanitize the user input).&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-14-2018/</guid><pubDate>Fri, 14 Sep 2018 20:28:14 GMT</pubDate></item><item><title>Plan and done for Sep-13-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-13-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;We talked a lot. We switched not so often. Databases in conjunction with web-servers are hard to grasp in a short period of time, so my team definitely needed some additional visual explanations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h2&gt;What did we learn?&lt;/h2&gt;
+&lt;p&gt;Practiced to explain things in digestible parts visualizing flows between Browser-WebServer-DB.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Switch more often.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;My team struggles with all the flows and vocabulary about requests/responses/POST/GET.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-13-2018/</guid><pubDate>Thu, 13 Sep 2018 18:56:14 GMT</pubDate></item><item><title>Plan and done for Sep-12-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-sep-12-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 1)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What did we do well, that if we don’t discuss we might forget?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;We accomplished the tasks given in quite short period and find only two things which required some research. One of them - how to implement 404 error handler. The way we have it implemented - by some 'anything else goes' - seems weird 'cause handling errors and routing are different behavior. We need some middleware to implement this handler.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-did-we-learn"&gt;
+&lt;h2&gt;What did we learn?&lt;/h2&gt;
+&lt;p&gt;We've learned that the routes in &lt;cite&gt;express.static&lt;/cite&gt; routes are relative, but in &lt;cite&gt;get&lt;/cite&gt; they are absolute. That's why we need to setup them with &lt;cite&gt;__dirname&lt;/cite&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
+&lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 11)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What should we do differently next time?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Switch between roles earlier, maybe every 15 minutes?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
+&lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 16)&lt;/p&gt;
+&lt;p&gt;Title overline too short.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+==============================
+What still puzzles us, or what do we need to learn more about?
+==============================
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;How to correctly implement 404 handler.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-sep-12-2018/</guid><pubDate>Wed, 12 Sep 2018 18:46:14 GMT</pubDate></item><item><title>Plan and done for Aug-24-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-aug-24-2018/</link><dc:creator>alstof</dc:creator><description>&lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Implement a carousel for pictures.&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;number of libraries and approaches is overwhelming;&lt;/li&gt;
@@ -60,200 +445,4 @@ The user can interact with pages by:&lt;/p&gt;
 &lt;p&gt;For a long time, I've been a part of the operation team for a big payment service provider and troubleshooting became my second nature.&lt;/p&gt;
 &lt;p&gt;And all this integrated experience is a base and a source for my future career which will eventually lead me to the role of a system engineer or software architect.&lt;/p&gt;
 &lt;p&gt;I'm adventurous by nature and consider risk and surprises as challenges I was given to learn and become better. The journey I've started at the beginning of August here in Code Fellows is fun and I'm excited to see what is the next chapter.&lt;/p&gt;
-&lt;p&gt;I want to thank you, Aaron and Allisa, for being supportive and open to discussion, ready to dive into the project and share your ideas about functionality and user interface. One of the stretch goals was to create a user-friendly app so UX was among the active parts that shape the look and feel for the app.&lt;/p&gt;&lt;/div&gt;</description><category>software development</category><guid>https://al1s.github.io/posts/pitch/</guid><pubDate>Fri, 24 Aug 2018 13:19:14 GMT</pubDate></item><item><title>Plan and done for August-17-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-17-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practicing Javascript, git and workflow at CodeFellow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;p&gt;We have another final project idea: it's a site for tourists of Seattle with a main page, where you see only a bunch of photos of different tourists attrations. You can roll it (like a grand spinning wheel) in different ways (swipe on mobile?) depending on your platform and get a random photo. If it's something interesting - the user can click on it and get the more visual and text info about the place with a link to (or an actual) google maps. Another functionality is to let user keep and her notes about the place.&lt;/p&gt;
-&lt;p&gt;Product name: Tourist Roulette&lt;/p&gt;
-&lt;p&gt;User stories:&lt;/p&gt;
-&lt;p&gt;As a user, I want an app to provide me with tourist attractions in Seattle, so that I could choose where I want to go next on route.&lt;/p&gt;
-&lt;p&gt;As a user, I want to be provided with a randomly picked place, so that I always have a choice without any efforts.&lt;/p&gt;
-&lt;p&gt;As a user, I want to have an ability to get some details about a chosen place, so that I could decide whether I'm interested in it or not.&lt;/p&gt;
-&lt;p&gt;As a user, I want to have an ability to get the place position on a map, so that I could plan my trip in details.&lt;/p&gt;
-&lt;p&gt;As a user, I want to have an ability to leave my private notes on attraction I've attended, so that I could later share them with my friends.&lt;/p&gt;
-&lt;p&gt;As a hiring manager, I want to know about the guys who created the app, so that I could assess their skill set and get an expression of their abilities.&lt;/p&gt;
-&lt;p&gt;As a developer, I want to face a challenging task, so that I could feel the pleasure of accomplishment when I would overcome the challenge.&lt;/p&gt;
-&lt;p&gt;## Stretch goals&lt;/p&gt;
-&lt;p&gt;As a user, I want all the features to be presented in a game form, so that it was fun to use the app.&lt;/p&gt;
-&lt;p&gt;As a user, I want to see current weather conditions in Seattle, so that I could plan my trip with all information available.&lt;/p&gt;
-&lt;p&gt;As a user, I want to see how far the chosen place is from my current location, so that I can decide whether to go there or to find something closer.&lt;/p&gt;
-&lt;p&gt;As a user, I want to be able to share my impressions about the place I've visited immediately into all well known platforms, so that I could spend less time to open and publish into each app separately.&lt;/p&gt;
-&lt;p&gt;MVP&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;The user can get a random picture of the tourist's place in Seattle on the main page.&lt;/li&gt;
-&lt;li&gt;The user can click (touch) on it and get the page with a description, additional photos and a google maps link.&lt;/li&gt;
-&lt;li&gt;The user can get&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Stretch goals:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;to make it roll&lt;/li&gt;
-&lt;li&gt;Google map attached to each page about a place.&lt;/li&gt;
-&lt;li&gt;Ability to edit/print/save to file.&lt;/li&gt;
-&lt;li&gt;A scheduler to make a planning and set notifications.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;What should we author?&lt;/p&gt;
-&lt;p&gt;CSS classes hierarchy
-Shareable data objects format&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>Final project</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-17-2018/</guid><pubDate>Fri, 17 Aug 2018 22:30:31 GMT</pubDate></item><item><title>Plan and done for August-16-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-16-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practicing Javascript, git and workflow at CodeFellow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/rh24/seattle-201d43-lab-14/"&gt;Result&lt;/a&gt; of the day.&lt;/p&gt;
-&lt;p&gt;It was a very lazy morning and very intensive afternoon.&lt;/p&gt;
-&lt;p&gt;All transformation stuff adds a little if you don't dig into interesting effects, something like a story unfolding in front of you. Or some esthetically pleasable design effects, which make navigation (read UX) easier. Everything that is beyond these is usually annoying and distractive.&lt;/p&gt;
-&lt;p&gt;Pair programming was hard - primarily because we didn't agree before about data structures to use to transfer data between moving part of an app. It's a good lesson for me.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-16-2018/</guid><pubDate>Fri, 17 Aug 2018 00:59:31 GMT</pubDate></item><item><title>Plan and done for August-15-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-15-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practicing Javascript, git and workflow at CodeFellow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/al1s/busMall/pull/3"&gt;Result&lt;/a&gt; of the day.&lt;/p&gt;
-&lt;p&gt;The challenge was to rebuild objects based on previously saved JSON. I didn't want to modify the constructor, so first I tried to implement an object builder. My object has a function call to initialize one parameter using other. And this call didn't work - parameter undefined. Dropped the idea of a builder and returned to object assigning. And finally, it worked.&lt;/p&gt;
-&lt;p&gt;Another challenge - how to draw two charts on the page. I tried to add a new chart to existing wrapper - unsuccessfully, tried to put it in a separate wrapper - no. Just dropped the idea.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-15-2018/</guid><pubDate>Thu, 16 Aug 2018 00:15:31 GMT</pubDate></item><item><title>Plan and done for August-14-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-14-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practicing Javascript, git and workflow at CodeFellow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/al1s/busMall/pull/2"&gt;Result&lt;/a&gt; of the day.&lt;/p&gt;
-&lt;p&gt;Started the dive into extensions. Built small one to show current assingnmets in Canvas LMS when I'm on the site - such approach doesn't require any additionsl authentication. Right now it prints the result to console. Next step - put the results to either the page or a new tab.&lt;/p&gt;
-&lt;p&gt;Chart.js is good in terms of basic tasks. Lack of documentation, lack of freedom, lack of challenges but a result is on the table after an hour.&lt;/p&gt;
-&lt;p&gt;Our labs are great exercises to grasp the importance of planning and prioritizing of tasks.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-14-2018/</guid><pubDate>Wed, 15 Aug 2018 00:29:31 GMT</pubDate></item><item><title>Plan and done for August-13-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-13-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practicing Javascript, git and workflow at CodeFellow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/al1s/busMall/pull/1"&gt;Result&lt;/a&gt; of the day.&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;I need more practice in building an architecture of an app. Now it's hard to decide - which way to choose to implement requirements. I hope I will eventually find time to dive deeper into design patterns.&lt;/li&gt;
-&lt;li&gt;Built a &lt;a class="reference external" href="https://gist.github.com/al1s/ef70628b0af97888f5b210a2aceb22d7"&gt;little helper&lt;/a&gt; to have a picture of what's going on with my assignments in Canvas - I don't want to lose points just because for two days I thought I already submitted everything. The helper works only in the dev console in the tab where Canvas already open.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-13-2018/</guid><pubDate>Tue, 14 Aug 2018 00:43:31 GMT</pubDate></item><item><title>Plan and done for August-11-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-11-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practicing Javascript at CodeFellow.&lt;/li&gt;
-&lt;li&gt;Generation ideas for Code 201 Final projects.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;div class="section" id="idea-for-the-final-project"&gt;
-&lt;h3&gt;Idea for the final project.&lt;/h3&gt;
-&lt;p&gt;Chrome extension for tracking and presenting user with his activities in the browser.&lt;/p&gt;
-&lt;div class="section" id="events-to-track"&gt;
-&lt;h4&gt;Events to track:&lt;/h4&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;New tab opened.&lt;/li&gt;
-&lt;li&gt;New page loaded (with an url to track).&lt;/li&gt;
-&lt;li&gt;Time spent in the current tab (all user events are tracked with attach to the 1st level domain).&lt;/li&gt;
-&lt;li&gt;User clicked in the current tab.&lt;/li&gt;
-&lt;li&gt;User typed in the current tab.&lt;/li&gt;
-&lt;li&gt;Tab switched.&lt;/li&gt;
-&lt;li&gt;User followed a link to a new domain.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="time-scope"&gt;
-&lt;h4&gt;Time scope&lt;/h4&gt;
-&lt;p&gt;The last 7 days.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="domain-scope"&gt;
-&lt;h4&gt;Domain scope&lt;/h4&gt;
-&lt;p&gt;All domains.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="final-result"&gt;
-&lt;h4&gt;Final result&lt;/h4&gt;
-&lt;p&gt;2 diagrams showing top 20 domain names:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;for the time user spent on each during the last 7 days.&lt;/li&gt;
-&lt;li&gt;for the user clicks on each during the last 7 days.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="data-format"&gt;
-&lt;h4&gt;Data format:&lt;/h4&gt;
-&lt;pre class="code javascript"&gt;&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-1"&gt;&lt;/a&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;domainLastVisited&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-2"&gt;&lt;/a&gt;  &lt;span class="nx"&gt;lastDateVisited&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;domain&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-3"&gt;&lt;/a&gt;&lt;span class="p"&gt;};&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-4"&gt;&lt;/a&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-5"&gt;&lt;/a&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;trackingData&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-6"&gt;&lt;/a&gt;  &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;domain&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-7"&gt;&lt;/a&gt;    &lt;span class="nx"&gt;timeSpent&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;seconds&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-8"&gt;&lt;/a&gt;    &lt;span class="nx"&gt;clicks&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;count&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-9"&gt;&lt;/a&gt;    &lt;span class="nx"&gt;visits&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-10"&gt;&lt;/a&gt;  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_8405ba58237e4c50a367c6c9c5d18495-11"&gt;&lt;/a&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="section" id="user-stories"&gt;
-&lt;h4&gt;User stories:&lt;/h4&gt;
-&lt;p&gt;As a user, I want to have information of my internet activities to understand where I spend most of the time browsing.&lt;/p&gt;
-&lt;p&gt;As a user, I want to know what attracted me the most during the past week.&lt;/p&gt;
-&lt;p&gt;As a user, I want to know which sites I've attended the most.&lt;/p&gt;
-&lt;p&gt;As a user, I want to track my activities in Chrome for the week: the sites I spent the most of the time and those which requires me to interact the most.&lt;/p&gt;
-&lt;p&gt;As a user I want all tracking information to be presented to me in forms of beautiful diagrams.&lt;/p&gt;
-&lt;p&gt;As a dev, I want to get an experience of development of browser extensions.&lt;/p&gt;
-&lt;p&gt;As a dev, I want to work with data presentation tools.&lt;/p&gt;
-&lt;p&gt;As a dev, I want to work with available in-browser data storage techniques.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="sources"&gt;
-&lt;h4&gt;Sources:&lt;/h4&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://www.google.com/search?q=track+user+actions+in+browser+tabs+by+extension+site:stackoverflow.com&amp;amp;safe=active&amp;amp;client=ms-android-google&amp;amp;prmd=nisv&amp;amp;sa=X&amp;amp;ved=2ahUKEwjM5IL77OTcAhUo4IMKHY5SAXwQrQIoAjACegQICRAG&amp;amp;biw=412&amp;amp;bih=604&amp;amp;dpr=2.63"&gt;Google&lt;/a&gt; it.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://stackoverflow.com/q/36243128"&gt;Tracking&lt;/a&gt; user activity.&lt;/li&gt;
-&lt;li&gt;Tab is &lt;a class="reference external" href="https://stackoverflow.com/a/6184276"&gt;focused&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;extensions on my machine: ~/.config/google-chrome/Default/Extensions/&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://docs.telerik.com/kendo-ui/controls/data-management/grid/how-to/Editing/grid-localstorage-crud"&gt;CRUD&lt;/a&gt; with local storage.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-11-2018/</guid><pubDate>Sat, 11 Aug 2018 11:57:31 GMT</pubDate></item><item><title>Plan and done for August-10-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-10-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practicing Javascript at CodeFellow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/trecain/chocolate-pizza"&gt;Result&lt;/a&gt; of the day.&lt;/p&gt;
-&lt;p&gt;Today I learned:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;I can make a layout for an easy landing page without JS in 3 hours. It's a progress, but such CSS sprints still make me exhausted.&lt;/li&gt;
-&lt;li&gt;Rules approved by team members are the most important thing in a teamwork or you risk spend another hour/day/week trying to unify the code base.&lt;/li&gt;
-&lt;li&gt;I don't like solving code problems in mind when it's more about untangling code, than about grasping some algorithm meaning or a business rule.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-10-2018/</guid><pubDate>Sat, 11 Aug 2018 04:07:31 GMT</pubDate></item><item><title>Plan and done for August-09-2018</title><link>https://al1s.github.io/posts/plan-and-done-for-august-09-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-will-i-learn-today"&gt;
-&lt;h2&gt;What will I learn today?&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Practice Javascript at CodeFellow.&lt;/li&gt;
-&lt;li&gt;Choose the idea for the Code201 final project.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="done"&gt;
-&lt;h2&gt;Done&lt;/h2&gt;
-&lt;p&gt;Today I learned:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://github.com/al1s/SalmonCookies/pull/22"&gt;Results&lt;/a&gt; of the day -&lt;/p&gt;
-&lt;p&gt;My thoughts about the final project:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;first idea was to built a calendar with all required assignments from Canvas which are not finished yet sorted by submission date. But, first, it uses external API and it's forbidden, and second Canvas has tangled API which I don't want to dive in.&lt;/li&gt;
-&lt;li&gt;second thought - to build HTML to ASCII converter. Just for fun. It will require two steps: convert HTML into JPG, convert JPG into ASCII. I've found a &lt;a class="reference external" href="http://html2canvas.hertzen.com/"&gt;solution&lt;/a&gt; for the first task in a form of an external library. And &lt;a class="reference external" href="https://www.codeproject.com/Articles/20435/Using-C-To-Generate-ASCII-Art-From-An-Image"&gt;here&lt;/a&gt; is an explanation of converting pictures into ASCII art with a C# example. The idea is exciting but totally useless.&lt;/li&gt;
-&lt;li&gt;technical skills are easy to acquire through practice. My concerns now primarily about an organization - I easily dive into assignments and lose focus to details.&lt;/li&gt;
-&lt;li&gt;today's assignment was very good for practicing CSS - exactly what I needed, spend 4 hours just to style the page.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Code201</category><category>Code Fellows</category><category>JS</category><category>web-dev</category><guid>https://al1s.github.io/posts/plan-and-done-for-august-09-2018/</guid><pubDate>Thu, 09 Aug 2018 17:17:31 GMT</pubDate></item></channel></rss>
+&lt;p&gt;I want to thank you, Aaron and Allisa, for being supportive and open to discussion, ready to dive into the project and share your ideas about functionality and user interface. One of the stretch goals was to create a user-friendly app so UX was among the active parts that shape the look and feel for the app.&lt;/p&gt;&lt;/div&gt;</description><category>software development</category><guid>https://al1s.github.io/posts/pitch/</guid><pubDate>Fri, 24 Aug 2018 13:19:14 GMT</pubDate></item></channel></rss>
