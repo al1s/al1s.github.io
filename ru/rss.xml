@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Learn another day</title><link>https://al1s.github.io/</link><description>Notes collection</description><atom:link type="application/rss+xml" href="https://al1s.github.io/ru/rss.xml" rel="self"></atom:link><language>ru</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Tue, 25 Sep 2018 12:29:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for Sep-21-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-21-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
-&lt;p&gt;Title underline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-Retro about getting data by Express server from external API (Google Books)
-____________________________________________________
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Learn another day</title><link>https://al1s.github.io/</link><description>Notes collection</description><atom:link rel="self" type="application/rss+xml" href="https://al1s.github.io/ru/rss.xml"></atom:link><language>ru</language><copyright>Contents © 2018 &lt;a href="mailto:alstof@gmail.com"&gt;alstof&lt;/a&gt; </copyright><lastBuildDate>Tue, 25 Sep 2018 12:40:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Plan and done for Sep-21-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-21-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Practiced in debugging Express &amp;lt;=&amp;gt; Postgres interaction;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
@@ -26,48 +9,13 @@ What did we do well, that if we don’t discuss we might forget?
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Spend more time on styling.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Best practices for creating a robust server with Node/Express/DB with input validation and unified error handling. Current state looks fragile.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-21-2018/</guid><pubDate>Fri, 21 Sep 2018 20:06:14 GMT</pubDate></item><item><title>Plan and done for Sep-20-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-20-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
-&lt;p&gt;Title underline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-Retro about using `validator.js &amp;lt;https://github.com/chriso/validator.js&amp;gt;`_ for backend Book App project
-____________________________________________________
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-21-2018/</guid><pubDate>Fri, 21 Sep 2018 20:06:14 GMT</pubDate></item><item><title>Plan and done for Sep-20-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-20-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Added validation and sanitizing by existing validator for Node.js&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
@@ -76,99 +24,49 @@ What did we do well, that if we don’t discuss we might forget?
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Spent more time on styling.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Error handling and best practices in it.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-20-2018/</guid><pubDate>Thu, 20 Sep 2018 18:22:14 GMT</pubDate></item><item><title>Plan and done for Sep-19-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-19-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="c"&gt;
 &lt;h2&gt;C#&lt;/h2&gt;
 &lt;p&gt;I've started practicing basic C# fluency by taking small assessments on CodeWars. The first logistical question I've got - how to setup a test env for C# projects? My steps (based on many sources but primarily on &lt;a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test"&gt;MS dotnet Core guide&lt;/a&gt;) include:&lt;/p&gt;
-&lt;p&gt;Packages to install (with &lt;code&gt;dotnet add package PackageName&lt;/code&gt;):
-* NUnit;
-* NUnit.Console;
-* NUnit.ConsoleRunner;
-* NUnit.Runners;&lt;/p&gt;
-&lt;p&gt;Folders/files setup:
-* start a project: &lt;code&gt;dotnet new console -o "MyAppName"&lt;/code&gt;;
-* initialize a solution &lt;code&gt;cd MyAppName; dotnet new sln&lt;/code&gt;;
-* initialize a main project &lt;code&gt;mkdir ProjectName; cd ProjectName; dotnet new classLib&lt;/code&gt;;
-* add the main project to the solution &lt;code&gt;cd ..; dotnet sln add ./ProjectName/ProjectName.csproj&lt;/code&gt;;
-* initialize a test project &lt;code&gt;mkdir ProjectName.Tests; cd ProjectName.Tests; dotnet new nunit&lt;/code&gt;;
-* add reference to the main project &lt;code&gt;dotnet add reference ../ProjectName/ProjectName.csproj&lt;/code&gt;;
-* add the test project to the solution &lt;code&gt;cd ..; dotnet sln add ./ProjectName.Tests/ProjectName.Tests.csproj&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;Packages to install (with &lt;code&gt;dotnet add package PackageName&lt;/code&gt;):&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;NUnit;&lt;/li&gt;
+&lt;li&gt;NUnit.Console;&lt;/li&gt;
+&lt;li&gt;NUnit.ConsoleRunner;&lt;/li&gt;
+&lt;li&gt;NUnit.Runners;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Folders/files setup:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;start a project: &lt;code&gt;dotnet new console -o "MyAppName"&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;initialize a solution &lt;code&gt;cd MyAppName; dotnet new sln&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;initialize a main project &lt;code&gt;mkdir ProjectName; cd ProjectName; dotnet new classLib&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;add the main project to the solution &lt;code&gt;cd ..; dotnet sln add ./ProjectName/ProjectName.csproj&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;initialize a test project &lt;code&gt;mkdir ProjectName.Tests; cd ProjectName.Tests; dotnet new nunit&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;add reference to the main project &lt;code&gt;dotnet add reference ../ProjectName/ProjectName.csproj&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;add the test project to the solution &lt;code&gt;cd ..; dotnet sln add ./ProjectName.Tests/ProjectName.Tests.csproj&lt;/code&gt;;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;VSCode extension - .NET Core Test Explorer&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="retro-about"&gt;
 &lt;h2&gt;Retro about&lt;/h2&gt;
 &lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h3&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h3&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 27)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
 &lt;h3&gt;What did we learn?&lt;/h3&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h3&gt;What should we do differently next time?&lt;/h3&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 35)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h3&gt;What still puzzles us, or what do we need to learn more about?&lt;/h3&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 39)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-19-2018/</guid><pubDate>Wed, 19 Sep 2018 13:10:14 GMT</pubDate></item><item><title>Plan and done for Sep-18-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-18-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;We've moved through the plan step by step and implemented everything that was required. The progress is visible and accomplishment seems tangible.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
@@ -177,48 +75,13 @@ What did we do well, that if we don’t discuss we might forget?
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Delegate more work to Danul..?&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;How to combine rendering on a server with rendering on user-side. I mean - how to add React for example to pages, rendered initially on a server.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-18-2018/</guid><pubDate>Tue, 18 Sep 2018 19:31:14 GMT</pubDate></item><item><title>Plan and done for Sep-17-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-17-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
-&lt;p&gt;Title underline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-Retro about attaching Postgresql to our blog engine (JOIN queries and promises)
-____________________________________________________
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-18-2018/</guid><pubDate>Tue, 18 Sep 2018 19:31:14 GMT</pubDate></item><item><title>Plan and done for Sep-17-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-17-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Accomplished everything that was possible (except select-option tags) with just CSS. Sprites are still a pain.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
@@ -227,48 +90,13 @@ What did we do well, that if we don’t discuss we might forget?
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Plan first! Then work according to the plan step by step.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;As I've got we can't style &lt;code&gt;option&lt;/code&gt; tag. Adding javascript just to deal with the element's style seems unreasonable.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-17-2018/</guid><pubDate>Mon, 17 Sep 2018 19:47:14 GMT</pubDate></item><item><title>Plan and done for Sep-14-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-14-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 2)&lt;/p&gt;
-&lt;p&gt;Title underline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-Retro about attaching Postgresql to our blog engine (JOIN queries and promises)
-____________________________________________________
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-17-2018/</guid><pubDate>Mon, 17 Sep 2018 19:47:14 GMT</pubDate></item><item><title>Plan and done for Sep-14-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-14-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;It was a pleasure to work with Jeff - he grasps different concepts and ideas very fast and always ready for more adventures.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
@@ -277,40 +105,13 @@ What did we do well, that if we don’t discuss we might forget?
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Work together on a bigger project?&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;How to conduct SQL injection on the blog (we didn't sanitize the user input).&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-14-2018/</guid><pubDate>Fri, 14 Sep 2018 20:28:14 GMT</pubDate></item><item><title>Plan and done for Sep-13-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-13-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 4)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;We talked a lot. We switched not so often. Databases in conjunction with web-servers are hard to grasp in a short period of time, so my team definitely needed some additional visual explanations.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
@@ -319,40 +120,13 @@ What did we do well, that if we don’t discuss we might forget?
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 14)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Switch more often.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 19)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;My team struggles with all the flows and vocabulary about requests/responses/POST/GET.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-13-2018/</guid><pubDate>Thu, 13 Sep 2018 18:56:14 GMT</pubDate></item><item><title>Plan and done for Sep-12-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-sep-12-2018/</link><dc:creator>alstof</dc:creator><description>&lt;div&gt;&lt;div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget"&gt;
 &lt;h2&gt;What did we do well, that if we don’t discuss we might forget?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 1)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;We accomplished the tasks given in quite short period and find only two things which required some research. One of them - how to implement 404 error handler. The way we have it implemented - by some 'anything else goes' - seems weird 'cause handling errors and routing are different behavior. We need some middleware to implement this handler.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-did-we-learn"&gt;
@@ -361,28 +135,10 @@ What did we do well, that if we don’t discuss we might forget?
 &lt;/div&gt;
 &lt;div class="section" id="what-should-we-do-differently-next-time"&gt;
 &lt;h2&gt;What should we do differently next time?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 11)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What should we do differently next time?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;Switch between roles earlier, maybe every 15 minutes?&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about"&gt;
 &lt;h2&gt;What still puzzles us, or what do we need to learn more about?&lt;/h2&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 16)&lt;/p&gt;
-&lt;p&gt;Title overline too short.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-&lt;/pre&gt;
-&lt;/div&gt;
 &lt;p&gt;How to correctly implement 404 handler.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;</description><guid>https://al1s.github.io/ru/posts/plan-and-done-for-sep-12-2018/</guid><pubDate>Wed, 12 Sep 2018 18:46:14 GMT</pubDate></item><item><title>Plan and done for Aug-24-2018</title><link>https://al1s.github.io/ru/posts/plan-and-done-for-aug-24-2018/</link><dc:creator>alstof</dc:creator><description>&lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Implement a carousel for pictures.&lt;/p&gt;

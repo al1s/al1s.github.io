@@ -13,12 +13,14 @@ __
 I've started practicing basic C# fluency by taking small assessments on CodeWars. The first logistical question I've got - how to setup a test env for C# projects? My steps (based on many sources but primarily on `MS dotnet Core guide <https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test>`_) include:
 
 Packages to install (with :code:`dotnet add package PackageName`):
+
 * NUnit;
 * NUnit.Console;
 * NUnit.ConsoleRunner;
 * NUnit.Runners;
 
 Folders/files setup:
+
 * start a project: :code:`dotnet new console -o "MyAppName"`;
 * initialize a solution :code:`cd MyAppName; dotnet new sln`;
 * initialize a main project :code:`mkdir ProjectName; cd ProjectName; dotnet new classLib`;
@@ -33,20 +35,20 @@ VSCode extension - .NET Core Test Explorer
 Retro about 
 ____________________________________________________
 
-==============================
+================================================================
 What did we do well, that if we don’t discuss we might forget?
-==============================
+================================================================
 
 ==============================
 What did we learn?
 ==============================
 
-==============================
+================================================================
 What should we do differently next time?
-==============================
+================================================================
 
-==============================
+================================================================
 What still puzzles us, or what do we need to learn more about?
-==============================
+================================================================
 
 

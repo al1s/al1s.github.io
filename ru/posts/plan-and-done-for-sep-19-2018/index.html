@@ -99,61 +99,38 @@ I've started practicing basic C# fluency by taking small assessments on CodeWars
 <div class="section" id="c">
 <h2>C#</h2>
 <p>I've started practicing basic C# fluency by taking small assessments on CodeWars. The first logistical question I've got - how to setup a test env for C# projects? My steps (based on many sources but primarily on <a class="reference external" href="https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test">MS dotnet Core guide</a>) include:</p>
-<p>Packages to install (with <code>dotnet add package PackageName</code>):
-* NUnit;
-* NUnit.Console;
-* NUnit.ConsoleRunner;
-* NUnit.Runners;</p>
-<p>Folders/files setup:
-* start a project: <code>dotnet new console -o "MyAppName"</code>;
-* initialize a solution <code>cd MyAppName; dotnet new sln</code>;
-* initialize a main project <code>mkdir ProjectName; cd ProjectName; dotnet new classLib</code>;
-* add the main project to the solution <code>cd ..; dotnet sln add ./ProjectName/ProjectName.csproj</code>;
-* initialize a test project <code>mkdir ProjectName.Tests; cd ProjectName.Tests; dotnet new nunit</code>;
-* add reference to the main project <code>dotnet add reference ../ProjectName/ProjectName.csproj</code>;
-* add the test project to the solution <code>cd ..; dotnet sln add ./ProjectName.Tests/ProjectName.Tests.csproj</code>;</p>
+<p>Packages to install (with <code>dotnet add package PackageName</code>):</p>
+<ul class="simple">
+<li>NUnit;</li>
+<li>NUnit.Console;</li>
+<li>NUnit.ConsoleRunner;</li>
+<li>NUnit.Runners;</li>
+</ul>
+<p>Folders/files setup:</p>
+<ul class="simple">
+<li>start a project: <code>dotnet new console -o "MyAppName"</code>;</li>
+<li>initialize a solution <code>cd MyAppName; dotnet new sln</code>;</li>
+<li>initialize a main project <code>mkdir ProjectName; cd ProjectName; dotnet new classLib</code>;</li>
+<li>add the main project to the solution <code>cd ..; dotnet sln add ./ProjectName/ProjectName.csproj</code>;</li>
+<li>initialize a test project <code>mkdir ProjectName.Tests; cd ProjectName.Tests; dotnet new nunit</code>;</li>
+<li>add reference to the main project <code>dotnet add reference ../ProjectName/ProjectName.csproj</code>;</li>
+<li>add the test project to the solution <code>cd ..; dotnet sln add ./ProjectName.Tests/ProjectName.Tests.csproj</code>;</li>
+</ul>
 <p>VSCode extension - .NET Core Test Explorer</p>
 </div>
 <div class="section" id="retro-about">
 <h2>Retro about</h2>
 <div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget">
 <h3>What did we do well, that if we don’t discuss we might forget?</h3>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 27)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-==============================
-What did we do well, that if we don’t discuss we might forget?
-==============================
-</pre>
-</div>
 </div>
 <div class="section" id="what-did-we-learn">
 <h3>What did we learn?</h3>
 </div>
 <div class="section" id="what-should-we-do-differently-next-time">
 <h3>What should we do differently next time?</h3>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 35)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-==============================
-What should we do differently next time?
-==============================
-</pre>
-</div>
 </div>
 <div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about">
 <h3>What still puzzles us, or what do we need to learn more about?</h3>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 39)</p>
-<p>Title overline too short.</p>
-<pre class="literal-block">
-==============================
-What still puzzles us, or what do we need to learn more about?
-==============================
-</pre>
-</div>
 </div>
 </div>
 </div>
