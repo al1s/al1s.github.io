@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://al1s.github.io/</loc>
-  <lastmod>2018-08-24T13:25:00Z</lastmod>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/2015/</loc>
@@ -27,7 +27,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/archive.html</loc>
-  <lastmod>2018-09-25T12:30:00Z</lastmod>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/categories/</loc>
@@ -127,7 +127,11 @@
  </url>
  <url>
   <loc>https://al1s.github.io/index-12.html</loc>
-  <lastmod>2018-09-25T12:30:00Z</lastmod>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/index-13.html</loc>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/index-2.html</loc>
@@ -662,6 +666,10 @@
   <lastmod>2018-09-25T12:29:00Z</lastmod>
  </url>
  <url>
+  <loc>https://al1s.github.io/posts/plan-and-done-for-sep-28-2018/</loc>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://al1s.github.io/posts/plan-and-done-for-september-01-2017/</loc>
   <lastmod>2018-06-28T21:37:00Z</lastmod>
  </url>
@@ -687,7 +695,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/</loc>
-  <lastmod>2018-08-24T13:25:00Z</lastmod>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/2015/</loc>
@@ -707,7 +715,7 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/archive.html</loc>
-  <lastmod>2018-09-25T12:30:00Z</lastmod>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/categories/</loc>
@@ -807,7 +815,11 @@
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-12.html</loc>
-  <lastmod>2018-09-25T12:30:00Z</lastmod>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/index-13.html</loc>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://al1s.github.io/ru/index-2.html</loc>
@@ -1460,6 +1472,11 @@
   <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-21-2018/</loc>
   <lastmod>2018-09-25T12:29:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-21-2018/" />
+ </url>
+ <url>
+  <loc>https://al1s.github.io/ru/posts/plan-and-done-for-sep-28-2018/</loc>
+  <lastmod>2018-09-28T20:03:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://al1s.github.io/posts/plan-and-done-for-sep-28-2018/" />
  </url>
  <url>
   <loc>https://al1s.github.io/ru/posts/plan-and-done-for-september-01-2017/</loc>
