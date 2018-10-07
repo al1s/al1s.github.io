@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan and done for Oct-06-2018 | Learn another day</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="../../rss.xml">
+<link rel="canonical" href="https://al1s.github.io/ru/posts/plan-and-done-for-oct-06-2018/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="alstof">
+<link rel="prev" href="../plan-and-done-for-oct-04-2018/" title="Plan and done for Oct-04-2018" type="text/html">
+<meta property="og:site_name" content="Learn another day">
+<meta property="og:title" content="Plan and done for Oct-06-2018">
+<meta property="og:url" content="https://al1s.github.io/ru/posts/plan-and-done-for-oct-06-2018/">
+<meta property="og:description" content="What will I learn today?
+Keep solving and submitting CodeWars assignments.
+
+
+Done
+Solved reverse or rotate assignment and the most interesting as always - what is considered as best practice and cleve">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-10-06T11:37:14-07:00">
+<meta property="article:tag" content="c#">
+<link rel="alternate" hreflang="en" href="../../../posts/plan-and-done-for-oct-06-2018/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Перейти к главному содержимому</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Включить навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://al1s.github.io/ru/">
+
+                <span id="blog-title">Learn another day</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" role="navigation" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Архив</a>
+                </li>
+<li>
+<a href="../../categories/">Тэги</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS лента</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="https://al1s.github.io/" rel="alternate" hreflang="en">English</a></li>
+
+                
+                    
+    <li>
+    <a href="index.rst" id="sourcelink">Источник</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Plan and done for Oct-06-2018</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    alstof
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2018-10-06T11:37:14-07:00" itemprop="datePublished" title="2018-10-06 11:37">2018-10-06 11:37</time></a></p>
+            
+        <p class="sourceline"><a href="index.rst" class="sourcelink">Источник</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<p>Keep solving and submitting CodeWars assignments.</p>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<p><a class="reference external" href="http://www.codewars.com/kata/reverse-or-rotate/train/csharp">Solved reverse or rotate</a> assignment and the most interesting as always - what is considered as best practice and clever solution by other members. The <a class="reference external" href="http://www.codewars.com/kata/reviews/56b5b65783df365700000091/groups/578b6a9384ac69f8110000be">give solution</a> is definitely clever and declarative (I strive to be as declarative as I can) and I've learned some stuff from it.</p>
+<ol class="arabic simple">
+<li>Dividing integer by integer in C# you'll get an integer and never a float/double/decimal. No decimal delimiter! Never. No need for <code>Math.round</code> or <code>Math.floor</code>. Short <a class="reference external" href="https://stackoverflow.com/a/10851437">SO explanation</a>.</li>
+<li>There is an <code>Enumerable.Range()</code>. It works almost like <code>range()</code> in Python: <code>string.Join(",", Enumerable.Range(1,5))</code> will produce <cite>"1,2,3,4,5"</cite>. Almost like Python but not exactly because in Python the upper bound isn't included in the result, and we have additional method overload with a third parameter as step for generating the sequence.</li>
+<li>There are two versions of <code>Reverse()</code> method: one is for <code>List</code> collection, another is for objects with <code>IEnumerable</code> implemented. First is in place, second returns <code>IEnumerable</code> compatible. The reasons are historical. For strings we can use both, but the second seems more declarative.</li>
+</ol>
+<pre class="code C#"><a name="rest_code_3f324b54f68047e0ac601d2aaf83030f-1"></a><span class="kt">char</span><span class="p">[]</span> <span class="n">charArray</span> <span class="p">=</span> <span class="n">chunk</span><span class="p">.</span><span class="n">ToCharArray</span><span class="p">();</span>
+<a name="rest_code_3f324b54f68047e0ac601d2aaf83030f-2"></a><span class="n">Array</span><span class="p">.</span><span class="n">Reverse</span><span class="p">(</span> <span class="n">charArray</span>  <span class="p">);</span>
+<a name="rest_code_3f324b54f68047e0ac601d2aaf83030f-3"></a><span class="kt">string</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">(</span> <span class="n">charArray</span>  <span class="p">);</span>
+</pre>
+<pre class="code C#"><a name="rest_code_b0e55f100b6e40df955e6109d11ca9c4-1"></a><span class="kt">string</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">(</span><span class="n">chunk</span><span class="p">.</span><span class="n">Reverse</span><span class="p">().</span><span class="n">ToArray</span><span class="p">());</span>
+</pre>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/c/" rel="tag">c#</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../plan-and-done-for-oct-04-2018/" rel="prev" title="Plan and done for Oct-04-2018">Предыдущая запись</a>
+            </li>
+        </ul></nav></aside></article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2018         <a href="mailto:alstof@gmail.com">alstof</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-ru.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("ru");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

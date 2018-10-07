@@ -12,7 +12,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS (ru)" href="ru/rss.xml">
 <link rel="canonical" href="https://al1s.github.io/">
 <link rel="next" href="index-13.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/plan-and-done-for-oct-04-2018/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/plan-and-done-for-oct-06-2018/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -73,7 +73,37 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-oct-04-2018/" class="u-url">Plan and done for Oct-04-2018</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-oct-06-2018/" class="u-url">Plan and done for Oct-06-2018</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                alstof
+            </span></p>
+            <p class="dateline"><a href="posts/plan-and-done-for-oct-06-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-10-06T11:37:14-07:00" title="2018-10-06 11:37">2018-10-06 11:37</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="section" id="what-will-i-learn-today">
+<h2>What will I learn today?</h2>
+<p>Keep solving and submitting CodeWars assignments.</p>
+</div>
+<div class="section" id="done">
+<h2>Done</h2>
+<p><a class="reference external" href="http://www.codewars.com/kata/reverse-or-rotate/train/csharp">Solved reverse or rotate</a> assignment and the most interesting as always - what is considered as best practice and clever solution by other members. The <a class="reference external" href="http://www.codewars.com/kata/reviews/56b5b65783df365700000091/groups/578b6a9384ac69f8110000be">give solution</a> is definitely clever and declarative (I strive to be as declarative as I can) and I've learned some stuff from it.</p>
+<ol class="arabic simple">
+<li>Dividing integer by integer in C# you'll get an integer and never a float/double/decimal. No decimal delimiter! Never. No need for <code>Math.round</code> or <code>Math.floor</code>. Short <a class="reference external" href="https://stackoverflow.com/a/10851437">SO explanation</a>.</li>
+<li>There is an <code>Enumerable.Range()</code>. It works almost like <code>range()</code> in Python: <code>string.Join(",", Enumerable.Range(1,5))</code> will produce <cite>"1,2,3,4,5"</cite>. Almost like Python but not exactly because in Python the upper bound isn't included in the result, and we have additional method overload with a third parameter as step for generating the sequence.</li>
+<li>There are two versions of <code>Reverse()</code> method: one is for <code>List</code> collection, another is for objects with <code>IEnumerable</code> implemented. First is in place, second returns <code>IEnumerable</code> compatible. The reasons are historical. For strings we can use both, but the second seems more declarative.</li>
+</ol>
+<pre class="code C#"><a name="rest_code_3f324b54f68047e0ac601d2aaf83030f-1"></a><span class="kt">char</span><span class="p">[]</span> <span class="n">charArray</span> <span class="p">=</span> <span class="n">chunk</span><span class="p">.</span><span class="n">ToCharArray</span><span class="p">();</span>
+<a name="rest_code_3f324b54f68047e0ac601d2aaf83030f-2"></a><span class="n">Array</span><span class="p">.</span><span class="n">Reverse</span><span class="p">(</span> <span class="n">charArray</span>  <span class="p">);</span>
+<a name="rest_code_3f324b54f68047e0ac601d2aaf83030f-3"></a><span class="kt">string</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">(</span> <span class="n">charArray</span>  <span class="p">);</span>
+</pre>
+<pre class="code C#"><a name="rest_code_b0e55f100b6e40df955e6109d11ca9c4-1"></a><span class="kt">string</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">(</span><span class="n">chunk</span><span class="p">.</span><span class="n">Reverse</span><span class="p">().</span><span class="n">ToArray</span><span class="p">());</span>
+</pre>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-oct-04-2018/" class="u-url">Plan and done for Oct-04-2018</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 alstof
@@ -334,33 +364,6 @@
 <div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about">
 <h2>What still puzzles us, or what do we need to learn more about?</h2>
 <p>My team struggles with all the flows and vocabulary about requests/responses/POST/GET.</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/plan-and-done-for-sep-12-2018/" class="u-url">Plan and done for Sep-12-2018</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                alstof
-            </span></p>
-            <p class="dateline"><a href="posts/plan-and-done-for-sep-12-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-09-12T11:46:14-07:00" title="2018-09-12 11:46">2018-09-12 11:46</time></a></p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<div class="section" id="what-did-we-do-well-that-if-we-dont-discuss-we-might-forget">
-<h2>What did we do well, that if we don’t discuss we might forget?</h2>
-<p>We accomplished the tasks given in quite short period and find only two things which required some research. One of them - how to implement 404 error handler. The way we have it implemented - by some 'anything else goes' - seems weird 'cause handling errors and routing are different behavior. We need some middleware to implement this handler.</p>
-</div>
-<div class="section" id="what-did-we-learn">
-<h2>What did we learn?</h2>
-<p>We've learned that the routes in <cite>express.static</cite> routes are relative, but in <cite>get</cite> they are absolute. That's why we need to setup them with <cite>__dirname</cite>.</p>
-</div>
-<div class="section" id="what-should-we-do-differently-next-time">
-<h2>What should we do differently next time?</h2>
-<p>Switch between roles earlier, maybe every 15 minutes?</p>
-</div>
-<div class="section" id="what-still-puzzles-us-or-what-do-we-need-to-learn-more-about">
-<h2>What still puzzles us, or what do we need to learn more about?</h2>
-<p>How to correctly implement 404 handler.</p>
 </div>
 </div>
     </div>
