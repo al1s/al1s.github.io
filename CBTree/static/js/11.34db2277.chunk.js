@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcb_tree=self.webpackChunkcb_tree||[]).push([[11],{6011(t,e,s){s.r(e),s.d(e,{default:()=>h});var i=s(2554),n=s(4450),r=s(7748),u=s(8426),c=s(3130),o=s(579);const h=()=>{const{thoughtRecord:t,onSubmit:e,isSubmitting:s,isValidQuestion:h}=(0,r.A)();return h&&t?(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n.DZ,{my:4,children:"Your Thought Record"}),(0,o.jsx)(c.A,{thoughtRecord:t}),(0,o.jsx)(i.$n,{mt:2,variant:"submit",isLoading:s,onClick:()=>e(t),children:"Submit"})]}):(0,o.jsx)(u.A,{})}}}]);
+//# sourceMappingURL=11.34db2277.chunk.js.map
